@@ -60,6 +60,15 @@ body {
 }
 
 
+.open-sans-<uniquifier> {
+                font-family: "Open Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+                font-variation-settings:
+                        "wdth" 100;
+            }
+
 .bg-geometry {
     position: fixed;     /* stays in place; use absolute if you want it to scroll with content */
     inset: 0;            /* top:0 right:0 bottom:0 left:0 */
@@ -248,7 +257,8 @@ font-size: 18px;
     margin: 0;
     font-size: clamp(32px, 5vw, 58px);
     letter-spacing: 0.06em;
-    font-family: "Bpmf Iansui", cursive;
+    font-family: "open sans", sans-serif;
+    font-weight: 700;
 }
 
 .hero__subtitle {
