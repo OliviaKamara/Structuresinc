@@ -53,12 +53,12 @@ body {
 }
 
 
-.cormorant-<uniquifier> {
-                font-family: "Cormorant", serif;
-                font-optical-sizing: auto;
-                font-weight: <weight>;
-                font-style: normal;
-            }
+.bpmf-iansui-regular {
+    font-family: "Bpmf Iansui", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .bg-geometry {
     position: fixed;     /* stays in place; use absolute if you want it to scroll with content */
@@ -248,6 +248,7 @@ font-size: 18px;
     margin: 0;
     font-size: clamp(32px, 5vw, 58px);
     letter-spacing: 0.06em;
+    font-family: "Bpmf Iansui", cursive;
 }
 
 .hero__subtitle {
