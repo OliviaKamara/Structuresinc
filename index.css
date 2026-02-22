@@ -1,0 +1,278 @@
+/* Slide in like railroad gates */
+@keyframes gateChopLeft {
+    0%   { opacity: 0; transform: translateX(-1400px); stroke-width: 0.5; }
+    8%   { opacity: 1; }
+    70%  { transform: translateX(-120px); stroke-width: 1; }
+    88%  { transform: translateX(18px); }
+    100% { opacity: 1; transform: translateX(0px); }
+}
+
+@keyframes gateChopRight {
+    0%   { opacity: 0; transform: translateX(1400px); stroke-width: 0.5; }
+    8%   { opacity: 1; }
+    70%  { transform: translateX(120px); stroke-width: 1; }
+    88%  { transform: translateX(-18px); }
+    100% { opacity: 1; transform: translateX(0px); }
+}
+@keyframes fillFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes heroPop {
+    0%   { opacity: 0; transform: translateY(22px) scale(0.98); filter: blur(2px); }
+    70%  { opacity: 1; transform: translateY(-2px) scale(1.01); filter: blur(0px); }
+    100% { opacity: 1; transform: translateY(0px) scale(1); filter: blur(0px); }
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .hero {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        animation: none;
+    }
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.page {
+    background-color: #ffffff;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 627px) {
+    .page {
+        background-color: #ffffff;
+    }
+}
+
+
+.cormorant-<uniquifier> {
+                font-family: "Cormorant", serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+
+.bg-geometry {
+    position: fixed;     /* stays in place; use absolute if you want it to scroll with content */
+    inset: 0;            /* top:0 right:0 bottom:0 left:0 */
+    width: 100vw;
+    height: 100vh;       /* viewport height; we’ll draw down inside the viewBox */
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.scroll-fade {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    pointer-events: none;
+    z-index: 1;          /* above svg, below content */
+    opacity: 0;
+    transition: opacity 0.15s linear;
+}
+/* ensure real content stays above */
+.header,
+main,
+section,
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+.bg-geometry {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+
+/* blueprint vibe */
+.bg-line,
+.bg-cap {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1;
+    stroke-linecap: round;
+}
+
+.bg-fill {
+    fill: #0409bf;
+    opacity: 0;
+    animation: fillFadeIn 800ms ease-out 1600ms forwards;
+}
+
+/* CHOP-IN like heavy gates: slower + in unison */
+.bg-line.slide {
+    transform-box: fill-box;
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+/* both start together */
+.slide-left {
+    transform: translateX(-1400px);
+    animation: gateChopLeft 1800ms steps(10, end) 150ms forwards;
+}
+
+.slide-right {
+    transform: translateX(1400px);
+    animation: gateChopRight 1800ms steps(10, end) 150ms forwards;
+}
+
+/* optional: soften the line edges even more */
+@media (max-width: 700px) {
+    .bg-line, .bg-cap { opacity: 0.12; }
+}
+
+.header{
+    background: #ffffff;
+   padding-bottom: 20px;
+}
+.logo__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+    width: 400px;
+    height: auto;
+}
+
+
+
+.nav__container {
+
+}
+
+.nav {
+
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    font-family: "Cormorant", serif;
+font-size: 18px;
+}
+
+.nav__item {
+    cursor: pointer;
+}
+
+.nav__item:hover {
+    color: #0409c0;
+    text-decoration: underline 1px solid;
+}
+
+.hero {
+    opacity: 0;
+    transform: translateY(22px) scale(0.98);
+    filter: blur(2px);
+    animation: heroPop 650ms cubic-bezier(.16,.9,.2,1) 2400ms forwards;
+}
+
+.hero__container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* The image becomes the "stage" */
+.hero__image-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+/* Make the image cover nicely */
+.hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Gradient overlay for readability */
+.hero__image-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* left-to-right dark fade; tweak as needed */
+    background: linear-gradient(
+            90deg,
+            rgba(4, 9, 191, 0.75) 0%,
+            rgba(4, 9, 191, 0.35) 45%,
+            rgba(4, 9, 191, 0.0) 75%
+    );
+    pointer-events: none;
+}
+
+/* Put text over the image */
+.hero__text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding-left: clamp(20px, 8vw, 120px);
+    padding-right: clamp(20px, 4vw, 60px);
+    max-width: 700px;
+    z-index: 1;
+    color: #fff;
+}
+
+.hero__title {
+    margin: 0;
+    font-size: clamp(32px, 5vw, 58px);
+    letter-spacing: 0.06em;
+}
+
+.hero__subtitle {
+    margin: 0;
+    font-size: clamp(16px, 2.2vw, 22px);
+    font-weight: 400;
+    line-height: 1.35;
+    max-width: 55ch;
+    opacity: 0.95;
+}
+
+/* Mobile: make overlay more centered and even */
+@media (max-width: 700px) {
+    .hero__image-container::after {
+        background: linear-gradient(
+                180deg,
+                rgba(4, 9, 191, 0.70) 0%,
+                rgba(4, 9, 191, 0.35) 55%,
+                rgba(4, 9, 191, 0.0) 100%
+        );
+    }
+
+    .hero__text {
+        justify-content: flex-end;
+        padding: 18px;
+        max-width: 100%;
+    }
+}
