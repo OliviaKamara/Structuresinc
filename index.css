@@ -1,4 +1,4 @@
-@keyframes boxOpenTop{
+ @keyframes boxOpenTop{
     0%   { --gap: 0px; }
     65%  { --gap: 26px; }   /* opens */
     100% { --gap: 22px; }   /* settles */
