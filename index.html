@@ -11,51 +11,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Strutures Inc</title>
-    <script src="index.js" defer></script>
 </head>
 <body class="page">
-<div class="scroll-fade"></div>
-<svg class="bg-geometry" viewBox="0 -121 1000 1600" preserveAspectRatio="none" aria-hidden="true">
-
-    <!-- BLUE OUTSIDE FILLS -->
-    <polygon class="bg-fill fill-left"
-             points="0,260 360,260 0,1520" />
-
-    <polygon class="bg-fill fill-right"
-             points="640,260 1000,260 1000,1520" />
-
-    <!-- YOUR LINES (unchanged numbers) -->
-    <path class="bg-line slide slide-left"  id="bgLeft"  d="M 360 260 L -80 1520" />
-    <path class="bg-line slide slide-right" id="bgRight" d="M 640 260 L 1070 1520" />
-
-</svg>
 <header class="header">
-    <div class="logo__container">
-<img src="images/Bpmf.png" class="logo" alt="Bradley Logo">
-    </div>
-    <div class="nav__container">
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item">HOME</li>
-            <li class="nav__item">SERVICES</li>
-            <li class="nav__item">CONTACT</li>
-            <li class="nav__item">ABOUT</li>
-        </ul>
-    </div>
-    </nav>
 </header>
 <main class="main">
-    <section class="hero">
-        <div class="hero__container">
-            <div class="hero__image-container">
-                <img src="images/heroimage.jpg" class="hero__image" alt="construction hat">
+    <section class="services-grid services-grid--checker">
 
-                <div class="hero__text">
-                    <h1 class="hero__title">STRUCTURES INC.</h1>
-                    <h2 class="hero__subtitle">Your tageline text here wassssuuuupppp, David! It's Codess</h2>
-                </div>
-            </div>
+        <button class="tile tile--tl">
+            <img class="tile__img" src="images/leveling.jpg" alt="">
+            <span class="tile__label">Structural Leveling & Repairs</span>
+        </button>
+
+        <button class="tile tile--tr">
+            <img class="tile__img" src="images/waterproofing.jpg" alt="">
+            <span class="tile__label">Deck Waterproofing</span>
+        </button>
+
+        <button class="tile tile--bl">
+            <img class="tile__img" src="images/bath.jpg" alt="">
+            <span class="tile__label">Kitchen & Baths</span>
+        </button>
+
+        <button class="tile tile--br">
+            <img class="tile__img" src="images/roof.jpg" alt="">
+            <span class="tile__label">Metal / Flat Roof Coatings</span>
+        </button>
+
+        <div class="logo-card">
+            <img class="logo-card__img" src="images/Bpmf.png" alt="Structures Inc Logo">
+            <p class="logo-card__tagline">When you need to think outside the box.</p>
         </div>
+
     </section>
 </main>
 </body>

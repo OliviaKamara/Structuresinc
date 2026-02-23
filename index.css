@@ -1,289 +1,193 @@
-/* Slide in like railroad gates */
-@keyframes gateChopLeft {
-    0%   { opacity: 0; transform: translateX(-1400px); stroke-width: 0.5; }
-    8%   { opacity: 1; }
-    70%  { transform: translateX(-120px); stroke-width: 1; }
-    88%  { transform: translateX(18px); }
-    100% { opacity: 1; transform: translateX(0px); }
+@keyframes boxOpenTop{
+    0%   { --gap: 0px; }
+    65%  { --gap: 26px; }   /* opens */
+    100% { --gap: 22px; }   /* settles */
 }
 
-@keyframes gateChopRight {
-    0%   { opacity: 0; transform: translateX(1400px); stroke-width: 0.5; }
-    8%   { opacity: 1; }
-    70%  { transform: translateX(120px); stroke-width: 1; }
-    88%  { transform: translateX(-18px); }
-    100% { opacity: 1; transform: translateX(0px); }
-}
-@keyframes fillFadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-@keyframes heroPop {
-    0%   { opacity: 0; transform: translateY(22px) scale(0.98); filter: blur(2px); }
-    70%  { opacity: 1; transform: translateY(-2px) scale(1.01); filter: blur(0px); }
-    100% { opacity: 1; transform: translateY(0px) scale(1); filter: blur(0px); }
-}
-
-/* Accessibility: respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    .hero {
-        opacity: 1;
-        transform: none;
-        filter: none;
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+    .logo-card::after{
         animation: none;
+        --gap: 22px;
     }
 }
 
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .page {
-    background-color: #ffffff;
     min-height: 100vh;
-    max-width: 100%;
+    background: #fff;
 }
 
-@media screen and (max-width: 627px) {
-    .page {
-        background-color: #ffffff;
-    }
+/* Center the whole “panel” vertically without creating extra scroll */
+.main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+    box-sizing: border-box;
 }
-
-
-.bpmf-iansui-regular {
-    font-family: "Bpmf Iansui", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-.open-sans-<uniquifier> {
-                font-family: "Open Sans", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: <weight>;
-                font-style: normal;
-                font-variation-settings:
-                        "wdth" 100;
-            }
-
-.bg-geometry {
-    position: fixed;     /* stays in place; use absolute if you want it to scroll with content */
-    inset: 0;            /* top:0 right:0 bottom:0 left:0 */
-    width: 100vw;
-    height: 100vh;       /* viewport height; we’ll draw down inside the viewBox */
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0.9;
-}
-
-.scroll-fade {
-    position: fixed;
-    inset: 0;
-    background: #ffffff;
-    pointer-events: none;
-    z-index: 1;          /* above svg, below content */
-    opacity: 0;
-    transition: opacity 0.15s linear;
-}
-/* ensure real content stays above */
-.header,
-main,
-section,
-footer {
-    position: relative;
-    z-index: 2;
-}
-
-.bg-geometry {
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 0;
-    pointer-events: none;
-}
-
-
-
-/* blueprint vibe */
-.bg-line,
-.bg-cap {
-    fill: none;
-    stroke: #ffffff;
-    stroke-width: 1;
-    stroke-linecap: round;
-}
-
-.bg-fill {
-    fill: #0409bf;
-    opacity: 0;
-    animation: fillFadeIn 800ms ease-out 1600ms forwards;
-}
-
-/* CHOP-IN like heavy gates: slower + in unison */
-.bg-line.slide {
-    transform-box: fill-box;
-    opacity: 0;
-    will-change: transform, opacity;
-}
-
-/* both start together */
-.slide-left {
-    transform: translateX(-1400px);
-    animation: gateChopLeft 1800ms steps(10, end) 150ms forwards;
-}
-
-.slide-right {
-    transform: translateX(1400px);
-    animation: gateChopRight 1800ms steps(10, end) 150ms forwards;
-}
-
-/* optional: soften the line edges even more */
-@media (max-width: 700px) {
-    .bg-line, .bg-cap { opacity: 0.12; }
-}
-
-.header{
-    background: #ffffff;
-   padding-bottom: 20px;
-}
-.logo__container {
-    max-width: 1200px;
+/* --- PANEL LAYOUT: clean 3-col frame around the logo --- */
+.services-grid--checker{
+    width: min(1200px, 100%);
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+
+    display: grid;
+
+    /* left tiles | center logo | right tiles */
+    grid-template-columns:
+    minmax(240px, 320px)
+    minmax(520px, 700px)
+    minmax(240px, 320px);
+
+    /* top row + bottom row */
+    grid-template-rows: auto auto;
+
+    /* Big intentional breathing room */
+    gap: clamp(24px, 4vw, 64px);
+
+    /* Push everything away from edges */
+    padding: clamp(12px, 3vw, 36px);
+
     align-items: center;
-}
+    justify-content: center;
 
-
-.logo {
-    width: 400px;
+    /* Remove fixed height to kill weird scroll */
     height: auto;
 }
 
+/* Place the 4 tiles as corners of this “frame” */
+.tile--tl { grid-column: 1; grid-row: 1; }
+.tile--bl { grid-column: 1; grid-row: 2; }
+.tile--tr { grid-column: 3; grid-row: 1; }
+.tile--br { grid-column: 3; grid-row: 2; }
 
+/* Put the logo in the center column spanning both rows */
+.logo-card{
+    position: static;
+    transform: none;
+    grid-column: 2;
+    grid-row: 1 / span 2;
 
-.nav__container {
-
-}
-
-.nav {
-
-}
-
-.nav__list {
-    list-style: none;
-    padding: 0;
-    margin-top: -50px;
-    display: flex;
-    justify-content: center;
-    gap: 170px;
-    font-family: "Cormorant", serif;
-font-size: 18px;
-}
-
-.nav__item {
-    cursor: pointer;
-}
-
-.nav__item:hover {
-    color: #0409c0;
-    text-decoration: underline 1px solid;
-}
-
-.hero {
-    opacity: 0;
-    transform: translateY(22px) scale(0.98);
-    filter: blur(2px);
-    animation: heroPop 650ms cubic-bezier(.16,.9,.2,1) 2400ms forwards;
-}
-
-.hero__container {
     width: 100%;
-    margin: 0;
-    padding: 0;
-}
+    max-width: 700px;
+    justify-self: center;
+    align-self: center;
 
-/* The image becomes the "stage" */
-.hero__image-container {
+    padding: clamp(20px, 3vw, 44px);
+    background: rgba(255,255,255,0.95);
+    border: none;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: visible;
+    --b: 3px;                     /* border thickness */
+    --c: rgba(0,0,0,0.25);         /* border color */
+    --gap: 18px;                   /* how wide the “opening” becomes */
+    --dur: 900ms;
     position: relative;
-    width: 100%;
-    height: 70vh;
-    overflow: hidden;
 }
 
-/* Make the image cover nicely */
-.hero__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Gradient overlay for readability */
-.hero__image-container::after {
+.logo-card::before {
     content: "";
     position: absolute;
     inset: 0;
-    /* left-to-right dark fade; tweak as needed */
-    background: linear-gradient(
-            90deg,
-            rgba(4, 9, 191, 0.75) 0%,
-            rgba(4, 9, 191, 0.35) 45%,
-            rgba(4, 9, 191, 0.0) 75%
-    );
     pointer-events: none;
+    z-index: 20;
+
+    /* draw 3 sides using backgrounds */
+    background: /* left */ linear-gradient(var(--c), var(--c)) left top / var(--b) 100% no-repeat,
+        /* right */ linear-gradient(var(--c), var(--c)) right top / var(--b) 100% no-repeat,
+        /* bottom */ linear-gradient(var(--c), var(--c)) left bottom / 100% var(--b) no-repeat;
 }
 
-/* Put text over the image */
-.hero__text {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    padding-left: clamp(20px, 8vw, 120px);
-    padding-right: clamp(20px, 4vw, 60px);
-    max-width: 700px;
-    z-index: 1;
-    color: #fff;
+.logo-card::after{
+    content:"";
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--b);
+    pointer-events:none;
+    z-index: 21;
+
+    /* two halves: left piece + right piece */
+    background:
+            linear-gradient(var(--c), var(--c)) left top / calc(50% - var(--gap)) var(--b) no-repeat,
+            linear-gradient(var(--c), var(--c)) right top / calc(50% - var(--gap)) var(--b) no-repeat;
+
+    /* Start closed (gap is 0), then open */
+    --gap: 0px;
+    animation: boxOpenTop var(--dur) ease-out forwards;
 }
 
-.hero__title {
-    margin: 0;
-    font-size: clamp(32px, 5vw, 58px);
-    letter-spacing: 0.06em;
-    font-family: "open sans", sans-serif;
-    font-weight: 700;
+
+
+.logo-card__tagline {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+}
+.tile {
+    aspect-ratio: 4 / 5;
+    font-family: "Open Sans";
+    color: #ffffff;
+    box-shadow: 0 0 18px rgb(0, 0, 0);
+    background: radial-gradient(
+            circle at center,
+            #2563eb 0%,
+            #1e40af 50%,
+            #0f1f4b 100%);
+)
 }
 
-.hero__subtitle {
-    margin: 0;
-    font-size: clamp(16px, 2.2vw, 22px);
-    font-weight: 400;
-    line-height: 1.35;
-    max-width: 55ch;
-    opacity: 0.95;
+.tile__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-/* Mobile: make overlay more centered and even */
-@media (max-width: 700px) {
-    .hero__image-container::after {
-        background: linear-gradient(
-                180deg,
-                rgba(4, 9, 191, 0.70) 0%,
-                rgba(4, 9, 191, 0.35) 55%,
-                rgba(4, 9, 191, 0.0) 100%
-        );
+
+/* Keep your logo big but responsive */
+.logo-card__img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 14px auto;
+}
+
+/* --- MOBILE: logo on top, tiles in a clean 2x2 --- */
+@media (max-width: 900px){
+    .services-grid--checker{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 14px;
+        padding: 16px;
     }
 
-    .hero__text {
-        justify-content: flex-end;
-        padding: 18px;
-        max-width: 100%;
+    .logo-card{
+        grid-column: 1;
+        grid-row: auto;
+        max-width: 720px;
+    }
+
+    .tile--tl, .tile--tr, .tile--bl, .tile--br{
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    /* 2x2 on mobile-ish widths (optional nicer) */
+    @media (min-width: 520px){
+        .services-grid--checker{
+            grid-template-columns: 1fr 1fr;
+        }
+        .logo-card{
+            grid-column: 1 / -1; /* span both columns */
+        }
     }
 }
