@@ -8,7 +8,6 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
@@ -17,53 +16,240 @@
 </head>
 
 <body class="page">
-<header class="header"></header>
+
+<div class="loader" id="loader" aria-label="Loading">
+    <div class="loader__scene">
+        <div class="cube-scene" id="cubeScene" aria-hidden="true">
+            <div class="cube" id="cube">
+                <div class="cube__core">
+                    <img class="cube__logo" src="images/opensans.png" alt="">
+                </div>
+
+                <div class="cube__face cube__face--front"></div>
+                <div class="cube__face cube__face--back"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--top"></div>
+                <div class="cube__face cube__face--bottom"></div>
+
+                <div class="cube__door cube__door--left"></div>
+                <div class="cube__door cube__door--right"></div>
+            </div>
+
+            <p class="cube__tagline" id="quoteFly">
+                The Best Ideas Come From Thinking “Outside The Box.”
+            </p>
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="#">
+            <span class="nav__brandMark" aria-hidden="true"></span>
+            <span class="nav__brandText">Structures, Inc.</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggleIcon" aria-hidden="true"></span>
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <ul class="nav__list" id="navMenu">
+            <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
 <main class="main">
-    <section class="services-grid services-grid--checker">
-
-        <!-- Top Quote -->
-        <p class="quote-top">
-             The Best Ideas Come From Thinking “Outside The Box.”
+    <section class="services-orbit">
+        <p class="quote-top" id="quoteTarget">
+            The Best Ideas Come From Thinking “Outside The Box.”
         </p>
 
-        <button class="tile tile--tl">
-            <img class="tile__img" src="images/leveling.jpg" alt="">
-            <span class="tile__label">Structural Jacking & Leveling</span>
-        </button>
+        <div class="orbit-stage">
+            <div class="logo-card" aria-label="Structures Inc Logo">
+                <div class="logo-state logo-state--default">
+                    <img class="logo-card__img" src="images/opensans.png" alt="Structures Inc Logo">
+                </div>
 
-        <button class="tile tile--tr">
-            <img class="tile__img" src="images/waterproofing.jpg" alt="">
-            <span class="tile__label">Deck Waterproofing</span>
-        </button>
+                <div class="logo-state logo-state--hover">
+                    <img class="owner-photo" src="images/david.jpg" alt="David - Owner of Structures Inc">
 
-        <button class="tile tile--bl">
-            <img class="tile__img" src="images/bath.jpg" alt="">
-            <span class="tile__label">Kitchen & Baths</span>
-        </button>
+                    <div class="speech-bubble">
+                        <p class="bubble-text">
+                            When you think outside the box, the unreasonable becomes reasonable.
+                            The unachievable achievable. Step outside the box become unreasonable.
+                        </p>
 
-        <button class="tile tile--br">
-            <img class="tile__img" src="images/roof.jpg" alt="">
-            <span class="tile__label">Metal / Flat Roof Coatings</span>
-        </button>
-        <button class="tile tile--br">
-            <img class="tile__img" src="images/roof.jpg" alt="">
-            <span class="tile__label">Plans & Designs</span>
-        </button>
+                        <p class="bubble-signature">
+                            - David
+                            <span>Owner / Founder</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Square Logo Box (logo only) -->
-        <div class="logo-card" aria-label="Structures Inc Logo">
-            <img class="logo-card__img" src="images/opensans.png" alt="Structures Inc Logo">
+            <div class="orbit-ring">
+                <div class="orbit-planet orbit-planet--1">
+                    <a href="http://www.rubberstoneatlanta.com" target="_blank" rel="noopener noreferrer" class="tile orbit-card">
+                        <img class="tile__img" src="images/rubberstone.png" alt="Rubber Stone">
+                        <span class="tile__label">Rubber Stone</span>
+                    </a>
+                </div>
+
+                <div class="orbit-planet orbit-planet--2">
+                    <a href="structural-jacking-leveling.html" class="tile orbit-card">
+                        <img class="tile__img" src="images/leveling.jpg" alt="Structural Jacking &amp; Leveling">
+                        <span class="tile__label">Structural Jacking &amp; Leveling</span>
+                    </a>
+                </div>
+
+                <div class="orbit-planet orbit-planet--3">
+                    <a href="deck-waterproofing.html" class="tile orbit-card">
+                        <img class="tile__img" src="images/waterproofing.jpg" alt="Deck Waterproofing">
+                        <span class="tile__label">Deck Waterproofing</span>
+                    </a>
+                </div>
+
+                <div class="orbit-planet orbit-planet--4">
+                    <a href="kitchen-baths.html" class="tile orbit-card">
+                        <img class="tile__img" src="images/bath.jpg" alt="Kitchen &amp; Baths">
+                        <span class="tile__label">Kitchen &amp; Baths</span>
+                    </a>
+                </div>
+
+                <div class="orbit-planet orbit-planet--5">
+                    <a href="metal-flat-roof-coatings.html" class="tile orbit-card">
+                        <img class="tile__img" src="images/roof.jpg" alt="Metal / Flat Roof Coatings">
+                        <span class="tile__label">Metal / Flat Roof Coatings</span>
+                    </a>
+                </div>
+
+                <div class="orbit-planet orbit-planet--6">
+                    <a href="plans-designs.html" class="tile orbit-card">
+                        <img class="tile__img" src="images/plans.jpg" alt="Plans &amp; Designs">
+                        <span class="tile__label">Plans &amp; Designs</span>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <!-- Handwritten Note -->
-        <p class="note-bottom">
-            " Tired of the ordinary? Think beyond walls and square footage. Transform… Imagine… Dream… Think… “outside the box”.
-            Remodeling “outside the box” means questioning every assumption. It is about designing spaces that spark curiosity,
-            invite conversation, and reflect the bold personality of the people who live there. Think outside the box, think Structures. "
-        </p>
-
     </section>
 </main>
+
+<script>
+    (function () {
+        const loader = document.getElementById("loader");
+        const cube = document.getElementById("cube");
+        const cubeScene = document.getElementById("cubeScene");
+        const fly = document.getElementById("quoteFly");
+        const target = document.getElementById("quoteTarget");
+
+        const spinMs = 1900;
+        const openMs = 900;
+        const popHoldMs = 700;
+        const flyMs = 750;
+        const fadeAfterMs = 500;
+
+        function rect(el) {
+            return el.getBoundingClientRect();
+        }
+
+        function flyTaglineToTarget() {
+            if (!fly || !target) return;
+
+            target.classList.add("is-waiting");
+
+            const from = rect(fly);
+
+            fly.classList.add("is-flying");
+            fly.style.left = "0";
+            fly.style.top = "0";
+            fly.style.margin = "0";
+            fly.style.width = from.width + "px";
+            fly.style.transform = `translate(${from.left}px, ${from.top}px)`;
+
+            const to = rect(target);
+
+            const anim = fly.animate(
+                [
+                    {
+                        transform: `translate(${from.left}px, ${from.top}px)`,
+                        opacity: 1
+                    },
+                    {
+                        transform: `translate(${to.left}px, ${to.top}px)`,
+                        opacity: 1
+                    }
+                ],
+                {
+                    duration: flyMs,
+                    easing: "cubic-bezier(.2,.9,.2,1)",
+                    fill: "forwards"
+                }
+            );
+
+            anim.onfinish = () => {
+                target.classList.remove("is-waiting");
+                fly.style.opacity = "0";
+            };
+        }
+
+        window.addEventListener("load", () => {
+            cube.classList.add("is-spinning");
+
+            setTimeout(() => {
+                cube.classList.remove("is-spinning");
+                cube.classList.add("is-front");
+
+                requestAnimationFrame(() => {
+                    cube.classList.add("is-opening");
+                    cubeScene.classList.add("is-tagline-visible");
+                });
+
+                setTimeout(() => {
+                    cube.classList.add("is-reveal");
+                }, openMs - 120);
+
+                setTimeout(() => {
+                    flyTaglineToTarget();
+                }, openMs + popHoldMs);
+
+                setTimeout(() => {
+                    loader.classList.add("is-hidden");
+                }, openMs + popHoldMs + flyMs + fadeAfterMs);
+
+            }, spinMs);
+        }, { once: true });
+
+        const nav = document.querySelector(".nav");
+        const toggle = document.querySelector(".nav__toggle");
+        const menu = document.getElementById("navMenu");
+
+        if (nav && toggle && menu) {
+            toggle.addEventListener("click", () => {
+                const isOpen = nav.classList.toggle("is-open");
+                toggle.setAttribute("aria-expanded", String(isOpen));
+            });
+
+            menu.addEventListener("click", (e) => {
+                const a = e.target.closest("a");
+                if (!a) return;
+                nav.classList.remove("is-open");
+                toggle.setAttribute("aria-expanded", "false");
+            });
+
+            document.addEventListener("click", (e) => {
+                if (nav.contains(e.target)) return;
+                nav.classList.remove("is-open");
+                toggle.setAttribute("aria-expanded", "false");
+            });
+        }
+    })();
+</script>
+
 </body>
 </html>
