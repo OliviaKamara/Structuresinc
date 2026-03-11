@@ -37,7 +37,7 @@
             </div>
 
             <p class="cube__tagline" id="quoteFly">
-                The Best Ideas Come From Thinking “Outside The Box.”
+                Think Outside The Box!
             </p>
         </div>
     </div>
@@ -46,7 +46,7 @@
 <header class="header">
     <nav class="nav" aria-label="Primary">
         <a class="nav__brand" href="#">
-            <span class="nav__brandMark" aria-hidden="true"></span>
+            <img src="images/triangle.png" class="nav__brandMark" alt="">
             <span class="nav__brandText">Structures, Inc.</span>
         </a>
 
@@ -150,8 +150,9 @@
 
         const spinMs = 1900;
         const openMs = 900;
-        const popHoldMs = 700;
+        const popHoldMs = 900;
         const flyMs = 750;
+        const revealAfterFlyMs = 180;
         const fadeAfterMs = 500;
 
         function rect(el) {
@@ -163,18 +164,31 @@
 
             target.classList.add("is-waiting");
 
+            /* measure the ORIGINAL tagline where it is visibly sitting */
             const from = rect(fly);
-
-            fly.classList.add("is-flying");
-            fly.style.left = "0";
-            fly.style.top = "0";
-            fly.style.margin = "0";
-            fly.style.width = from.width + "px";
-            fly.style.transform = `translate(${from.left}px, ${from.top}px)`;
-
             const to = rect(target);
 
-            const anim = fly.animate(
+            /* make a clone so the original stays centered above cube */
+            const clone = fly.cloneNode(true);
+            clone.removeAttribute("id");
+            clone.classList.add("is-flying-clone");
+
+            clone.style.position = "fixed";
+            clone.style.left = "0";
+            clone.style.top = "0";
+            clone.style.margin = "0";
+            clone.style.width = from.width + "px";
+            clone.style.transform = `translate(${from.left}px, ${from.top}px)`;
+            clone.style.opacity = "1";
+            clone.style.pointerEvents = "none";
+            clone.style.zIndex = "10001";
+
+            document.body.appendChild(clone);
+
+            /* hide the original once the clone takes over */
+            fly.style.opacity = "0";
+
+            const anim = clone.animate(
                 [
                     {
                         transform: `translate(${from.left}px, ${from.top}px)`,
@@ -194,7 +208,7 @@
 
             anim.onfinish = () => {
                 target.classList.remove("is-waiting");
-                fly.style.opacity = "0";
+                clone.remove();
             };
         }
 
@@ -210,13 +224,15 @@
                     cubeScene.classList.add("is-tagline-visible");
                 });
 
-                setTimeout(() => {
-                    cube.classList.add("is-reveal");
-                }, openMs - 120);
-
+                /* let tagline sit centered above cube first */
                 setTimeout(() => {
                     flyTaglineToTarget();
                 }, openMs + popHoldMs);
+
+                /* cube turns after fly starts */
+                setTimeout(() => {
+                    cube.classList.add("is-reveal");
+                }, openMs + popHoldMs + revealAfterFlyMs);
 
                 setTimeout(() => {
                     loader.classList.add("is-hidden");
