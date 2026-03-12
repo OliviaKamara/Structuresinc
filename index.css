@@ -893,7 +893,34 @@ html, body {
         display: flex;
         justify-content: center;
     }
+    .loader__scene{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        place-items: center;
+    }
+    .cube-scene{
+        --size: clamp(120px, 34vw, 160px);
+        width: 100%;
+        max-width: 320px;
+        height: 220px;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+    }
 
+    .cube{
+        margin: 0 auto;
+    }
+
+    .cube__tagline{
+        width: min(90vw, 280px);
+        text-align: center;
+    }
+
+    .cube-scene.is-tagline-visible .cube__tagline{
+        transform: translate(-50%, -118px) scale(1);
+    }
     .services-orbit{
         width: 100%;
         max-width: 390px;
@@ -1029,7 +1056,9 @@ html, body {
         max-width: 360px;
         order: 3;
         margin: 0 auto;
+        text-align: center;
     }
+
 
     .owner-photo--mobile{
         width: 100%;
@@ -1046,15 +1075,32 @@ html, body {
     .speech-bubble--mobile{
         position: static;
         width: 100%;
-        max-width: 100%;
+        max-width: 320px;
         opacity: 1;
         transform: none;
         pointer-events: auto;
         margin: 0 auto;
+        padding: 18px 16px;
+        box-sizing: border-box;
+        text-align: center;
     }
 
     .speech-bubble--mobile::before{
         display: none;
+    }
+
+    .bubble-text{
+        margin: 0 0 14px;
+        text-align: center;
+    }
+
+    .bubble-signature{
+        margin: 10px 0 0;
+        text-align: center;
+    }
+
+    .bubble-signature span{
+        text-align: center;
     }
 
     .nav__brandMark{
