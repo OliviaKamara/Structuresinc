@@ -1,0 +1,443 @@
+/* =========================
+   CONTACT PAGE ONLY
+   ========================= */
+
+.contact-main{
+    position: relative;
+    min-height: 100vh;
+    padding: 0 0 40px;
+}
+
+.contact-shell{
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.contact-hero{
+    position: relative;
+    overflow: hidden;
+    padding: 84px 0 64px;
+    min-height: clamp(500px, 72vh, 720px);
+    display: flex;
+    align-items: center;
+}
+
+.contact-hero__bg{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.contact-grid{
+    position: absolute;
+    inset: 4% 5%;
+    border-radius: 28px;
+    background:
+            linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px),
+            linear-gradient(rgba(26,52,145,0.88), rgba(19,42,126,0.92));
+    background-size: 64px 64px, 64px 64px, cover;
+    box-shadow:
+            0 24px 50px rgba(0,0,0,0.16),
+            0 8px 18px rgba(0,0,0,0.10),
+            inset 0 0 0 1px rgba(255,255,255,0.12),
+            inset 0 1px 0 rgba(255,255,255,0.18);
+    opacity: 0.96;
+}
+
+.contact-grid::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 28px;
+    background:
+            repeating-linear-gradient(
+                    0deg,
+                    rgba(255,255,255,0.12) 0px,
+                    rgba(255,255,255,0.12) 1px,
+                    transparent 1px,
+                    transparent 16px
+            ),
+            repeating-linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.12) 0px,
+                    rgba(255,255,255,0.12) 1px,
+                    transparent 1px,
+                    transparent 16px
+            );
+    opacity: 0.75;
+}
+
+.contact-grid::after{
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border-radius: 18px;
+    border: 1px dashed rgba(255,255,255,0.42);
+    opacity: 0.9;
+}
+
+.contact-sweep{
+    position: absolute;
+    right: 6%;
+    top: 6%;
+    width: min(680px, 72vw);
+    height: min(680px, 72vw);
+    border-radius: 50%;
+    background:
+            conic-gradient(
+                    from 0deg,
+                    rgba(255,255,255,0) 0deg,
+                    rgba(255,255,255,0.02) 230deg,
+                    rgba(255,255,255,0.18) 285deg,
+                    rgba(255,255,255,0.02) 325deg,
+                    rgba(255,255,255,0) 360deg
+            );
+    filter: blur(1px);
+    opacity: 0.85;
+    animation: contact-sweep-rotate 15s linear infinite;
+}
+
+.contact-orbit{
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 50%;
+}
+
+.contact-orbit--1{
+    width: 400px;
+    height: 400px;
+    left: -70px;
+    bottom: 0;
+    animation: contact-float 10s ease-in-out infinite;
+}
+
+.contact-orbit--2{
+    width: 760px;
+    height: 760px;
+    right: -180px;
+    top: -80px;
+    opacity: 0.45;
+    animation: contact-pulse 8s ease-in-out infinite;
+}
+
+.contact-hero__content{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.contact-eyebrow{
+    margin: 0 0 16px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+}
+
+.contact-copy .contact-eyebrow{
+    color: rgba(255,255,255,0.92);
+}
+
+.contact-copy h1,
+.contact-mapHeader h2{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.04;
+}
+
+.contact-copy h1{
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    color: #ffffff;
+    max-width: 10ch;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.contact-mapHeader h2{
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #0d1537;
+}
+
+.contact-copy p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.92);
+    max-width: 62ch;
+}
+
+.contact-lead{
+    font-size: 1.12rem !important;
+}
+
+.contact-heroActions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.contact-heroCard,
+.contact-card,
+.contact-mapCard{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.82);
+    border: 1px solid rgba(255,255,255,0.26);
+    box-shadow:
+            0 20px 36px rgba(0,0,0,0.10),
+            0 8px 18px rgba(0,0,42,0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.contact-heroCard::before,
+.contact-card::before,
+.contact-mapCard::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+            linear-gradient(rgba(4,9,192,0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(4,9,192,0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+    opacity: 0.55;
+}
+
+.contact-heroCard{
+    padding: 28px;
+    max-width: 360px;
+    justify-self: end;
+}
+
+.contact-chip{
+    display: inline-flex;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-blue);
+    background: rgba(4,9,192,0.08);
+    border: 1px solid rgba(4,9,192,0.14);
+}
+
+.contact-heroCard h3,
+.contact-card h3{
+    margin: 16px 0 12px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.08;
+    color: #0d1537;
+}
+
+.contact-heroCard p,
+.contact-card p{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(2,3,40,0.82);
+}
+
+.contact-quickLinks{
+    margin-top: 18px;
+    display: grid;
+    gap: 12px;
+}
+
+.contact-quickLink{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: var(--ink-blue);
+}
+
+.contact-section{
+    padding: 34px 0 40px;
+}
+
+.contact-cardsGrid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.contact-card{
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+
+.contact-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-btn--primary{
+    background: rgba(255,255,255,0.96);
+    color: var(--ink-blue);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+}
+
+.contact-btn--secondary{
+background: rgba(255,255,255,0.12);
+border: 1px solid rgba(255,255,255,0.28);
+color: #ffffff;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+
+.contact-btn--card{
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.contact-btn:hover{
+    transform: translateY(-2px);
+}
+
+.contact-section--map{
+    padding-top: 10px;
+}
+
+.contact-mapCard{
+    padding: 30px;
+}
+
+.contact-mapHeader .contact-eyebrow{
+    color: var(--ink-blue);
+}
+
+.contact-mapWrap{
+    margin-top: 22px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(10,20,60,0.10);
+    background: rgba(255,255,255,0.7);
+}
+
+.contact-mapWrap iframe{
+    display: block;
+    width: 100%;
+    height: 420px;
+    border: 0;
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   CONTACT RESPONSIVE
+   ========================= */
+
+@media (max-width: 980px){
+    .contact-hero__content,
+    .contact-cardsGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero{
+        padding: 56px 0 40px;
+        min-height: auto;
+    }
+
+    .contact-copy h1{
+        max-width: 100%;
+    }
+
+    .contact-heroCard{
+        justify-self: start;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+    .contact-shell{
+        width: min(1100px, calc(100% - 24px));
+    }
+
+    .contact-hero{
+        padding: 42px 0 28px;
+    }
+
+    .contact-grid{
+        inset: 2% 0;
+        border-radius: 18px;
+    }
+
+    .contact-grid::after{
+        inset: 10px;
+        border-radius: 12px;
+    }
+
+    .contact-heroCard,
+    .contact-card,
+    .contact-mapCard{
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+    .contact-heroActions{
+        flex-direction: column;
+    }
+
+    .contact-btn,
+    .contact-btn--card{
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .contact-mapWrap iframe{
+        height: 320px;
+    }
+}
+
+/* =========================
+   CONTACT ANIMATIONS
+   ========================= */
+
+@keyframes contact-sweep-rotate{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+@keyframes contact-float{
+    0%, 100%{ transform: translateY(0) translateX(0); }
+    50%{ transform: translateY(-14px) translateX(10px); }
+}
+
+@keyframes contact-pulse{
+    0%, 100%{ transform: scale(1); opacity: 0.45; }
+    50%{ transform: scale(1.03); opacity: 0.62; }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Structures Inc.</title>
+
+    <link rel="stylesheet" href="contact-index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body class="page">
+<script src="shared.js" defer></script>
+<script src="contact.js" defer></script>
+
+<header class="header">
+    <nav class="nav">
+        <a href="index.html" class="nav__brand">
+            <img src="images/triangle.png" alt="Structures Inc." class="nav__brandMark">
+            <span class="nav__brandText">Structures Inc.</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav__toggleIcon"></span>
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="about.html">About</a></li>
+            <li><a class="nav__link" href="services.html">Services</a></li>
+            <li><a class="nav__link nav__link--active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contact-main">
+    <section class="contact-hero">
+        <div class="contact-hero__bg">
+            <div class="contact-grid"></div>
+            <div class="contact-sweep"></div>
+            <div class="contact-orbit contact-orbit--1"></div>
+            <div class="contact-orbit contact-orbit--2"></div>
+        </div>
+
+        <div class="contact-shell contact-hero__content">
+            <div class="contact-copy reveal">
+                <p class="contact-eyebrow">CONTACT US</p>
+                <h1>Let’s talk about your project.</h1>
+
+                <p class="contact-lead">
+                    Whether you need structural repair, waterproofing, coatings, renovation work,
+                    or planning support, Structures Inc. is here to help.
+                </p>
+
+                <p>
+                    Reach out today to discuss your project, ask questions, or request a consultation.
+                    We proudly serve clients throughout Metro Atlanta.
+                </p>
+
+                <div class="contact-heroActions">
+                    <a href="tel:17704036300" class="contact-btn contact-btn--primary">Call 770-403-6300</a>
+                    <a href="mailto:david@mystructures.com" class="contact-btn contact-btn--secondary">Email Us</a>
+                </div>
+            </div>
+
+            <div class="contact-heroCard reveal">
+                <span class="contact-chip">DIRECT CONTACT</span>
+                <h3>Get in Touch</h3>
+
+                <div class="contact-quickLinks">
+                    <a href="tel:17704036300" class="contact-quickLink">770-403-6300</a>
+                    <a href="mailto:david@mystructures.com" class="contact-quickLink">david@mystructures.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-shell">
+            <div class="contact-cardsGrid">
+                <article class="contact-card reveal">
+                    <span class="contact-chip">CALL US</span>
+                    <h3>Speak with a specialist</h3>
+                    <p>
+                        The fastest way to reach us is by phone. Call to discuss your project,
+                        ask questions, or schedule a consultation.
+                    </p>
+                    <a href="tel:17704036300" class="contact-btn contact-btn--card">
+                        Call 770-403-6300
+                    </a>
+                </article>
+
+                <article class="contact-card reveal">
+                    <span class="contact-chip">EMAIL</span>
+                    <h3>Send project details</h3>
+                    <p>
+                        Email us photos, project descriptions, or questions and we’ll get back
+                        to you as soon as possible.
+                    </p>
+                    <a href="mailto:david@mystructures.com" class="contact-btn contact-btn--card">
+                        Email david@mystructures.com
+                    </a>
+                </article>
+
+                <article class="contact-card reveal">
+                    <span class="contact-chip">SERVICE AREA</span>
+                    <h3>Metro Atlanta</h3>
+                    <p>
+                        Structures Inc. proudly serves residential and commercial clients throughout
+                        the Metro Atlanta region with practical, high-quality solutions.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section contact-section--map">
+        <div class="contact-shell">
+            <div class="contact-mapCard reveal">
+                <div class="contact-mapHeader">
+                    <p class="contact-eyebrow">OUR REGION</p>
+                    <h2>Metro Atlanta Service Area</h2>
+                </div>
+
+                <div class="contact-mapWrap">
+                    <iframe
+                            title="Metro Atlanta Map"
+                            src="https://www.google.com/maps?q=Metro%20Atlanta&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-contact">
+            <span class="footer-label">Contact</span>
+
+            <a href="tel:17704036300" class="footer-link">
+                770-403-6300
+            </a>
+
+            <a href="mailto:david@mystructures.com" class="footer-link">
+                david@mystructures.com
+            </a>
+        </div>
+
+        <div class="footer-service">
+            <span class="footer-pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                    <path d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2 2.2z"/>
+                </svg>
+            </span>
+            Serving Metro Atlanta
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Structures, Inc.
+    </div>
+
+    <div class="footer-credit">
+        Crafted with Precision by
+        <a href="https://www.codess.dev" target="_blank" rel="noopener">
+            CODESS
+        </a>
+    </div>
+</footer>
+</body>
+</html>

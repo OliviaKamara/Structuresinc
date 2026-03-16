@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Service Name | Structures Inc.</title>
+
+    <link rel="stylesheet" href="service-index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body class="page">
+<script src="shared.js" defer></script>
+<script src="service.js" defer></script>
+
+<header class="header">
+    <nav class="nav">
+        <a href="index.html" class="nav__brand">
+            <img src="images/triangle.png" alt="Structures Inc." class="nav__brandMark">
+            <span class="nav__brandText">Structures Inc.</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav__toggleIcon"></span>
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="about.html">About</a></li>
+            <li><a class="nav__link nav__link--active" href="services.html">Services</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="service-main">
+    <section class="service-hero">
+        <div class="service-hero__bg">
+            <div class="service-grid"></div>
+            <div class="service-sweep"></div>
+            <div class="service-orbit service-orbit--1"></div>
+            <div class="service-orbit service-orbit--2"></div>
+        </div>
+
+        <div class="service-shell service-hero__content">
+            <div class="service-copy reveal">
+                <p class="service-eyebrow">OUR SERVICES</p>
+                <h1>Service Name</h1>
+
+                <p class="service-lead">
+                    A short, polished intro for this service goes here. This should explain
+                    what the service is and why it matters.
+                </p>
+
+                <p>
+                    Use this section for a slightly more detailed overview. Explain what
+                    kinds of problems this service solves, who it is for, and what clients
+                    can expect from Structures Inc.
+                </p>
+
+                <div class="service-actions">
+                    <a href="contact.html" class="service-btn service-btn--primary">Contact Us</a>
+                    <a href="services.html" class="service-btn service-btn--secondary">Back to Services</a>
+                </div>
+            </div>
+
+            <div class="service-heroCard reveal">
+                <span class="service-chip">PROJECT SUPPORT</span>
+                <h3>Built for lasting results</h3>
+                <p>
+                    Add a short supporting blurb here that reinforces craftsmanship,
+                    durability, expertise, or performance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="service-shell">
+            <div class="service-layout">
+                <div class="service-gallery reveal">
+                    <div class="service-imageCard service-imageCard--large">
+                        <img src="images/service-placeholder-1.jpg" alt="Service project image">
+                    </div>
+
+                    <div class="service-imageGrid">
+                        <div class="service-imageCard">
+                            <img src="images/service-placeholder-2.jpg" alt="Service detail image">
+                        </div>
+
+                        <div class="service-imageCard">
+                            <img src="images/service-placeholder-3.jpg" alt="Service detail image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-details reveal">
+                    <p class="service-eyebrow">DETAILED OVERVIEW</p>
+                    <h2>What this service includes</h2>
+
+                    <p>
+                        This section should go deeper into the service itself. Describe the
+                        process, materials, scope, benefits, or common use cases. You can
+                        make this two or three paragraphs depending on what you want to say.
+                    </p>
+
+                    <p>
+                        This is also a good place to talk about quality, experience,
+                        long-term performance, and what makes your company’s approach
+                        dependable and practical.
+                    </p>
+
+                    <p>
+                        If needed, mention whether the service applies to residential,
+                        commercial, interior, exterior, repair, restoration, or new work.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="service-shell">
+            <div class="service-heading reveal">
+                <p class="service-eyebrow">WHY IT MATTERS</p>
+                <h2>Key benefits and project considerations.</h2>
+            </div>
+
+            <div class="service-cardGrid">
+                <article class="service-card reveal">
+                    <span class="service-chip">01</span>
+                    <h3>Benefit One</h3>
+                    <p>
+                        Add a clear benefit, feature, or reason this service is valuable.
+                    </p>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-chip">02</span>
+                    <h3>Benefit Two</h3>
+                    <p>
+                        Add another practical benefit, performance point, or project note.
+                    </p>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-chip">03</span>
+                    <h3>Benefit Three</h3>
+                    <p>
+                        Add a third highlight about durability, appearance, structure,
+                        protection, or long-term value.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section service-section--cta">
+        <div class="service-shell">
+            <div class="service-cta reveal">
+                <p class="service-eyebrow">START YOUR PROJECT</p>
+                <h2>Need help with this service?</h2>
+                <p>
+                    Contact Structures Inc. to discuss your project, ask questions,
+                    or request a consultation.
+                </p>
+                <a href="contact.html" class="service-btn service-btn--primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-contact">
+            <span class="footer-label">Contact</span>
+
+            <a href="tel:17704036300" class="footer-link">
+                770-403-6300
+            </a>
+
+            <a href="mailto:david@mystructures.com" class="footer-link">
+                david@mystructures.com
+            </a>
+        </div>
+
+        <div class="footer-service">
+            <span class="footer-pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                    <path d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2 2.2z"/>
+                </svg>
+            </span>
+            Serving Metro Atlanta
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Structures, Inc.
+    </div>
+
+    <div class="footer-credit">
+        Crafted with Precision by
+        <a href="https://www.codess.dev" target="_blank" rel="noopener">
+            CODESS
+        </a>
+    </div>
+</footer>
+</body>
+</html>
