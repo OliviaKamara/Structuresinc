@@ -19,7 +19,7 @@ html, body {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("../images/bg.png") center center / cover no-repeat;
+    background: url("../images/bg.webp") center center / cover no-repeat;
     opacity: 0.62;
     filter: contrast(1.08) saturate(0.92);
     mix-blend-mode: multiply;

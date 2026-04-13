@@ -13,11 +13,15 @@
     margin: 0 auto;
 }
 
+/* =========================
+   HERO
+   ========================= */
+
 .contact-hero{
     position: relative;
     overflow: hidden;
     padding: 84px 0 64px;
-    min-height: clamp(500px, 72vh, 720px);
+    min-height: clamp(520px, 72vh, 760px);
     display: flex;
     align-items: center;
 }
@@ -34,9 +38,9 @@
     inset: 4% 5%;
     border-radius: 28px;
     background:
-            linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px),
-            linear-gradient(rgba(26,52,145,0.88), rgba(19,42,126,0.92));
+            linear-gradient(rgba(255,255,255,0.14) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.14) 1px, transparent 1px),
+            linear-gradient(rgba(26,52,145,0.90), rgba(19,42,126,0.94));
     background-size: 64px 64px, 64px 64px, cover;
     box-shadow:
             0 24px 50px rgba(0,0,0,0.16),
@@ -54,19 +58,19 @@
     background:
             repeating-linear-gradient(
                     0deg,
-                    rgba(255,255,255,0.12) 0px,
-                    rgba(255,255,255,0.12) 1px,
+                    rgba(255,255,255,0.11) 0px,
+                    rgba(255,255,255,0.11) 1px,
                     transparent 1px,
                     transparent 16px
             ),
             repeating-linear-gradient(
                     90deg,
-                    rgba(255,255,255,0.12) 0px,
-                    rgba(255,255,255,0.12) 1px,
+                    rgba(255,255,255,0.11) 0px,
+                    rgba(255,255,255,0.11) 1px,
                     transparent 1px,
                     transparent 16px
             );
-    opacity: 0.75;
+    opacity: 0.72;
 }
 
 .contact-grid::after{
@@ -74,7 +78,7 @@
     position: absolute;
     inset: 18px;
     border-radius: 18px;
-    border: 1px dashed rgba(255,255,255,0.42);
+    border: 1px dashed rgba(255,255,255,0.38);
     opacity: 0.9;
 }
 
@@ -95,13 +99,13 @@
                     rgba(255,255,255,0) 360deg
             );
     filter: blur(1px);
-    opacity: 0.85;
+    opacity: 0.78;
     animation: contact-sweep-rotate 15s linear infinite;
 }
 
 .contact-orbit{
     position: absolute;
-    border: 1px solid rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.16);
     border-radius: 50%;
 }
 
@@ -118,7 +122,7 @@
     height: 760px;
     right: -180px;
     top: -80px;
-    opacity: 0.45;
+    opacity: 0.42;
     animation: contact-pulse 8s ease-in-out infinite;
 }
 
@@ -126,9 +130,13 @@
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 32px;
+    grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+    gap: 36px;
     align-items: center;
+}
+
+.contact-copy{
+    max-width: 760px;
 }
 
 .contact-eyebrow{
@@ -141,18 +149,18 @@
 }
 
 .contact-copy .contact-eyebrow{
-    color: rgba(255,255,255,0.92);
+    color: rgba(255,255,255,0.94);
 }
 
 .contact-copy h1,
 .contact-mapHeader h2{
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    line-height: 1.04;
+    line-height: 1.02;
 }
 
 .contact-copy h1{
-    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    font-size: clamp(3rem, 6vw, 4.9rem);
     color: #ffffff;
     max-width: 10ch;
     margin-bottom: 20px;
@@ -165,11 +173,16 @@
 }
 
 .contact-copy p{
+    margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     line-height: 1.8;
     color: rgba(255,255,255,0.92);
     max-width: 62ch;
+}
+
+.contact-copy p + p{
+    margin-top: 22px;
 }
 
 .contact-lead{
@@ -180,8 +193,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: 28px;
+    margin-top: 30px;
 }
+
+/* =========================
+   CARDS
+   ========================= */
 
 .contact-heroCard,
 .contact-card,
@@ -189,8 +206,8 @@
     position: relative;
     overflow: hidden;
     border-radius: 18px;
-    background: rgba(255,255,255,0.82);
-    border: 1px solid rgba(255,255,255,0.26);
+    background: rgba(255,255,255,0.84);
+    border: 1px solid rgba(255,255,255,0.28);
     box-shadow:
             0 20px 36px rgba(0,0,0,0.10),
             0 8px 18px rgba(0,0,42,0.08);
@@ -209,16 +226,19 @@
             linear-gradient(90deg, rgba(4,9,192,0.05) 1px, transparent 1px);
     background-size: 28px 28px;
     pointer-events: none;
-    opacity: 0.55;
+    opacity: 0.48;
 }
 
 .contact-heroCard{
     padding: 28px;
     max-width: 360px;
+    width: 100%;
     justify-self: end;
 }
 
 .contact-chip{
+    position: relative;
+    z-index: 1;
     display: inline-flex;
     padding: 7px 12px;
     border-radius: 999px;
@@ -234,6 +254,8 @@
 
 .contact-heroCard h3,
 .contact-card h3{
+    position: relative;
+    z-index: 1;
     margin: 16px 0 12px;
     font-family: "Open Sans", sans-serif;
     font-size: 1.7rem;
@@ -253,6 +275,8 @@
 }
 
 .contact-quickLinks{
+    position: relative;
+    z-index: 1;
     margin-top: 18px;
     display: grid;
     gap: 12px;
@@ -261,9 +285,19 @@
 .contact-quickLink{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--ink-blue);
+    overflow-wrap: anywhere;
 }
+
+.contact-quickLink:hover{
+    text-decoration: underline;
+}
+
+/* =========================
+   CONTENT SECTIONS
+   ========================= */
 
 .contact-section{
     padding: 34px 0 40px;
@@ -279,8 +313,13 @@
     padding: 28px;
     display: flex;
     flex-direction: column;
+    gap: 14px;
     min-height: 250px;
 }
+
+/* =========================
+   BUTTONS
+   ========================= */
 
 .contact-btn{
     display: inline-flex;
@@ -290,10 +329,20 @@
     padding: 0 22px;
     border-radius: 999px;
     text-decoration: none;
+    text-align: center;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 700;
-    transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    transition:
+            transform 180ms ease,
+            background 180ms ease,
+            border-color 180ms ease,
+            box-shadow 180ms ease,
+            color 180ms ease;
+}
+
+.contact-btn:hover{
+    transform: translateY(-2px);
 }
 
 .contact-btn--primary{
@@ -303,21 +352,28 @@
 }
 
 .contact-btn--secondary{
-background: rgba(255,255,255,0.12);
-border: 1px solid rgba(255,255,255,0.28);
-color: #ffffff;
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.28);
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .contact-btn--card{
     margin-top: auto;
     align-self: flex-start;
+    background: rgba(4,9,192,0.06);
+    border: 1px solid rgba(4,9,192,0.14);
+    color: var(--ink-blue);
 }
 
-.contact-btn:hover{
-    transform: translateY(-2px);
+.contact-btn--card:hover{
+    box-shadow: 0 10px 22px rgba(4,9,192,0.14);
 }
+
+/* =========================
+   MAP
+   ========================= */
 
 .contact-section--map{
     padding-top: 10px;
@@ -327,24 +383,34 @@ backdrop-filter: blur(10px);
     padding: 30px;
 }
 
-.contact-mapHeader .contact-eyebrow{
-    color: var(--ink-blue);
-}
-
 .contact-mapWrap{
     margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
     border-radius: 18px;
     overflow: hidden;
     border: 1px solid rgba(10,20,60,0.10);
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.72);
 }
 
 .contact-mapWrap iframe{
     display: block;
     width: 100%;
-    height: 420px;
+    height: 520px;
     border: 0;
 }
+
+.contact-mapWrap .contact-btn{
+    align-self: flex-start;
+    margin: 16px;
+    min-width: 220px;
+}
+
+/* =========================
+   REVEAL
+   ========================= */
 
 .reveal{
     opacity: 0;
@@ -358,7 +424,7 @@ backdrop-filter: blur(10px);
 }
 
 /* =========================
-   CONTACT RESPONSIVE
+   TABLET
    ========================= */
 
 @media (max-width: 980px){
@@ -368,7 +434,7 @@ backdrop-filter: blur(10px);
     }
 
     .contact-hero{
-        padding: 56px 0 40px;
+        padding: 56px 0 42px;
         min-height: auto;
     }
 
@@ -380,46 +446,197 @@ backdrop-filter: blur(10px);
         justify-self: start;
         max-width: 100%;
     }
+
+    .contact-cardsGrid{
+        gap: 18px;
+    }
+
+    .contact-card{
+        min-height: unset;
+    }
 }
+
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 640px){
     .contact-shell{
-        width: min(1100px, calc(100% - 24px));
+        width: min(1100px, calc(100% - 20px));
+    }
+
+    .contact-main{
+        padding-bottom: 28px;
     }
 
     .contact-hero{
-        padding: 42px 0 28px;
+        padding: 26px 0 22px;
+        min-height: auto;
+        align-items: flex-start;
+    }
+
+    .contact-hero__content{
+        gap: 18px;
     }
 
     .contact-grid{
-        inset: 2% 0;
+        inset: 0;
         border-radius: 18px;
+    }
+
+    .contact-grid::before{
+        opacity: 0.56;
     }
 
     .contact-grid::after{
         inset: 10px;
         border-radius: 12px;
+        opacity: 0.72;
+    }
+
+    .contact-sweep{
+        width: 120vw;
+        height: 120vw;
+        right: -28vw;
+        top: 10%;
+        opacity: 0.38;
+    }
+
+    .contact-orbit--1{
+        width: 260px;
+        height: 260px;
+        left: -120px;
+        bottom: 70px;
+        opacity: 0.28;
+    }
+
+    .contact-orbit--2{
+        width: 420px;
+        height: 420px;
+        right: -180px;
+        top: 38%;
+        opacity: 0.16;
+    }
+
+    .contact-copy .contact-eyebrow{
+        margin-bottom: 12px;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+    }
+
+    .contact-copy h1{
+        max-width: 100%;
+        font-size: clamp(2.55rem, 13vw, 3.75rem);
+        line-height: 0.96;
+        margin-bottom: 16px;
+        text-wrap: balance;
+    }
+
+    .contact-copy p{
+        max-width: 100%;
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .contact-copy p + p{
+        margin-top: 18px;
+    }
+
+    .contact-lead{
+        font-size: 1.03rem !important;
+    }
+
+    .contact-heroActions{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 22px;
+    }
+
+    .contact-btn{
+        width: 100%;
+        min-height: 54px;
+        padding: 0 18px;
+        box-sizing: border-box;
+    }
+
+    .contact-btn--card{
+        width: 100%;
+        align-self: stretch;
+        justify-content: center;
     }
 
     .contact-heroCard,
     .contact-card,
     .contact-mapCard{
-        padding: 22px;
-        border-radius: 14px;
+        padding: 20px;
+        border-radius: 16px;
     }
 
-    .contact-heroActions{
-        flex-direction: column;
-    }
-
-    .contact-btn,
-    .contact-btn--card{
+    .contact-heroCard{
+        justify-self: stretch;
         width: 100%;
-        align-self: stretch;
+        max-width: 100%;
+    }
+
+    .contact-heroCard h3,
+    .contact-card h3{
+        font-size: 1.45rem;
+        line-height: 1.08;
+    }
+
+    .contact-chip{
+        font-size: 0.68rem;
+        letter-spacing: 0.16em;
+        padding: 7px 11px;
+    }
+
+    .contact-quickLinks{
+        gap: 10px;
+    }
+
+    .contact-quickLink{
+        font-size: 0.98rem;
+    }
+
+    .contact-section{
+        padding: 18px 0 26px;
+    }
+
+    .contact-cardsGrid{
+        gap: 16px;
+    }
+
+    .contact-card{
+        gap: 12px;
+    }
+
+    .contact-mapHeader{
+        max-width: 100%;
+    }
+
+    .contact-mapHeader h2{
+        font-size: clamp(1.7rem, 9vw, 2.25rem);
+        line-height: 1.04;
+    }
+
+    .contact-mapHeader .contact-lead{
+        font-size: 0.98rem !important;
+        line-height: 1.55;
+    }
+
+    .contact-mapWrap{
+        margin-top: 18px;
     }
 
     .contact-mapWrap iframe{
-        height: 320px;
+        height: 280px;
+    }
+
+    .contact-mapWrap .contact-btn{
+        width: calc(100% - 24px);
+        min-width: 0;
+        margin: 14px 12px 16px;
     }
 }
 

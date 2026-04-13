@@ -20,7 +20,7 @@ html, body {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("../images/bg.png") center center / cover no-repeat;
+    background: url("../images/bg.webp") center center / cover no-repeat;
     opacity: 0.62;
     filter: contrast(1.08) saturate(0.92);
     mix-blend-mode: multiply;
@@ -349,5 +349,51 @@ html, body {
         align-items: center;
         text-align: center;
         gap: 14px;
+    }
+}
+.footer-service{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    text-align: right;
+}
+
+.footer-service-line{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(2,3,40,0.8);
+}
+
+.footer-address{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(2,3,40,0.72);
+    text-decoration: none;
+    max-width: 350px;
+}
+
+.footer-address:hover{
+    color: rgb(4,9,192);
+    text-decoration: underline;
+}
+
+@media (max-width: 640px){
+    .footer-service{
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-service-line{
+        justify-content: center;
+    }
+
+    .footer-address{
+        max-width: 100%;
     }
 }

@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body class="page">
@@ -20,7 +22,7 @@
 <header class="header">
     <nav class="nav">
         <a href="index.html" class="nav__brand">
-            <img src="images/triangle.png" alt="Structures Inc." class="nav__brandMark">
+            <img src="images/triangle.webp" alt="Structures Inc." class="nav__brandMark">
             <span class="nav__brandText">Structures Inc.</span>
         </a>
 
@@ -88,16 +90,16 @@
             <div class="service-layout">
                 <div class="service-gallery reveal">
                     <div class="service-imageCard service-imageCard--large">
-                        <img src="images/vubapatio.png" alt="Service project image">
+                        <img src="images/vubapatio.webp" alt="Service project image">
                     </div>
 
                     <div class="service-imageGrid">
                         <div class="service-imageCard">
-                            <img src="images/driveway.png" alt="Service detail image">
+                            <img src="images/driveway.webp" alt="Service detail image">
                         </div>
 
                         <div class="service-imageCard">
-                            <img src="images/pool.png" alt="Service detail image">
+                            <img src="images/pool.webp" alt="Service detail image">
                         </div>
                     </div>
                 </div>
@@ -218,7 +220,6 @@
         </div>
     </section>
 </main>
-
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-contact">
@@ -234,12 +235,23 @@
         </div>
 
         <div class="footer-service">
-            <span class="footer-pin" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="16" height="16">
-                    <path d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2 2.2z"/>
-                </svg>
-            </span>
-            Serving Metro Atlanta
+            <div class="footer-service-line">
+                <span class="footer-pin" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16">
+                        <path d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2 2.2z"/>
+                    </svg>
+                </span>
+                <span>Serving Metro Atlanta</span>
+            </div>
+
+            <a
+                    href="https://www.google.com/maps/search/?api=1&query=4305+Trotters+Way,+Alpharetta,+GA+30004,+Suite+A"
+                    class="footer-address"
+                    target="_blank"
+                    rel="noopener"
+            >
+                4305 Trotters Way, Alpharetta, GA 30004, Suite A
+            </a>
         </div>
     </div>
 

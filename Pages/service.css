@@ -405,7 +405,47 @@
     opacity: 1;
     transform: translateY(0);
 }
+.service-subheading {
+    text-align: center;
+    padding-left: 0;
+    font-family: "Open Sans", sans-serif;\
+    font-weight: 400;
+    color: #1e40af;
+    font-size: 2rem;
+}
 
+.service-subheading::before {
+    display: none;
+}
+.service-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-videoWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 90%; /* controls size */
+    margin: 0 auto;
+    padding-top: 56.25%; /* 16:9 ratio */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+            0 20px 40px rgba(0,0,0,0.15),
+            0 0 20px rgba(4,9,192,0.15);
+    margin-bottom: 100px;
+}
+
+.service-videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* FULL SIZE */
+    height: 100%; /* FULL SIZE */
+    border: 0;
+}
 /* =========================
    EXTERNAL SERVICE CARD
    ========================= */
