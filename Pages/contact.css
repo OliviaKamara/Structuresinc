@@ -475,6 +475,14 @@
         align-items: flex-start;
     }
 
+    .contact-heroCard{
+        justify-self: center;   /* 👈 center in grid */
+        align-self: center;
+        width: 100%;
+        max-width: 340px;       /* 👈 prevents edge bleed */
+        margin: 12px auto 0;    /* 👈 true centering */
+    }
+
     .contact-hero__content{
         gap: 18px;
     }
@@ -571,12 +579,6 @@
     .contact-mapCard{
         padding: 20px;
         border-radius: 16px;
-    }
-
-    .contact-heroCard{
-        justify-self: stretch;
-        width: 100%;
-        max-width: 100%;
     }
 
     .contact-heroCard h3,
