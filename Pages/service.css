@@ -157,7 +157,7 @@
 .service-copy h1{
     font-size: clamp(2.6rem, 5vw, 4.4rem);
     color: #ffffff;
-    max-width: 7ch;
+    max-width: 12ch;
     margin-bottom: 18px;
     text-shadow: 0 10px 30px rgba(0,0,0,0.18);
 }
