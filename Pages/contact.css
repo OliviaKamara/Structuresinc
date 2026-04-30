@@ -370,7 +370,171 @@
 .contact-btn--card:hover{
     box-shadow: 0 10px 22px rgba(4,9,192,0.14);
 }
+.contact-socialStrip{
+    position: relative;
+    overflow: hidden;
+    margin-top: 22px;
+    padding: 26px 28px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.84);
+    border: 1px solid rgba(255,255,255,0.28);
+    box-shadow:
+            0 20px 36px rgba(0,0,0,0.10),
+            0 8px 18px rgba(0,0,42,0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
 
+.contact-socialStrip::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+            linear-gradient(rgba(4,9,192,0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(4,9,192,0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+    opacity: 0.48;
+}
+
+.contact-socialStrip > *{
+    position: relative;
+    z-index: 1;
+}
+
+.contact-socialStrip h3{
+    margin: 14px 0 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.65rem;
+    line-height: 1.1;
+    color: #0d1537;
+}
+
+.contact-socialStrip p{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(2,3,40,0.82);
+}
+
+.contact-socialStripActions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.contact-socialStripActions .contact-btn{
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 760px){
+    .contact-socialStrip{
+        flex-direction: column;
+        align-items: stretch;
+        text-align: left;
+        padding: 22px;
+    }
+
+    .contact-socialStripActions{
+        justify-content: stretch;
+    }
+
+    .contact-socialStripActions .contact-btn{
+        width: 100%;
+    }
+}
+.contact-connectBar{
+    position: relative;
+    overflow: hidden;
+    width: min(760px, calc(100% - 32px));
+    margin: 24px auto 0;
+    padding: 24px 26px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.86);
+    border: 1px solid rgba(4,9,192,0.16);
+    box-shadow:
+            0 18px 32px rgba(0,0,0,0.10),
+            0 8px 18px rgba(0,0,42,0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    text-align: center;
+}
+
+.contact-connectBar::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+            linear-gradient(rgba(4,9,192,0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(4,9,192,0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.contact-connectBar::after{
+    display: none;
+}
+
+.contact-connectBar__copy,
+.contact-connectBar__actions{
+    position: relative;
+    z-index: 1;
+}
+
+.contact-connectBar h3{
+    margin: 14px 0 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.65rem, 3vw, 2.25rem);
+    line-height: 1.08;
+    color: #0d1537;
+}
+
+.contact-connectBar p{
+    margin: 0 auto;
+    max-width: 560px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: rgba(2,3,40,0.82);
+}
+
+.contact-connectBar__actions{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.contact-connectBar__actions .contact-btn{
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px){
+    .contact-connectBar{
+        width: min(100% - 20px, 420px);
+        padding: 22px;
+    }
+
+    .contact-connectBar__actions{
+        flex-direction: column;
+    }
+
+    .contact-connectBar__actions .contact-btn{
+        width: 100%;
+    }
+}
 /* =========================
    MAP
    ========================= */

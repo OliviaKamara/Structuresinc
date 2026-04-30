@@ -596,6 +596,64 @@
 .about-hero__content .about-link:hover::after{
     background: #ffffff;
 }
+.about-review{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.80);
+    border: 1px solid rgba(255,255,255,0.26);
+    box-shadow:
+            0 20px 36px rgba(0,0,0,0.10),
+            0 8px 18px rgba(0,0,42,0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    text-align: center;
+    padding: 48px 30px;
+}
+
+.about-review::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+            linear-gradient(rgba(4,9,192,0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(4,9,192,0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+    opacity: 0.55;
+}
+
+.about-review .about-eyebrow{
+    color: var(--ink-blue);
+}
+
+.about-review h2{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.05;
+    color: #0d1537;
+}
+
+.about-review p{
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 18px auto 28px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(2,3,40,0.82);
+}
+
+.about-review .about-btn{
+    position: relative;
+    z-index: 1;
+    background: var(--ink-blue);
+    color: #ffffff;
+}
 /* =========================
    ABOUT RESPONSIVE
    ========================= */
