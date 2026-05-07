@@ -619,6 +619,9 @@
         min-height: unset;
     }
 }
+.contact-phone {
+    color: #0409c0;
+}
 
 /* =========================
    MOBILE
