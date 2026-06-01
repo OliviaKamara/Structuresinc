@@ -654,6 +654,156 @@
     background: var(--ink-blue);
     color: #ffffff;
 }
+```css
+       /* =========================
+          ABOUT CREDENTIAL PLAQUE
+          ========================= */
+
+   .about-section--credentials{
+       padding: 10px 0 28px;
+   }
+
+.about-credentials{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 28px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 22px;
+    background:
+            radial-gradient(circle at 8% 20%, rgba(4,9,192,0.14), transparent 32%),
+            linear-gradient(135deg, rgba(255,255,255,0.92), rgba(244,247,255,0.82));
+    border: 1px solid rgba(4,9,192,0.14);
+    box-shadow:
+            0 18px 34px rgba(0,0,0,0.08),
+            inset 0 0 0 1px rgba(255,255,255,0.65);
+}
+
+.about-credentials::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+            linear-gradient(rgba(4,9,192,0.045) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(4,9,192,0.045) 1px, transparent 1px);
+    background-size: 22px 22px;
+    pointer-events: none;
+}
+
+.about-credentials__mark{
+    position: relative;
+    z-index: 1;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+            linear-gradient(135deg, rgba(4,9,192,0.95), rgba(13,21,55,0.95));
+    box-shadow:
+            0 18px 28px rgba(4,9,192,0.22),
+            inset 0 0 0 8px rgba(255,255,255,0.12);
+}
+
+.about-credentials__mark::after{
+    content: "";
+    position: absolute;
+    inset: -12px;
+    border-radius: 50%;
+    border: 1px dashed rgba(4,9,192,0.28);
+}
+
+.about-credentials__mark span{
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    color: #ffffff;
+}
+
+.about-credentials__content{
+    position: relative;
+    z-index: 1;
+}
+
+.about-credentials__content h2{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    line-height: 1.05;
+    color: #0d1537;
+}
+
+.about-credentials__content p{
+    max-width: 860px;
+    margin: 12px 0 18px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(2,3,40,0.78);
+}
+
+.about-badge-cloud{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 18px;
+}
+
+.about-badge-cloud span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 0 13px;
+    border-radius: 999px;
+    background: rgba(4,9,192,0.09);
+    border: 1px solid rgba(4,9,192,0.16);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.13em;
+    color: var(--ink-blue);
+}
+
+.about-credentials__details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.about-credentials__details span{
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 11px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.62);
+    border: 1px solid rgba(4,9,192,0.09);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: rgba(2,3,40,0.76);
+}
+
+@media (max-width: 760px){
+    .about-credentials{
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+
+    .about-credentials__mark{
+        width: 104px;
+        height: 104px;
+    }
+
+    .about-credentials__mark span{
+        font-size: 2rem;
+    }
+}
+```
+
 /* =========================
    ABOUT RESPONSIVE
    ========================= */
