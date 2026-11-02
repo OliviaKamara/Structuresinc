@@ -1,54 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Structural Jacking & Leveling in Metro Atlanta | Structures, Inc.</title>
-    <meta name="description" content="Structural jacking and leveling services in Metro Atlanta. Correct sagging floors, restore support, and improve structural stability with Structures, Inc.">
-    <link rel="canonical" href="https://www.mystructures.com/structural-jacking-leveling.html">
-    <meta property="og:title" content="Structural Jacking & Leveling in Metro Atlanta | Structures, Inc.">
-    <meta property="og:description" content="Correct sagging floors and restore structural stability with professional jacking and leveling services in Metro Atlanta.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Structural Jacking &amp; Floor Leveling | Metro Atlanta</title>
+
+    <meta
+            name="description"
+            content="Sagging or uneven floors? Structures Inc. provides structural jacking and leveling in Metro Atlanta. Discuss support repairs and request an assessment."
+    >
+
+    <link
+            rel="canonical"
+            href="https://www.mystructures.com/structural-jacking-leveling.html"
+    >
+
+    <meta
+            property="og:title"
+            content="Structural Jacking &amp; Leveling in Metro Atlanta | Structures Inc."
+    >
+    <meta
+            property="og:description"
+            content="Understand the cause of sagging floors and settling supports. Explore structural jacking, leveling, and support repair with Structures Inc."
+    >
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mystructures.com/structural-jacking-leveling.html">
-    <meta property="og:image" content="https://www.mystructures.com/images/level.webp">
-    <link rel="stylesheet" href="service-index.css" />
+    <meta
+            property="og:url"
+            content="https://www.mystructures.com/structural-jacking-leveling.html"
+    >
+    <meta
+            property="og:image"
+            content="https://www.mystructures.com/images/level.webp"
+    >
+
+    <link rel="stylesheet" href="service-index.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap"
+            rel="stylesheet"
+    >
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+    >
+
+    <script src="shared.js" defer></script>
+    <script src="service.js" defer></script>
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Structural Jacking and Leveling",
-            "provider": {
-                "@type": "GeneralContractor",
-                "name": "Structures, Inc."
-            },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Metro Atlanta"
-            },
-            "description": "Structural jacking and leveling services to correct sagging floors, restore support, and improve stability for residential and commercial structures.",
-            "url": "https://www.mystructures.com/structural-jacking-leveling.html"
+            "@graph": [
+                {
+                    "@type": "GeneralContractor",
+                    "@id": "https://www.mystructures.com/#business",
+                    "name": "Structures, Inc.",
+                    "url": "https://www.mystructures.com/",
+                    "telephone": "+1-770-403-6300",
+                    "email": "david@mystructures.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4205 Trotters Way, Suite A",
+                        "addressLocality": "Alpharetta",
+                        "addressRegion": "GA",
+                        "postalCode": "30004",
+                        "addressCountry": "US"
+                    },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Metro Atlanta"
+                    }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://www.mystructures.com/structural-jacking-leveling.html#webpage",
+                    "url": "https://www.mystructures.com/structural-jacking-leveling.html",
+                    "name": "Structural Jacking and Leveling in Metro Atlanta",
+                    "description": "Structural jacking and leveling for sagging floors, settling supports, and structural elevation concerns in Metro Atlanta.",
+                    "about": {
+                        "@id": "https://www.mystructures.com/structural-jacking-leveling.html#service"
+                    },
+                    "publisher": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "inLanguage": "en-US"
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://www.mystructures.com/structural-jacking-leveling.html#service",
+                    "name": "Structural Jacking and Leveling",
+                    "serviceType": "Structural jacking, leveling, and related support repair",
+                    "url": "https://www.mystructures.com/structural-jacking-leveling.html",
+                    "provider": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Metro Atlanta"
+                    },
+                    "description": "Assessment and controlled structural lifting and leveling for residential and commercial properties, with reinforcement or support repair as required by the project."
+                }
+            ]
         }
     </script>
 </head>
 
-<body class="page">
-<script src="shared.js" defer></script>
-<script src="service.js" defer></script>
+<body class="page jacking-page">
 
 <header class="header">
     <nav class="nav">
         <a href="index.html" class="nav__brand">
-            <img src="images/triangle.webp" alt="Structures Inc." class="nav__brandMark">
+            <img
+                    src="images/triangle.webp"
+                    alt="Structures Inc."
+                    class="nav__brandMark"
+            >
             <span class="nav__brandText">Structures Inc.</span>
         </a>
 
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+                class="nav__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
             <span class="nav__toggleIcon"></span>
             <span class="sr-only">Menu</span>
         </button>
@@ -56,15 +137,22 @@
         <ul class="nav__list">
             <li><a class="nav__link" href="index.html">Home</a></li>
             <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link nav__link--active" href="services.html">Services</a></li>
+            <li>
+                <a
+                        class="nav__link nav__link--active"
+                        href="services.html"
+                >Services</a>
+            </li>
             <li><a class="nav__link" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <main class="service-main">
+
+    <!-- HERO -->
     <section class="service-hero">
-        <div class="service-hero__bg">
+        <div class="service-hero__bg" aria-hidden="true">
             <div class="service-grid"></div>
             <div class="service-sweep"></div>
             <div class="service-orbit service-orbit--1"></div>
@@ -72,132 +160,609 @@
         </div>
 
         <div class="service-shell service-hero__content">
-            <div class="service-copy reveal">
-                <p class="service-eyebrow">OUR SERVICES</p>
+            <div class="service-copy">
+                <p class="service-eyebrow">METRO ATLANTA STRUCTURAL REPAIR</p>
+
                 <h1>Structural Jacking &amp; Leveling</h1>
 
                 <p class="service-lead">
-                    Uneven floors, sagging framing, and settling structures are common issues in homes and buildings throughout Metro Atlanta. Structural jacking and leveling can help restore support, improve stability, and correct elevation problems at the source.
+                    Sagging floors deserve more than a cosmetic fix.
+                    Start with the support beneath them.
                 </p>
 
                 <p>
-                    Structures, Inc. approaches jacking and leveling work with care, precision, and a long-term mindset. We evaluate the structure, identify where support has been compromised, and develop practical solutions to help bring the building back into proper alignment.
+                    Structures Inc. assesses structural movement and
+                    provides controlled jacking, leveling, and related
+                    support repairs for residential and commercial
+                    properties in Metro Atlanta.
                 </p>
 
                 <div class="service-actions">
-                    <a href="contact.html" class="service-btn service-btn--primary">Schedule an Assessment</a>
-                    <a href="services.html" class="service-btn service-btn--secondary">Back to Services</a>
+                    <a
+                            href="contact.html"
+                            class="service-btn service-btn--primary"
+                    >Request a Structural Assessment</a>
+
+                    <a
+                            href="#jacking-process"
+                            class="service-btn service-btn--secondary"
+                    >How It Works</a>
+                </div>
+
+                <nav class="sj-jump-links" aria-label="On this page">
+                    <a href="#warning-signs">Signs to investigate</a>
+                    <a href="#repair-options">Repair considerations</a>
+                    <a href="#jacking-cost">Cost factors</a>
+                    <a href="#jacking-faq">FAQs</a>
+                </nav>
+            </div>
+
+            <figure class="sj-hero-photo">
+                <img
+                        src="images/level.webp"
+                        alt="Structural jacking and leveling work"
+                        fetchpriority="high"
+                        decoding="async"
+                >
+                <figcaption>
+                    Understand the movement. Plan the support.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- DIRECT SERVICE DEFINITION -->
+    <section class="sj-section" aria-labelledby="jacking-overview-title">
+        <div class="service-shell">
+            <div class="sj-split">
+                <div class="sj-copy">
+                    <div class="sj-heading">
+                        <p class="sj-eyebrow">WHAT THE SERVICE DOES</p>
+                        <h2 id="jacking-overview-title">
+                            What is structural jacking and leveling?
+                        </h2>
+                    </div>
+
+                    <p class="sj-intro">
+                        Structural jacking uses controlled lifting to
+                        adjust the position of a building or part of
+                        its framing. Leveling addresses elevation
+                        differences where correction is appropriate.
+                    </p>
+
+                    <p>
+                        The work begins with understanding why the
+                        structure moved. A low floor may involve
+                        compromised framing, deteriorated supports,
+                        settlement, or more than one condition.
+                    </p>
+
+                    <p>
+                        Structures evaluates the affected areas and
+                        develops a project-specific approach. Lifting
+                        may be paired with reinforcement or support
+                        repair so the work addresses more than
+                        the visible slope.
+                    </p>
+                </div>
+
+                <figure class="sj-photo">
+                    <img
+                            src="images/levelandjack.webp"
+                            alt="Structural support and jacking work"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- WARNING SIGNS -->
+    <section
+            class="sj-section sj-section--soft"
+            id="warning-signs"
+            aria-labelledby="warning-signs-title"
+    >
+        <div class="service-shell">
+            <div class="sj-heading">
+                <p class="sj-eyebrow">LOOK BEYOND THE FINISHES</p>
+                <h2 id="warning-signs-title">
+                    Sagging floors? Sticking doors? Find out why.
+                </h2>
+            </div>
+
+            <div class="sj-signs">
+                <div>
+                    <h3>Floors that slope or dip</h3>
+                    <p>
+                        A noticeable low area or changing slope is a
+                        reason to investigate the floor system and
+                        its supports.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Openings that no longer fit</h3>
+                    <p>
+                        Doors and windows that begin sticking can
+                        accompany movement, although moisture and
+                        other conditions can also cause them.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Changes in framing or finishes</h3>
+                    <p>
+                        Visible sagging, new gaps, or recurring cracks
+                        may warrant an assessment, especially when
+                        several changes appear together.
+                    </p>
                 </div>
             </div>
 
-            <div class="service-heroCard reveal">
-                <span class="service-chip">STRUCTURAL CORRECTION</span>
-                <h3>Restoring support from the ground up</h3>
-                <p>
-                    Proper leveling work helps address movement, improve load support, and create a stronger foundation for lasting repairs.
+            <p class="sj-note">
+                These signs do not establish a diagnosis. Their location,
+                history, and underlying conditions help determine
+                whether jacking, leveling, or another repair is appropriate.
+            </p>
+        </div>
+    </section>
+
+    <!-- IMPORTANT DISTINCTIONS -->
+    <section
+            class="sj-section sj-section--blue"
+            id="repair-options"
+            aria-labelledby="repair-options-title"
+    >
+        <div class="service-shell">
+            <div class="sj-heading">
+                <p class="sj-eyebrow">CHOOSE THE RIGHT REPAIR</p>
+                <h2 id="repair-options-title">
+                    Lifting is one part of the solution.
+                </h2>
+            </div>
+
+            <div class="sj-table-panel">
+                <div class="sj-table-scroll">
+                    <table class="sj-table">
+                        <caption class="sr-only">
+                            Structural jacking, support repair, and
+                            surface leveling considerations
+                        </caption>
+
+                        <thead>
+                        <tr>
+                            <th scope="col">Work involved</th>
+                            <th scope="col">What it addresses</th>
+                            <th scope="col">What to establish first</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <th scope="row">Structural jacking</th>
+                            <td>
+                                Controlled changes in the elevation
+                                of affected structural elements.
+                            </td>
+                            <td>
+                                Whether lifting is appropriate,
+                                how much correction is reasonable,
+                                and how the load will be supported.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Support repair or reinforcement</th>
+                            <td>
+                                Compromised framing or support
+                                conditions identified during assessment.
+                            </td>
+                            <td>
+                                The cause of deterioration or movement
+                                and the permanent repair scope.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Floor surface leveling</th>
+                            <td>
+                                Preparation of the surface that
+                                receives flooring.
+                            </td>
+                            <td>
+                                Whether the supporting structure
+                                needs repair before finish work begins.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="sj-note">
+                    A level-looking floor does not by itself establish
+                    that the structure beneath it is properly supported.
+                    Likewise, structural stabilization does not always
+                    mean every floor can be made perfectly level.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="service-section">
+    <!-- PROCESS -->
+    <section
+            class="sj-section"
+            id="jacking-process"
+            aria-labelledby="jacking-process-title"
+    >
         <div class="service-shell">
-            <div class="service-layout">
-                <div class="service-gallery reveal">
-                    <div class="service-imageCard service-imageCard--large">
-                        <img src="images/level.webp" alt="Structural jacking and leveling project in Metro Atlanta">
+            <div class="sj-heading">
+                <p class="sj-eyebrow">WHAT TO EXPECT</p>
+                <h2 id="jacking-process-title">
+                    Assess the cause. Plan the correction.
+                </h2>
+            </div>
+
+            <ol class="sj-process" role="list">
+                <li>
+                    <span class="sj-step-number" aria-hidden="true">01</span>
+                    <h3>Assess the affected structure</h3>
+                    <p>
+                        Review the uneven conditions, visible damage,
+                        support arrangement, and history of movement.
+                        Identify what needs closer investigation.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="sj-step-number" aria-hidden="true">02</span>
+                    <h3>Define the repair scope</h3>
+                    <p>
+                        Establish the correction goals, access
+                        requirements, support repairs, and any
+                        engineering or permit needs for the project.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="sj-step-number" aria-hidden="true">03</span>
+                    <h3>Correct and support</h3>
+                    <p>
+                        Carry out the agreed lifting and repair work
+                        with appropriate support, then review the
+                        result and any remaining finish repairs.
+                    </p>
+                </li>
+            </ol>
+
+            <p class="sj-note sj-process-note">
+                The amount and pace of correction depend on the
+                structure’s condition. The goal is an appropriate
+                repair—not a promise of perfect alignment.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECT CONSIDERATIONS -->
+    <section
+            class="sj-section sj-section--soft"
+            aria-labelledby="project-considerations-title"
+    >
+        <div class="service-shell">
+            <div class="sj-split">
+                <figure class="sj-photo">
+                    <img
+                            src="images/deckjack.webp"
+                            alt="Jacking work beneath an exterior structure"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </figure>
+
+                <div class="sj-copy">
+                    <div class="sj-heading">
+                        <p class="sj-eyebrow">PLAN FOR THE WHOLE STRUCTURE</p>
+                        <h2 id="project-considerations-title">
+                            What happens after the lift matters.
+                        </h2>
                     </div>
 
-                    <div class="service-imageGrid">
-                        <div class="service-imageCard">
-                            <img src="images/levelandjack.webp" alt="Structural jacking and leveling project in Metro Atlanta">
-                        </div>
-
-                        <div class="service-imageCard">
-                            <img src="images/deckjack.webp" alt="Structural jacking and leveling project in Metro Atlanta">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-details reveal">
-                    <p class="service-eyebrow">DETAILED OVERVIEW</p>
-                    <h2>What this service includes</h2>
-
+                    <h3>Permanent support</h3>
                     <p>
-                        Our Structural Jacking &amp; Leveling service is designed to address buildings that have shifted, settled, or lost proper support over time. These issues may show up as sloping floors, sticking doors and windows, visible sagging, or signs of framing movement that continue to worsen if left untreated.
+                        Temporary lifting equipment and the finished
+                        support system serve different purposes.
+                        The proposal should identify the repairs or
+                        reinforcement intended to support the structure
+                        after the work.
                     </p>
 
+                    <h3>Underlying conditions</h3>
                     <p>
-                        We assess the affected areas, determine where structural correction is needed, and use controlled lifting and support methods to help restore the building to a more stable position. In many cases, jacking and leveling work is paired with reinforcement or repair so the corrected structure has the support it needs moving forward.
+                        Moisture, deterioration, or settlement may
+                        influence the repair. Those conditions need
+                        to be considered alongside elevation correction.
                     </p>
 
+                    <h3>Connected finishes and utilities</h3>
                     <p>
-                        This service can apply to residential and commercial properties where settlement, age, moisture damage, or failing supports have created uneven conditions. Our goal is not just to lift a structure, but to help correct the problem in a way that is practical, dependable, and built to last.
+                        Moving a structure can affect attached finishes
+                        and building systems. Discuss anticipated
+                        disruption and any follow-up work before
+                        the project begins.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="service-section">
+    <!-- EXISTING VIDEO -->
+    <section class="sj-section" aria-labelledby="jacking-video-title">
         <div class="service-shell">
-            <div class="service-heading reveal">
-                <p class="service-eyebrow">WHY IT MATTERS</p>
-                <h2>Key benefits and project considerations.</h2>
+            <div class="sj-heading">
+                <p class="sj-eyebrow">SEE THE WORK</p>
+                <h2 id="jacking-video-title">
+                    Structural jacking and leveling in action.
+                </h2>
             </div>
-            <div class="service-cardGrid">
-                <article class="service-card reveal">
-                    <span class="service-chip">01</span>
-                    <h3>Improved structural stability</h3>
-                    <p>
-                        Correcting sagging or settling helps restore support to the structure and reduces strain on compromised areas.
-                    </p>
-                </article>
 
-                <article class="service-card reveal">
-                    <span class="service-chip">02</span>
-                    <h3>More level interior conditions</h3>
-                    <p>
-                        Jacking and leveling can help address uneven floors, sticking openings, and other signs of structural movement.
-                    </p>
-                </article>
+            <p class="sj-video-intro">
+                Watch the video, then talk with Structures about how
+                the needs of your property may differ.
+            </p>
 
-                <article class="service-card reveal">
-                    <span class="service-chip">03</span>
-                    <h3>Stronger long-term repair outcomes</h3>
-                    <p>
-                        When structural issues are corrected at the support level, future repairs and finish work have a more reliable foundation.
-                    </p>
-                </article>
+            <div class="sj-video">
+                <iframe
+                        src="https://www.youtube.com/embed/_9Ms4-FcALg?start=239"
+                        title="Structural jacking and leveling video"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                ></iframe>
             </div>
         </div>
     </section>
-    <div class="service-video reveal">
-        <h3 class="service-subheading">See the Process in Action</h3>
 
-        <div class="service-videoWrapper">
-            <iframe
-                    src="https://www.youtube.com/embed/_9Ms4-FcALg?start=239"
-                    title="Structural Jacking & Leveling"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-    <section class="service-section service-section--cta">
+    <!-- COST -->
+    <section
+            class="sj-section sj-section--soft"
+            id="jacking-cost"
+            aria-labelledby="jacking-cost-title"
+    >
         <div class="service-shell">
-            <div class="service-cta reveal">
-                <p class="service-eyebrow">START YOUR PROJECT</p>
-                <h2>Need help correcting structural movement?</h2>
-                <p>
-                    Contact Structures, Inc. to discuss structural jacking and leveling, ask questions, or request a consultation for your property.
-                </p>
-                <a href="contact.html" class="service-btn service-btn--primary">Contact Us</a>
+            <div class="sj-asymmetric">
+                <div class="sj-heading">
+                    <p class="sj-eyebrow">PLAN YOUR PROJECT</p>
+                    <h2 id="jacking-cost-title">
+                        What does structural jacking and leveling cost?
+                    </h2>
+                </div>
+
+                <div class="sj-cost-detail">
+                    <p class="sj-intro">
+                        A meaningful estimate starts with the cause
+                        and extent of the problem.
+                    </p>
+
+                    <ul class="sj-list">
+                        <li>
+                            <strong>Area affected:</strong>
+                            The portion of the structure involved
+                            and the correction being considered.
+                        </li>
+                        <li>
+                            <strong>Access and temporary support:</strong>
+                            Working space and the requirements
+                            for supporting the structure during repairs.
+                        </li>
+                        <li>
+                            <strong>Repair scope:</strong>
+                            Deteriorated framing, support repairs,
+                            and underlying conditions.
+                        </li>
+                        <li>
+                            <strong>Project coordination:</strong>
+                            Engineering, permits, utilities, and
+                            finish repairs where applicable.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Ask what the proposal includes, what remains
+                        outside the scope, and what conditions could
+                        change the work.
+                    </p>
+
+                    <a href="contact.html" class="sj-button">
+                        Request an Assessment
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- FAQ -->
+    <section
+            class="sj-section"
+            id="jacking-faq"
+            aria-labelledby="jacking-faq-title"
+    >
+        <div class="service-shell">
+            <div class="sj-asymmetric">
+                <div class="sj-heading">
+                    <p class="sj-eyebrow">STRAIGHT ANSWERS</p>
+                    <h2 id="jacking-faq-title">
+                        Structural jacking and leveling FAQs
+                    </h2>
+                </div>
+
+                <div class="sj-faq">
+                    <details>
+                        <summary>
+                            Can structural jacking help with sagging floors?
+                        </summary>
+                        <p>
+                            It may be part of the repair when a floor’s
+                            support or framing requires elevation
+                            correction. The cause must be assessed first;
+                            not every uneven floor needs lifting.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Is floor leveling the same as foundation repair?
+                        </summary>
+                        <p>
+                            No. Uneven floors can involve framing,
+                            supports, foundation movement, or surface
+                            conditions. Foundation repair addresses
+                            foundation problems; the assessment determines
+                            whether it is relevant to the floor issue.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Will the floors become perfectly level?
+                        </summary>
+                        <p>
+                            Perfect leveling cannot be assumed.
+                            Existing deformation, building condition,
+                            and the effects on connected components
+                            influence the correction that is appropriate.
+                            Discuss the intended outcome before work starts.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Is lifting alone a permanent repair?
+                        </summary>
+                        <p>
+                            Lifting changes elevation. A lasting repair
+                            also depends on suitable support and attention
+                            to the cause of movement. Ask how the finished
+                            structure will be supported and what related
+                            repairs are included.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Can lifting affect drywall, flooring, or plumbing?
+                        </summary>
+                        <p>
+                            Movement can affect attached finishes and
+                            building systems. Existing damage and the
+                            correction being attempted influence the
+                            potential effects. Discuss protection,
+                            coordination, and follow-up repairs in advance.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            How long does jacking and leveling take?
+                        </summary>
+                        <p>
+                            Duration depends on access, the area affected,
+                            structural condition, repair requirements,
+                            and the correction plan. A project-specific
+                            schedule is more useful than a blanket
+                            one-day promise.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Do I need engineering or permits?
+                        </summary>
+                        <p>
+                            Requirements depend on the location and
+                            scope of the structural work. Ask what
+                            engineering, approvals, and inspections
+                            apply and who is responsible for arranging
+                            them before work begins.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Can I stay in the building during repairs?
+                        </summary>
+                        <p>
+                            Occupancy depends on the work area,
+                            temporary support, access, and utility
+                            requirements. Confirm any restrictions
+                            with the project team rather than assuming
+                            the building can remain occupied.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Where does Structures provide this service?
+                        </summary>
+                        <p>
+                            Structures Inc. provides structural jacking
+                            and leveling services in Metro Atlanta.
+                            Contact the team with your property location
+                            to confirm availability and discuss the issue.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            What should I send when requesting an assessment?
+                        </summary>
+                        <p>
+                            Include the property location, the areas
+                            affected, when you noticed the issue, and
+                            whether it is changing. Share existing photos
+                            and any relevant plans or reports. Do not
+                            enter an unsafe area to obtain photographs.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SERVICE CTA -->
+    <section
+            class="sj-section sj-section--blue sj-final-cta"
+            aria-labelledby="jacking-cta-title"
+    >
+        <div class="service-shell">
+            <div class="sj-heading">
+                <p class="sj-eyebrow">METRO ATLANTA · STRUCTURES INC.</p>
+                <h2 id="jacking-cta-title">
+                    Start with the cause—not another patch.
+                </h2>
+            </div>
+
+            <p>
+                Tell us where the floor slopes, what has changed,
+                and where the property is located. Structures can
+                discuss the next step for assessing your structural
+                jacking and leveling needs.
+            </p>
+
+            <div class="sj-cta-actions">
+                <a href="contact.html" class="sj-button">
+                    Request a Structural Assessment
+                </a>
+
+                <a href="tel:17704036300" class="sj-phone">
+                    Call 770-403-6300
+                </a>
+            </div>
+        </div>
+    </section>
+
 </main>
+
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-contact">
@@ -216,14 +781,16 @@
             <div class="footer-service-line">
                 <span class="footer-pin" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="16" height="16">
-                        <path d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2 2.2z"/>
+                        <path
+                                d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2 2.2z"
+                        />
                     </svg>
                 </span>
                 <span>Serving Metro Atlanta</span>
             </div>
 
             <a
-                    href="https://www.google.com/maps/search/?api=1&query=4205+Trotters+Way,+Alpharetta,+GA+30004,+Suite+A"
+                    href="https://www.google.com/maps/search/?api=1&amp;query=4205+Trotters+Way,+Alpharetta,+GA+30004,+Suite+A"
                     class="footer-address"
                     target="_blank"
                     rel="noopener"
@@ -233,9 +800,7 @@
         </div>
     </div>
 
-    <div class="footer-copy">
-        © 2026 Structures, Inc.
-    </div>
+    <div class="footer-copy">© 2026 Structures, Inc.</div>
 
     <div class="footer-credit">
         Crafted with Precision by
@@ -244,5 +809,6 @@
         </a>
     </div>
 </footer>
+
 </body>
 </html>

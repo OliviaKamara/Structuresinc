@@ -1,199 +1,1397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Deck Waterproofing in Metro Atlanta | Structures, Inc.</title>
-    <meta name="description" content="Deck waterproofing in Metro Atlanta for elevated decks, outdoor living spaces, and exposed surfaces. Structures, Inc. helps protect decks from moisture damage, wear, and long-term structural deterioration.">
-    <link rel="canonical" href="https://www.mystructures.com/deck-waterproofing.html">
 
-    <meta property="og:title" content="Deck Waterproofing in Metro Atlanta | Structures, Inc.">
-    <meta property="og:description" content="Protect your deck from moisture damage with professional deck waterproofing services in Metro Atlanta.">
+    <meta
+            name="description"
+            content="Leaking deck or worn waterproofing? Structures Inc. provides deck waterproofing in Metro Atlanta. Discuss surface condition, drainage, and repair options."
+    >
+
+    <link
+            rel="canonical"
+            href="https://www.mystructures.com/deck-waterproofing.html"
+    >
+
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mystructures.com/deck-waterproofing.html">
-    <meta property="og:image" content="https://www.mystructures.com/images/deck1.webp">
+    <meta property="og:site_name" content="Structures, Inc.">
+    <meta
+            property="og:title"
+            content="Deck Waterproofing in Metro Atlanta | Structures, Inc."
+    >
+    <meta
+            property="og:description"
+            content="Protect your outdoor space with a deck waterproofing plan that addresses the surface, drainage, and vulnerable connections."
+    >
+    <meta
+            property="og:url"
+            content="https://www.mystructures.com/deck-waterproofing.html"
+    >
+    <meta
+            property="og:image"
+            content="https://www.mystructures.com/images/deck1.webp"
+    >
 
-    <link rel="stylesheet" href="service-index.css" />
+    <link rel="stylesheet" href="service-index.css">
+    <link rel="stylesheet" href="service.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap"
+            rel="stylesheet"
+    >
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+    >
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script src="shared.js" defer></script>
+    <script src="service.js" defer></script>
+
+    <style>
+        /* All additions are scoped to this page. */
+
+        .waterproofing-page {
+            --dw-blue: #0409c0;
+            --dw-ink: #0d1537;
+            --dw-text: #354057;
+            --dw-soft: #f3f5fb;
+            --dw-line: #dce2ef;
+            --dw-navy: #142775;
+        }
+
+        .waterproofing-page .dw-main,
+        .waterproofing-page .dw-main * {
+            box-sizing: border-box;
+        }
+
+        .waterproofing-page .dw-main {
+            padding-bottom: 0;
+            color: var(--dw-ink);
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .waterproofing-page .dw-shell {
+            width: min(1160px, calc(100% - 48px));
+            margin-inline: auto;
+        }
+
+        .waterproofing-page .dw-section {
+            padding: clamp(54px, 7vw, 88px) 0;
+            background: #fff;
+        }
+
+        .waterproofing-page .dw-section--soft {
+            background: var(--dw-soft);
+        }
+
+        .waterproofing-page .dw-section--blue {
+            color: #fff;
+            background: linear-gradient(125deg, #122569, #203697);
+        }
+
+        .waterproofing-page .dw-main section[id] {
+            scroll-margin-top: 115px;
+        }
+
+        .waterproofing-page .dw-eyebrow {
+            display: block;
+            margin: 0 0 14px;
+            color: var(--dw-blue);
+            font-size: 0.76rem;
+            font-weight: 800;
+            line-height: 1.5;
+            letter-spacing: 0.19em;
+            text-transform: uppercase;
+        }
+
+        .waterproofing-page .dw-title {
+            max-width: 850px;
+            margin: 0 0 24px;
+            color: var(--dw-ink);
+            font-size: clamp(1.95rem, 3.7vw, 3rem);
+            line-height: 1.14;
+            letter-spacing: -0.035em;
+            text-wrap: balance;
+        }
+
+        .waterproofing-page .dw-main h3 {
+            margin: 0 0 12px;
+            color: var(--dw-ink);
+            font-size: 1.22rem;
+            line-height: 1.35;
+        }
+
+        .waterproofing-page .dw-main p,
+        .waterproofing-page .dw-main li {
+            color: var(--dw-text);
+            font-size: 1rem;
+            line-height: 1.85;
+        }
+
+        .waterproofing-page .dw-main p {
+            margin: 0 0 18px;
+        }
+
+        .waterproofing-page .dw-main p:last-child {
+            margin-bottom: 0;
+        }
+
+        .waterproofing-page .dw-intro {
+            max-width: 73ch;
+            margin-bottom: 34px !important;
+            font-size: 1.08rem !important;
+        }
+
+        .waterproofing-page .dw-section--blue .dw-title {
+            color: #fff;
+        }
+
+        .waterproofing-page .dw-section--blue .dw-eyebrow {
+            color: #dce3ff;
+        }
+
+        .waterproofing-page .dw-section--blue .dw-intro {
+            color: #e7ecff;
+        }
+
+        .waterproofing-page .dw-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 14px;
+            margin-top: 28px;
+        }
+
+        .waterproofing-page .dw-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 14px 23px;
+            border: 1px solid var(--dw-blue);
+            border-radius: 999px;
+            background: var(--dw-blue);
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 750;
+            line-height: 1.5;
+            text-align: center;
+            text-decoration: none;
+            transition:
+                    transform 180ms ease,
+                    box-shadow 180ms ease;
+        }
+
+        .waterproofing-page .dw-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgb(4 9 192 / 18%);
+        }
+
+        .waterproofing-page .dw-main a:focus-visible,
+        .waterproofing-page .dw-main summary:focus-visible {
+            outline: 3px solid var(--dw-blue);
+            outline-offset: 5px;
+        }
+
+        /* Blueprint hero */
+
+        .waterproofing-page .dw-hero {
+            position: relative;
+            overflow: hidden;
+            padding: clamp(52px, 7vw, 90px) 0;
+            background-color: var(--dw-navy);
+            background-image:
+                    linear-gradient(rgb(255 255 255 / 8%) 1px, transparent 1px),
+                    linear-gradient(90deg, rgb(255 255 255 / 8%) 1px, transparent 1px),
+                    linear-gradient(125deg, #122569, #273d9c);
+            background-size: 32px 32px, 32px 32px, auto;
+        }
+
+        .waterproofing-page .dw-hero::after {
+            position: absolute;
+            right: -180px;
+            bottom: -280px;
+            width: 720px;
+            height: 720px;
+            border: 1px solid rgb(255 255 255 / 20%);
+            border-radius: 50%;
+            content: "";
+            pointer-events: none;
+        }
+
+        .waterproofing-page .dw-hero-layout {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: clamp(30px, 5vw, 64px);
+            align-items: center;
+        }
+
+        .waterproofing-page .dw-hero .dw-eyebrow {
+            color: #dce3ff;
+        }
+
+        .waterproofing-page .dw-hero h1 {
+            margin: 0 0 24px;
+            color: #fff;
+            font-size: clamp(2.5rem, 5vw, 4.3rem);
+            line-height: 1.06;
+            letter-spacing: -0.045em;
+            text-wrap: balance;
+        }
+
+        .waterproofing-page .dw-hero p {
+            max-width: 57ch;
+            color: #e7ecff;
+        }
+
+        .waterproofing-page .dw-hero .dw-lead {
+            color: #fff;
+            font-size: clamp(1.15rem, 2vw, 1.4rem);
+            line-height: 1.6;
+        }
+
+        .waterproofing-page .dw-hero .dw-button,
+        .waterproofing-page .dw-cta .dw-button {
+            border-color: #fff;
+            background: #fff;
+            color: var(--dw-blue);
+        }
+
+        .waterproofing-page .dw-hero .dw-button--outline {
+            border-color: rgb(255 255 255 / 45%);
+            background: transparent;
+            color: #fff;
+        }
+
+        .waterproofing-page .dw-hero a:focus-visible,
+        .waterproofing-page .dw-section--blue a:focus-visible {
+            outline-color: #fff;
+        }
+
+        .waterproofing-page .dw-jump {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+            margin-top: 28px;
+            padding-top: 22px;
+            border-top: 1px solid rgb(255 255 255 / 25%);
+        }
+
+        .waterproofing-page .dw-jump a {
+            color: #fff;
+            font-size: 0.84rem;
+            line-height: 1.7;
+            text-underline-offset: 5px;
+        }
+
+        .waterproofing-page .dw-hero-photo {
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid rgb(255 255 255 / 25%);
+            border-radius: 18px;
+            background: #101a48;
+            box-shadow: 0 24px 60px rgb(0 0 0 / 20%);
+        }
+
+        .waterproofing-page .dw-hero-photo img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+        }
+
+        .waterproofing-page .dw-hero-photo figcaption {
+            padding: 18px 22px;
+            color: #fff;
+            font-size: 0.9rem;
+            line-height: 1.65;
+        }
+
+        /* Editorial layouts */
+
+        .waterproofing-page .dw-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(28px, 5vw, 64px);
+            align-items: center;
+        }
+
+        .waterproofing-page .dw-photo {
+            margin: 0;
+        }
+
+        .waterproofing-page .dw-photo img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        .waterproofing-page .dw-photo figcaption {
+            padding-top: 14px;
+            color: var(--dw-text);
+            font-size: 0.87rem;
+            line-height: 1.7;
+        }
+
+        .waterproofing-page .dw-columns {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 32px;
+            margin-top: 36px;
+        }
+
+        .waterproofing-page .dw-columns > div {
+            padding-top: 22px;
+            border-top: 3px solid var(--dw-blue);
+        }
+
+        .waterproofing-page .dw-note {
+            margin-top: 28px !important;
+            padding-top: 20px;
+            border-top: 1px solid var(--dw-line);
+            font-size: 0.92rem !important;
+        }
+
+        /* Dark feature band */
+
+        .waterproofing-page .dw-detail-list {
+            margin: 28px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .waterproofing-page .dw-detail-list li {
+            display: grid;
+            grid-template-columns: 0.65fr 1.35fr;
+            gap: 30px;
+            padding: 24px 0;
+            border-top: 1px solid rgb(255 255 255 / 25%);
+            color: #e7ecff;
+        }
+
+        .waterproofing-page .dw-detail-list strong {
+            color: #fff;
+            font-size: 1.13rem;
+        }
+
+        /* Comparison table */
+
+        .waterproofing-page .dw-table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--dw-line);
+            border-radius: 16px;
+            background: #fff;
+        }
+
+        .waterproofing-page .dw-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .waterproofing-page .dw-table caption {
+            padding: 20px 22px;
+            color: var(--dw-ink);
+            font-weight: 750;
+            text-align: left;
+        }
+
+        .waterproofing-page .dw-table th,
+        .waterproofing-page .dw-table td {
+            padding: 20px 22px;
+            border-bottom: 1px solid var(--dw-line);
+            vertical-align: top;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .waterproofing-page .dw-table thead {
+            background: #edf0fa;
+        }
+
+        .waterproofing-page .dw-table tbody th {
+            width: 27%;
+            color: var(--dw-ink);
+        }
+
+        .waterproofing-page .dw-table td {
+            color: var(--dw-text);
+        }
+
+        .waterproofing-page .dw-table tbody tr:last-child > * {
+            border-bottom: 0;
+        }
+
+        /* Animated process */
+
+        .waterproofing-page .dw-process {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 34px;
+            margin: 36px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .waterproofing-page .dw-process li {
+            padding-top: 24px;
+            border-top: 2px solid var(--dw-line);
+        }
+
+        .waterproofing-page .dw-number {
+            display: inline-block;
+            margin-bottom: 22px;
+            color: var(--dw-blue);
+            font-size: 3.8rem;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.06em;
+            transform-origin: left bottom;
+        }
+
+        .waterproofing-page .dw-process li:nth-child(1) {
+            --dw-delay: 0ms;
+        }
+
+        .waterproofing-page .dw-process li:nth-child(2) {
+            --dw-delay: 450ms;
+        }
+
+        .waterproofing-page .dw-process li:nth-child(3) {
+            --dw-delay: 900ms;
+        }
+
+        .waterproofing-page .dw-process.is-playing .dw-number {
+            animation: dw-number-arrive 800ms
+            cubic-bezier(0.2, 0.8, 0.2, 1)
+            var(--dw-delay) both;
+        }
+
+        .waterproofing-page .dw-process.is-finished .dw-number {
+            transition: transform 200ms ease;
+        }
+
+        @media (hover: hover) {
+            .waterproofing-page .dw-process.is-finished li:hover .dw-number {
+                transform: translateY(-5px) rotate(-3deg);
+            }
+        }
+
+        @keyframes dw-number-arrive {
+            0% {
+                opacity: 0.35;
+                transform: translateY(18px) scale(0.86);
+            }
+
+            65% {
+                opacity: 1;
+                transform: translateY(-5px) scale(1.05);
+            }
+
+            100% {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Cost and FAQs */
+
+        .waterproofing-page .dw-asymmetric {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: clamp(30px, 6vw, 80px);
+            align-items: start;
+        }
+
+        .waterproofing-page .dw-cost-list {
+            margin: 24px 0;
+            padding-left: 22px;
+        }
+
+        .waterproofing-page .dw-cost-list li + li {
+            margin-top: 14px;
+        }
+
+        .waterproofing-page .dw-faq details {
+            border-bottom: 1px solid var(--dw-line);
+        }
+
+        .waterproofing-page .dw-faq details:first-child {
+            border-top: 1px solid var(--dw-line);
+        }
+
+        .waterproofing-page .dw-faq summary {
+            position: relative;
+            padding: 22px 34px 22px 0;
+            color: var(--dw-ink);
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 750;
+            line-height: 1.6;
+            list-style: none;
+        }
+
+        .waterproofing-page .dw-faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .waterproofing-page .dw-faq summary::after {
+            position: absolute;
+            top: 22px;
+            right: 3px;
+            color: var(--dw-blue);
+            font-size: 1.3rem;
+            font-weight: 400;
+            content: "+";
+        }
+
+        .waterproofing-page .dw-faq details[open] summary::after {
+            content: "−";
+        }
+
+        .waterproofing-page .dw-faq details p {
+            padding: 0 24px 22px 0;
+            font-size: 0.97rem;
+        }
+
+        /* Final CTA */
+
+        .waterproofing-page .dw-cta {
+            text-align: center;
+        }
+
+        .waterproofing-page .dw-cta .dw-title,
+        .waterproofing-page .dw-cta p {
+            max-width: 760px;
+            margin-inline: auto;
+        }
+
+        .waterproofing-page .dw-cta p {
+            color: #e7ecff;
+        }
+
+        .waterproofing-page .dw-cta .dw-actions {
+            justify-content: center;
+        }
+
+        .waterproofing-page .dw-phone {
+            padding: 12px;
+            color: #fff;
+            font-weight: 750;
+            text-underline-offset: 6px;
+        }
+
+        @media (max-width: 980px) {
+            .waterproofing-page .dw-hero-layout,
+            .waterproofing-page .dw-asymmetric {
+                grid-template-columns: 1fr;
+                gap: 34px;
+            }
+
+            .waterproofing-page .dw-hero-photo img {
+                aspect-ratio: 16 / 10;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .waterproofing-page .dw-shell {
+                width: min(1160px, calc(100% - 36px));
+            }
+
+            .waterproofing-page .dw-split,
+            .waterproofing-page .dw-columns,
+            .waterproofing-page .dw-process,
+            .waterproofing-page .dw-detail-list li {
+                grid-template-columns: 1fr;
+            }
+
+            .waterproofing-page .dw-detail-list li {
+                gap: 8px;
+            }
+
+            .waterproofing-page .dw-process {
+                gap: 30px;
+            }
+
+            .waterproofing-page .dw-button {
+                width: 100%;
+            }
+
+            .waterproofing-page .dw-table th,
+            .waterproofing-page .dw-table td {
+                min-width: 170px;
+                padding: 18px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .waterproofing-page .dw-number,
+            .waterproofing-page .dw-button {
+                animation: none !important;
+                transition: none !important;
+                transform: none !important;
+            }
+        }
+    </style>
 
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Deck Waterproofing",
-            "provider": {
-                "@type": "GeneralContractor",
-                "name": "Structures, Inc."
-            },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Metro Atlanta"
-            },
-            "description": "Deck waterproofing services in Metro Atlanta to protect elevated decks, outdoor structures, and exposed surfaces from moisture damage and long-term deterioration.",
-            "url": "https://www.mystructures.com/deck-waterproofing.html"
+            "@graph": [
+                {
+                    "@type": "GeneralContractor",
+                    "@id": "https://www.mystructures.com/#business",
+                    "name": "Structures, Inc.",
+                    "url": "https://www.mystructures.com/",
+                    "telephone": "+1-770-403-6300",
+                    "email": "david@mystructures.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4205 Trotters Way, Suite A",
+                        "addressLocality": "Alpharetta",
+                        "addressRegion": "GA",
+                        "postalCode": "30004",
+                        "addressCountry": "US"
+                    },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Metro Atlanta, Georgia"
+                    }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://www.mystructures.com/deck-waterproofing.html#webpage",
+                    "url": "https://www.mystructures.com/deck-waterproofing.html",
+                    "name": "Deck Waterproofing in Metro Atlanta",
+                    "description": "Deck waterproofing services, water intrusion considerations, project planning, and consultation requests for Metro Atlanta properties.",
+                    "inLanguage": "en-US",
+                    "publisher": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "about": {
+                        "@id": "https://www.mystructures.com/deck-waterproofing.html#service"
+                    }
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://www.mystructures.com/deck-waterproofing.html#service",
+                    "name": "Deck Waterproofing",
+                    "serviceType": "Deck waterproofing",
+                    "url": "https://www.mystructures.com/deck-waterproofing.html",
+                    "provider": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Metro Atlanta, Georgia"
+                    },
+                    "description": "Assessment of existing deck surfaces and vulnerable areas, with waterproofing solutions selected for the conditions and intended use of the project."
+                }
+            ]
         }
     </script>
 </head>
 
-<body class="page">
-<script src="shared.js" defer></script>
-<script src="service.js" defer></script>
+<body class="page waterproofing-page">
 
 <header class="header">
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
         <a href="index.html" class="nav__brand">
-            <img src="images/triangle.webp" alt="Structures, Inc. contractor logo" class="nav__brandMark">
+            <img
+                    src="images/triangle.webp"
+                    alt=""
+                    class="nav__brandMark"
+            >
             <span class="nav__brandText">Structures Inc.</span>
         </a>
 
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+                class="nav__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
             <span class="nav__toggleIcon"></span>
             <span class="sr-only">Menu</span>
         </button>
 
         <ul class="nav__list">
-            <li><a class="nav__link" href="index.html">Home</a></li>
-            <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link nav__link--active" href="services.html">Services</a></li>
-            <li><a class="nav__link" href="contact.html">Contact</a></li>
+            <li>
+                <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav__link" href="about.html">About</a>
+            </li>
+            <li>
+                <a
+                        class="nav__link nav__link--active"
+                        href="services.html"
+                >Services</a>
+            </li>
+            <li>
+                <a class="nav__link" href="contact.html">Contact</a>
+            </li>
         </ul>
     </nav>
 </header>
 
-<main class="service-main">
-    <section class="service-hero">
-        <div class="service-hero__bg">
-            <div class="service-grid"></div>
-            <div class="service-sweep"></div>
-            <div class="service-orbit service-orbit--1"></div>
-            <div class="service-orbit service-orbit--2"></div>
-        </div>
+<main class="dw-main" id="main-content">
 
-        <div class="service-shell service-hero__content">
-            <div class="service-copy reveal">
-                <p class="service-eyebrow">OUR SERVICES</p>
-                <h1>Deck Waterproofing in Metro Atlanta</h1>
+    <section class="dw-hero" aria-labelledby="deck-title">
+        <div class="dw-shell dw-hero-layout">
+            <div>
+                <p class="dw-eyebrow">Metro Atlanta deck waterproofing</p>
 
-                <p class="service-lead">
-                    Moisture is one of the biggest threats to the life of a deck. Structures, Inc. provides deck waterproofing in Metro Atlanta to help protect surfaces, framing, and surrounding areas from long-term water damage and weather exposure.
+                <h1 id="deck-title">
+                    Protect your deck.<br>
+                    Protect what’s below.
+                </h1>
+
+                <p class="dw-lead">
+                    A deck should be a place to relax—not a recurring
+                    source of leaks and water damage.
                 </p>
 
                 <p>
-                    We provide deck waterproofing solutions designed to extend the life of outdoor structures while improving durability through changing weather conditions. Our focus is on practical protection that supports safety, performance, and long-term value.
+                    Structures Inc. provides deck waterproofing in Metro
+                    Atlanta. We evaluate existing surface conditions and
+                    vulnerable areas to help you plan protection suited
+                    to your outdoor space.
                 </p>
 
-                <div class="service-actions">
-                    <a href="contact.html" class="service-btn service-btn--primary">Request a Consultation</a>
-                    <a href="services.html" class="service-btn service-btn--secondary">Back to Services</a>
+                <div class="dw-actions">
+                    <a class="dw-button" href="contact.html">
+                        Request a Waterproofing Consultation
+                    </a>
+                    <a
+                            class="dw-button dw-button--outline"
+                            href="#deck-process"
+                    >
+                        Explore the Process
+                    </a>
                 </div>
+
+                <nav class="dw-jump" aria-label="Explore deck waterproofing">
+                    <a href="#deck-warning-signs">Warning signs</a>
+                    <a href="#deck-details">Waterproofing details</a>
+                    <a href="#deck-cost">Cost factors</a>
+                    <a href="#deck-faq">FAQs</a>
+                </nav>
             </div>
 
-            <div class="service-heroCard reveal">
-                <span class="service-chip">WEATHER DEFENSE</span>
-                <h3>Protection built into the surface</h3>
+            <figure class="dw-hero-photo">
+                <img
+                        src="images/deck1.webp"
+                        alt="Deck surface shown on the Structures Inc. waterproofing service page"
+                        fetchpriority="high"
+                        decoding="async"
+                >
+                <figcaption>
+                    A better plan starts with the surface—and follows
+                    the path of the water.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="dw-section" aria-labelledby="overview-title">
+        <div class="dw-shell dw-split">
+            <div>
+                <p class="dw-eyebrow">Understand the protection</p>
+                <h2 class="dw-title" id="overview-title">
+                    What is deck waterproofing?
+                </h2>
+
                 <p>
-                    Waterproofing helps reduce moisture intrusion, preserve structural integrity, and keep decks and outdoor spaces performing better over time.
+                    Deck waterproofing uses a water-control system to
+                    limit water passing through an outdoor deck assembly.
+                    Depending on the project, that system may involve
+                    membranes or coatings, connection details, and a
+                    planned route for drainage.
                 </p>
-            </div>
-        </div>
-    </section>
 
-    <section class="service-section">
-        <div class="service-shell">
-            <div class="service-layout">
-                <div class="service-gallery reveal">
-                    <div class="service-imageCard service-imageCard--large">
-                        <img src="images/deck1.webp" alt="Deck waterproofing project in Metro Atlanta">
-                    </div>
-
-                    <div class="service-imageGrid">
-                        <div class="service-imageCard">
-                            <img src="images/deck2.webp" alt="Deck waterproofing surface detail in Metro Atlanta">
-                        </div>
-
-                        <div class="service-imageCard">
-                            <img src="images/deck3.webp" alt="Protected outdoor deck surface in Metro Atlanta">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-details reveal">
-                    <p class="service-eyebrow">DETAILED OVERVIEW</p>
-                    <h2>What this service includes</h2>
-
-                    <p>
-                        Our Deck Waterproofing service is designed to help shield decks and elevated outdoor surfaces from rain, humidity, and day-to-day exposure to the elements. Without proper waterproofing, moisture can work its way into the deck system, leading to deterioration, surface wear, and structural concerns over time.
-                    </p>
-
-                    <p>
-                        We evaluate the condition of the existing surface, identify vulnerable areas, and apply practical waterproofing solutions intended to help prevent water intrusion and improve overall resilience. This is especially important for decks built over living spaces, entry areas, garages, or lower-level structures where water penetration can create additional damage below.
-                    </p>
-
-                    <p>
-                        Whether the goal is to preserve an existing deck, improve performance, or protect a newer installation from premature wear, our approach focuses on dependable materials, practical application, and long-term function.
-                    </p>
-
-                    <p>
-                        For homeowners and property managers, deck waterproofing can help reduce maintenance issues, extend the life of outdoor structures, and improve confidence in how the space performs year after year.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="service-section">
-        <div class="service-shell">
-            <div class="service-heading reveal">
-                <p class="service-eyebrow">WHY IT MATTERS</p>
-                <h2>Key benefits and project considerations.</h2>
-            </div>
-
-            <div class="service-cardGrid">
-                <article class="service-card reveal">
-                    <span class="service-chip">01</span>
-                    <h3>Moisture protection</h3>
-                    <p>
-                        Waterproofing helps block water intrusion that can lead to rot, surface breakdown, leaks, and hidden structural damage.
-                    </p>
-                </article>
-
-                <article class="service-card reveal">
-                    <span class="service-chip">02</span>
-                    <h3>Longer deck life</h3>
-                    <p>
-                        Protecting the surface from weather exposure helps preserve the deck system and reduce the need for premature repairs or replacement.
-                    </p>
-                </article>
-
-                <article class="service-card reveal">
-                    <span class="service-chip">03</span>
-                    <h3>Added value and performance</h3>
-                    <p>
-                        A properly protected deck is easier to maintain, more dependable over time, and better equipped to handle changing weather conditions.
-                    </p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="service-section service-section--cta">
-        <div class="service-shell">
-            <div class="service-cta reveal">
-                <p class="service-eyebrow">START YOUR PROJECT</p>
-                <h2>Need help protecting your deck?</h2>
                 <p>
-                    Contact Structures, Inc. to discuss your deck waterproofing needs, ask questions, or request a consultation for your property.
+                    Structures Inc. evaluates the existing surface,
+                    identifies vulnerable areas, and discusses waterproofing
+                    options appropriate for the deck’s condition and use.
                 </p>
-                <a href="contact.html" class="service-btn service-btn--primary">Contact Us</a>
+
+                <p>
+                    <strong>For decks over living space, garages, or
+                        entry areas, the space below is part of the
+                        conversation from the start.</strong>
+                </p>
+            </div>
+
+            <figure class="dw-photo">
+                <img
+                        src="images/deck2.webp"
+                        alt="Additional deck surface view"
+                        loading="lazy"
+                        decoding="async"
+                >
+                <figcaption>
+                    Existing materials and conditions help determine
+                    the appropriate waterproofing approach.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section
+            class="dw-section dw-section--soft"
+            id="deck-warning-signs"
+            aria-labelledby="signs-title"
+    >
+        <div class="dw-shell">
+            <p class="dw-eyebrow">Know when to ask</p>
+            <h2 class="dw-title" id="signs-title">
+                Small signs can point to a bigger water problem.
+            </h2>
+
+            <p class="dw-intro">
+                Changes on the deck—or in the area beneath it—can help
+                guide an assessment. Share what you see and when it happens.
+            </p>
+
+            <div class="dw-columns">
+                <div>
+                    <h3>Leaks or staining below</h3>
+                    <p>
+                        Drips, ceiling stains, or damp areas after rain
+                        deserve investigation. The entry point may be
+                        somewhere other than directly above the visible damage.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Worn or separating surfaces</h3>
+                    <p>
+                        Peeling, blistering, open seams, or lifting edges
+                        may indicate a finish or waterproofing system
+                        that needs attention.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Water that lingers</h3>
+                    <p>
+                        Recurring standing water or persistently damp
+                        areas are worth discussing alongside drainage,
+                        surface condition, and existing details.
+                    </p>
+                </div>
+            </div>
+
+            <p class="dw-note">
+                These observations do not establish the cause of a leak.
+                Waterproofing also does not restore deteriorated framing;
+                necessary repairs need to be addressed in the project scope.
+            </p>
+        </div>
+    </section>
+
+    <section
+            class="dw-section dw-section--blue"
+            id="deck-details"
+            aria-labelledby="details-title"
+    >
+        <div class="dw-shell">
+            <p class="dw-eyebrow">Follow the water</p>
+            <h2 class="dw-title" id="details-title">
+                Protection depends on how the details connect.
+            </h2>
+
+            <p class="dw-intro">
+                A waterproofing plan needs to consider the whole deck
+                assembly. These are key areas to discuss when reviewing
+                the proposed work.
+            </p>
+
+            <ul class="dw-detail-list">
+                <li>
+                    <strong>The existing surface</strong>
+                    <span>
+                        Confirm the substrate, existing coatings, visible
+                        damage, and preparation needed for the selected system.
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Walls and door thresholds</strong>
+                    <span>
+                        Review how deck waterproofing meets the building,
+                        including transitions and flashing details.
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Edges and penetrations</strong>
+                    <span>
+                        Discuss perimeter edges, posts, drains, and other
+                        interruptions in the waterproofing layer.
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Drainage and discharge</strong>
+                    <span>
+                        Establish where water will travel and how it will
+                        leave the deck without creating another problem.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="dw-section" aria-labelledby="comparison-title">
+        <div class="dw-shell">
+            <p class="dw-eyebrow">Choose the right scope</p>
+            <h2 class="dw-title" id="comparison-title">
+                A fresh finish and a waterproof deck are different goals.
+            </h2>
+
+            <p class="dw-intro">
+                Start by identifying what you need the work to accomplish.
+                Appearance, water control, and structural condition each
+                deserve a clear place in the proposal.
+            </p>
+
+            <div class="dw-table-wrap">
+                <table class="dw-table">
+                    <caption>
+                        Waterproofing, surface finishes, and structural repairs
+                    </caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">Project goal</th>
+                        <th scope="col">What to discuss</th>
+                        <th scope="col">What to confirm</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Limit water intrusion</th>
+                        <td>
+                            A waterproofing assembly appropriate for the
+                            substrate, exposure, and use.
+                        </td>
+                        <td>
+                            Surface preparation, transitions, drainage,
+                            and the complete system included.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Refresh the appearance</th>
+                        <td>
+                            A finish selected for the desired look,
+                            texture, and intended traffic.
+                        </td>
+                        <td>
+                            Whether the proposed finish provides
+                            waterproofing or needs a separate assembly.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Address deterioration</th>
+                        <td>
+                            Repairs to affected substrate, framing,
+                            or supports where required.
+                        </td>
+                        <td>
+                            What needs repair before waterproofing
+                            can proceed.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="dw-note">
+                Do not assume that paint, stain, tile, rubber surfacing,
+                or a decorative stone finish makes a deck assembly
+                waterproof. Confirm the function of the complete
+                proposed system.
+            </p>
+        </div>
+    </section>
+
+    <section
+            class="dw-section dw-section--soft"
+            id="deck-process"
+            aria-labelledby="process-title"
+    >
+        <div class="dw-shell">
+            <p class="dw-eyebrow">What to expect</p>
+            <h2 class="dw-title" id="process-title">
+                A clear path from concern to protection.
+            </h2>
+
+            <ol class="dw-process" role="list">
+                <li>
+                    <span class="dw-number" aria-hidden="true">01</span>
+                    <h3>Assess the deck</h3>
+                    <p>
+                        Review the existing surface, visible damage,
+                        reported leaks, and accessible connections.
+                        Identify conditions that need further investigation.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="dw-number" aria-hidden="true">02</span>
+                    <h3>Define the system and scope</h3>
+                    <p>
+                        Discuss preparation, necessary repairs, waterproofing
+                        details, drainage, and finish requirements.
+                        Confirm what the proposal includes.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="dw-number" aria-hidden="true">03</span>
+                    <h3>Complete the work and care plan</h3>
+                    <p>
+                        Follow the selected system’s installation and
+                        curing requirements. Confirm return-to-use
+                        timing and maintenance instructions.
+                    </p>
+                </li>
+            </ol>
+
+            <p class="dw-note">
+                Weather, substrate condition, repairs, and product
+                requirements affect scheduling. Application completion
+                and readiness for foot traffic or furniture may be
+                separate milestones.
+            </p>
+        </div>
+    </section>
+
+    <section class="dw-section" aria-labelledby="spaces-title">
+        <div class="dw-shell dw-split">
+            <figure class="dw-photo">
+                <img
+                        src="images/deck3.webp"
+                        alt="Outdoor deck surface"
+                        loading="lazy"
+                        decoding="async"
+                >
+            </figure>
+
+            <div>
+                <p class="dw-eyebrow">Match the space</p>
+                <h2 class="dw-title" id="spaces-title">
+                    What’s underneath changes the conversation.
+                </h2>
+
+                <h3>Decks over enclosed spaces</h3>
+                <p>
+                    When a deck sits above a room or garage, discuss
+                    the complete water-control assembly and the
+                    consequences of leakage below.
+                </p>
+
+                <h3>Elevated outdoor areas</h3>
+                <p>
+                    Review how the deck meets the building, where
+                    water exits, and the condition of accessible
+                    surfaces and supports.
+                </p>
+
+                <h3>Existing decks needing renewal</h3>
+                <p>
+                    Establish whether the existing materials can remain,
+                    what needs removal or repair, and how the proposed
+                    system will connect to surrounding details.
+                </p>
             </div>
         </div>
     </section>
+
+    <section
+            class="dw-section dw-section--soft"
+            id="deck-cost"
+            aria-labelledby="cost-title"
+    >
+        <div class="dw-shell dw-asymmetric">
+            <div>
+                <p class="dw-eyebrow">Plan your project</p>
+                <h2 class="dw-title" id="cost-title">
+                    What does deck waterproofing cost?
+                </h2>
+            </div>
+
+            <div>
+                <p>
+                    A useful estimate starts with your deck’s condition
+                    and the protection it needs. Area is one factor;
+                    preparation and connection details also shape the scope.
+                </p>
+
+                <ul class="dw-cost-list">
+                    <li>
+                        <strong>Size and layout:</strong>
+                        Deck area, access, perimeter edges, and
+                        interruptions in the surface.
+                    </li>
+
+                    <li>
+                        <strong>Existing condition:</strong>
+                        Coating removal, substrate repairs, and
+                        deterioration uncovered during preparation.
+                    </li>
+
+                    <li>
+                        <strong>Water-control details:</strong>
+                        Wall transitions, thresholds, penetrations,
+                        and drainage requirements.
+                    </li>
+
+                    <li>
+                        <strong>Selected system:</strong>
+                        Materials, finish, installation requirements,
+                        and intended use.
+                    </li>
+                </ul>
+
+                <p>
+                    Compare complete scopes. Ask what is included,
+                    what remains uncertain, and how additional repairs
+                    would be handled if hidden damage is found.
+                </p>
+
+                <div class="dw-actions">
+                    <a class="dw-button" href="contact.html">
+                        Discuss Your Deck
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dw-section" aria-labelledby="care-title">
+        <div class="dw-shell">
+            <p class="dw-eyebrow">Keep protection working</p>
+            <h2 class="dw-title" id="care-title">
+                Care for the complete system.
+            </h2>
+
+            <div class="dw-columns">
+                <div>
+                    <h3>Keep water moving</h3>
+                    <p>
+                        Keep accessible drainage paths clear of leaves
+                        and debris. Follow the maintenance instructions
+                        for the installed system.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Notice changes early</h3>
+                    <p>
+                        Report new leaks, lifting edges, damaged areas,
+                        or recurring standing water before making
+                        unplanned surface repairs.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Use compatible products</h3>
+                    <p>
+                        Confirm approved cleaners and any future
+                        recoating requirements. Ask before adding
+                        sealers, fasteners, or finishes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+            class="dw-section dw-section--soft"
+            id="deck-faq"
+            aria-labelledby="faq-title"
+    >
+        <div class="dw-shell dw-asymmetric">
+            <div>
+                <p class="dw-eyebrow">Clear answers</p>
+                <h2 class="dw-title" id="faq-title">
+                    Deck waterproofing FAQs
+                </h2>
+                <p>
+                    Understand the system, the preparation, and what
+                    your proposal covers before work begins.
+                </p>
+            </div>
+
+            <div class="dw-faq">
+                <details>
+                    <summary>
+                        Can an existing deck be waterproofed?
+                    </summary>
+                    <p>
+                        It may be possible, depending on the substrate,
+                        condition, layout, and selected system.
+                        Existing finishes or damaged materials may
+                        need removal or repair first.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Is deck waterproofing the same as staining or sealing?
+                    </summary>
+                    <p>
+                        No. Stains and sealers can serve surface-protection
+                        or appearance goals, but they should not be assumed
+                        to create a waterproof deck assembly. Confirm the
+                        function and limitations of the proposed system.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Will waterproofing fix a leaking deck?
+                    </summary>
+                    <p>
+                        The appropriate repair depends on where water
+                        enters and how it travels. The source may involve
+                        the deck surface, wall connections, thresholds,
+                        or other details. Assessment should come before
+                        choosing the repair.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        What if my deck is above a room or garage?
+                    </summary>
+                    <p>
+                        Tell Structures Inc. what is beneath the deck
+                        when requesting a consultation. The waterproofing
+                        plan needs to consider the complete assembly,
+                        its connections, and drainage.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Does waterproofing repair rotten wood or weak framing?
+                    </summary>
+                    <p>
+                        No. Waterproofing does not restore damaged
+                        structural components. Necessary substrate
+                        or structural repairs need to be identified
+                        and addressed as part of the project.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Does a decorative deck finish provide waterproofing?
+                    </summary>
+                    <p>
+                        Not necessarily. A decorative finish may be
+                        separate from the waterproofing layer.
+                        Ask whether the complete proposed assembly
+                        is intended to provide water protection
+                        for your particular deck.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        How long does deck waterproofing last?
+                    </summary>
+                    <p>
+                        Service life varies with the installed system,
+                        preparation, exposure, use, and maintenance.
+                        Request product-specific care information and
+                        the written terms of any applicable warranty.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        When can I walk on the deck again?
+                    </summary>
+                    <p>
+                        Follow the selected system’s curing requirements.
+                        Weather can affect timing, and foot traffic,
+                        furniture placement, and full use may have
+                        different return-to-use requirements.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Where does Structures Inc. provide deck waterproofing?
+                    </summary>
+                    <p>
+                        Structures Inc. serves Metro Atlanta from
+                        Alpharetta, Georgia. Share your property
+                        location and project details to discuss
+                        service availability.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        What should I send when requesting a consultation?
+                    </summary>
+                    <p>
+                        Send your property location, approximate deck
+                        size, existing surface material if known,
+                        what is beneath the deck, and a description
+                        of any leaks. Existing photos and repair
+                        history can also help explain the concern.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section
+            class="dw-section dw-section--blue dw-cta"
+            aria-labelledby="contact-title"
+    >
+        <div class="dw-shell">
+            <p class="dw-eyebrow">Structures Inc. · Metro Atlanta</p>
+            <h2 class="dw-title" id="contact-title">
+                Make a plan for the next rainy day.
+            </h2>
+
+            <p>
+                Whether you are dealing with a leak or planning
+                protection for an existing deck, start with a
+                conversation about the surface, the details,
+                and the space below.
+            </p>
+
+            <div class="dw-actions">
+                <a class="dw-button" href="contact.html">
+                    Request a Waterproofing Consultation
+                </a>
+                <a class="dw-phone" href="tel:+17704036300">
+                    Call 770-403-6300
+                </a>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <footer class="site-footer">
@@ -205,7 +1403,10 @@
                 770-403-6300
             </a>
 
-            <a href="mailto:david@mystructures.com" class="footer-link">
+            <a
+                    href="mailto:david@mystructures.com"
+                    class="footer-link"
+            >
                 david@mystructures.com
             </a>
         </div>
@@ -221,7 +1422,7 @@
             </div>
 
             <a
-                    href="https://www.google.com/maps/search/?api=1&query=4205+Trotters+Way,+Alpharetta,+GA+30004,+Suite+A"
+                    href="https://www.google.com/maps/search/?api=1&amp;query=4205+Trotters+Way,+Alpharetta,+GA+30004,+Suite+A"
                     class="footer-address"
                     target="_blank"
                     rel="noopener"
@@ -232,15 +1433,131 @@
     </div>
 
     <div class="footer-copy">
-        © 2026 Structures, Inc.
+        &copy; 2026 Structures, Inc.
     </div>
 
     <div class="footer-credit">
         Crafted with Precision by
-        <a href="https://www.codess.dev" target="_blank" rel="noopener">
+        <a
+                href="https://www.codess.dev"
+                target="_blank"
+                rel="noopener"
+        >
             CODESS
         </a>
     </div>
 </footer>
+
+<script>
+    /*
+     * Deck waterproofing process animation.
+     * Shared navigation and other service functionality remain intact.
+     */
+    (() => {
+        "use strict";
+
+        function initializeDeckProcess() {
+            const page = document.querySelector(".waterproofing-page");
+
+            if (!page || page.dataset.deckProcessInitialized === "true") {
+                return;
+            }
+
+            page.dataset.deckProcessInitialized = "true";
+
+            const process = page.querySelector(".dw-process");
+
+            if (!process) {
+                return;
+            }
+
+            const motionPreference = window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+            );
+
+            let observer = null;
+            let timer = null;
+            let hasPlayed = false;
+
+            function finish() {
+                if (observer) {
+                    observer.disconnect();
+                }
+
+                if (timer !== null) {
+                    window.clearTimeout(timer);
+                    timer = null;
+                }
+
+                process.classList.remove("is-playing");
+                process.classList.add("is-finished");
+            }
+
+            function play() {
+                if (hasPlayed) {
+                    return;
+                }
+
+                hasPlayed = true;
+
+                if (observer) {
+                    observer.disconnect();
+                }
+
+                if (motionPreference.matches) {
+                    finish();
+                    return;
+                }
+
+                process.classList.add("is-playing");
+                timer = window.setTimeout(finish, 1750);
+            }
+
+            if (
+                motionPreference.matches ||
+                !("IntersectionObserver" in window)
+            ) {
+                finish();
+            } else {
+                observer = new IntersectionObserver(
+                    (entries) => {
+                        if (entries.some((entry) => entry.isIntersecting)) {
+                            play();
+                        }
+                    },
+                    { threshold: 0.15 }
+                );
+
+                observer.observe(process);
+            }
+
+            function handleMotionChange(event) {
+                if (event.matches) {
+                    finish();
+                }
+            }
+
+            if (typeof motionPreference.addEventListener === "function") {
+                motionPreference.addEventListener(
+                    "change",
+                    handleMotionChange
+                );
+            } else if (typeof motionPreference.addListener === "function") {
+                motionPreference.addListener(handleMotionChange);
+            }
+        }
+
+        if (document.readyState === "loading") {
+            document.addEventListener(
+                "DOMContentLoaded",
+                initializeDeckProcess,
+                { once: true }
+            );
+        } else {
+            initializeDeckProcess();
+        }
+    })();
+</script>
+
 </body>
 </html>
