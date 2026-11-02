@@ -27,64 +27,208 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "GeneralContractor",
-            "name": "Structures, Inc.",
-            "image": "https://www.mystructures.com/images/opensans.webp",
-            "url": "https://www.mystructures.com/",
-            "telephone": "770-403-6300",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4205 Trotters Way, Suite A",
-                "addressLocality": "Alpharetta",
-                "addressRegion": "GA",
-                "postalCode": "30004",
-                "addressCountry": "US"
-            },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Metro Atlanta"
-            },
-            "makesOffer": [
+            "@graph": [
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Structural Jacking and Leveling"
+                    "@type": "GeneralContractor",
+                    "@id": "https://www.mystructures.com/#business",
+                    "name": "Structures, Inc.",
+                    "url": "https://www.mystructures.com/",
+                    "logo": "https://www.mystructures.com/images/opensans.webp",
+                    "image": "https://www.mystructures.com/images/opensans.webp",
+                    "description": "Structures, Inc. provides specialty contracting, structural jacking and leveling, deck waterproofing, remodeling, and outdoor resurfacing for properties in Atlanta, GA, and throughout Metro Atlanta.",
+                    "slogan": "Think Outside The Box!",
+                    "telephone": "+1-770-403-6300",
+                    "email": "david@mystructures.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4205 Trotters Way, Suite A",
+                        "addressLocality": "Alpharetta",
+                        "addressRegion": "GA",
+                        "postalCode": "30004",
+                        "addressCountry": "US"
+                    },
+                    "areaServed": [
+                        {
+                            "@id": "https://www.mystructures.com/#atlanta"
+                        },
+                        {
+                            "@id": "https://www.mystructures.com/#metro-atlanta"
+                        }
+                    ],
+                    "sameAs": [
+                        "https://share.google/v67s7y0Zmhr5oy358"
+                    ],
+                    "hasOfferCatalog": {
+                        "@id": "https://www.mystructures.com/#service-catalog"
                     }
                 },
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Rubber Stone and Vuba Stone Installation"
+                    "@type": "City",
+                    "@id": "https://www.mystructures.com/#atlanta",
+                    "name": "Atlanta",
+                    "containedInPlace": {
+                        "@type": "State",
+                        "name": "Georgia"
                     }
                 },
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Kitchen and Bath Remodeling"
+                    "@type": "Place",
+                    "@id": "https://www.mystructures.com/#metro-atlanta",
+                    "name": "Metro Atlanta, Georgia"
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://www.mystructures.com/#website",
+                    "url": "https://www.mystructures.com/",
+                    "name": "Structures, Inc.",
+                    "inLanguage": "en-US",
+                    "publisher": {
+                        "@id": "https://www.mystructures.com/#business"
                     }
                 },
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Deck Waterproofing"
+                    "@type": "WebPage",
+                    "@id": "https://www.mystructures.com/#webpage",
+                    "url": "https://www.mystructures.com/",
+                    "name": "Structures, Inc. | Specialty Contracting, Remodeling & Surface Solutions in Metro Atlanta",
+                    "description": "Explore specialty contracting and remodeling services from Structures, Inc., serving Atlanta, GA, and Metro Atlanta from Alpharetta.",
+                    "inLanguage": "en-US",
+                    "isPartOf": {
+                        "@id": "https://www.mystructures.com/#website"
+                    },
+                    "about": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "mainEntity": {
+                        "@id": "https://www.mystructures.com/#service-catalog"
                     }
                 },
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Metal and Flat Roof Coatings"
+                    "@type": "OfferCatalog",
+                    "@id": "https://www.mystructures.com/#service-catalog",
+                    "name": "Structures, Inc. Contracting and Remodeling Services",
+                    "url": "https://www.mystructures.com/services.html",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@id": "https://www.mystructures.com/structural-jacking-leveling.html#service"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@id": "https://www.mystructures.com/deck-waterproofing.html#service"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@id": "https://www.mystructures.com/rubberstone-vuba-stone.html#service"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "@id": "https://www.mystructures.com/kitchen-baths.html#service",
+                                "name": "Kitchen and Bath Remodeling",
+                                "url": "https://www.mystructures.com/kitchen-baths.html",
+                                "provider": {
+                                    "@id": "https://www.mystructures.com/#business"
+                                }
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "@id": "https://www.mystructures.com/metal-flat-roof-coatings.html#service",
+                                "name": "Metal and Flat Roof Coatings",
+                                "url": "https://www.mystructures.com/metal-flat-roof-coatings.html",
+                                "provider": {
+                                    "@id": "https://www.mystructures.com/#business"
+                                }
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "@id": "https://www.mystructures.com/plans-designs.html#service",
+                                "name": "Plans and Designs",
+                                "url": "https://www.mystructures.com/plans-designs.html",
+                                "provider": {
+                                    "@id": "https://www.mystructures.com/#business"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://www.mystructures.com/structural-jacking-leveling.html#service",
+                    "name": "Structural Jacking and Leveling",
+                    "serviceType": "Structural jacking and leveling",
+                    "url": "https://www.mystructures.com/structural-jacking-leveling.html",
+                    "description": "Structural jacking and leveling for properties in Atlanta, GA, and Metro Atlanta. Assessment of structural movement and support conditions helps establish appropriate controlled lifting, leveling, and related support repairs.",
+                    "provider": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "areaServed": [
+                        {
+                            "@id": "https://www.mystructures.com/#atlanta"
+                        },
+                        {
+                            "@id": "https://www.mystructures.com/#metro-atlanta"
+                        }
+                    ],
+                    "mainEntityOfPage": {
+                        "@id": "https://www.mystructures.com/structural-jacking-leveling.html#webpage"
                     }
                 },
                 {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Plans and Designs"
+                    "@type": "Service",
+                    "@id": "https://www.mystructures.com/deck-waterproofing.html#service",
+                    "name": "Deck Waterproofing",
+                    "serviceType": "Deck waterproofing",
+                    "url": "https://www.mystructures.com/deck-waterproofing.html",
+                    "description": "Deck waterproofing for properties in Atlanta, GA, and Metro Atlanta. Existing surfaces, vulnerable connections, drainage, and necessary preparation are considered when planning the appropriate waterproofing scope.",
+                    "provider": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "areaServed": [
+                        {
+                            "@id": "https://www.mystructures.com/#atlanta"
+                        },
+                        {
+                            "@id": "https://www.mystructures.com/#metro-atlanta"
+                        }
+                    ],
+                    "mainEntityOfPage": {
+                        "@id": "https://www.mystructures.com/deck-waterproofing.html#webpage"
+                    }
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://www.mystructures.com/rubberstone-vuba-stone.html#service",
+                    "name": "Rubber Stone and Vuba Stone Resurfacing",
+                    "serviceType": "Rubber Stone and Vuba Stone outdoor resurfacing",
+                    "url": "https://www.mystructures.com/rubberstone-vuba-stone.html",
+                    "description": "Rubber Stone and Vuba Stone resurfacing for suitable existing outdoor surfaces in Atlanta, GA, and Metro Atlanta. Discuss material options for patios, pool decks, walkways, steps, and suitable driveways.",
+                    "provider": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "areaServed": [
+                        {
+                            "@id": "https://www.mystructures.com/#atlanta"
+                        },
+                        {
+                            "@id": "https://www.mystructures.com/#metro-atlanta"
+                        }
+                    ],
+                    "mainEntityOfPage": {
+                        "@id": "https://www.mystructures.com/rubberstone-vuba-stone.html#webpage"
                     }
                 }
             ]
