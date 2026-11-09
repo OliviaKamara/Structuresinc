@@ -415,3 +415,1024 @@
     0%, 100%{ transform: scale(1); opacity: 0.45; }
     50%{ transform: scale(1.03); opacity: 0.62; }
 }
+
+/* ==========================================================
+   STRUCTURES, INC. — SERVICES PAGE ENHANCEMENTS
+   Editorial / Architectural Design System
+   Append to existing services-index.css
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   01. SHARED DESIGN TOKENS
+   ---------------------------------------------------------- */
+
+.services-main {
+    --svc-blue: #193491;
+    --svc-blue-deep: #132a7e;
+    --svc-blue-bright: #0409c0;
+    --svc-ink: #0d1537;
+    --svc-body: #303b59;
+    --svc-muted: #68738d;
+    --svc-line: rgba(25, 52, 145, 0.14);
+    --svc-light: #f5f7fc;
+    --svc-white: #ffffff;
+    --svc-radius: 18px;
+
+    overflow: clip;
+}
+
+.services-main *,
+.services-main *::before,
+.services-main *::after {
+    box-sizing: border-box;
+}
+
+.services-main a:focus-visible,
+.services-main summary:focus-visible {
+    outline: 3px solid #5375ff;
+    outline-offset: 5px;
+}
+
+.services-main a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ----------------------------------------------------------
+   02. HERO REFINEMENTS
+   Original blueprint, orbits, and grid remain unchanged
+   ---------------------------------------------------------- */
+
+.services-hero .services-copy {
+    max-width: 680px;
+}
+
+.services-hero .services-copy h1 {
+    max-width: 13ch;
+    text-wrap: balance;
+}
+
+.services-hero .services-copy .services-lead {
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+.services-hero .services-copy > .service-btn {
+    margin-top: 18px;
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    color: var(--svc-blue-deep);
+    border: 1px solid rgba(255,255,255,0.7);
+}
+
+.services-hero .services-copy > .service-btn:hover {
+    background: #eaf0ff;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.services-heroCard {
+    isolation: isolate;
+}
+
+.services-heroCard h3 {
+    text-wrap: balance;
+}
+
+/* ----------------------------------------------------------
+   03. EDITORIAL INTRODUCTION
+   Two-column text-led architectural layout
+   ---------------------------------------------------------- */
+
+.services-intro {
+    position: relative;
+    padding: clamp(76px, 9vw, 132px) 0;
+    background: var(--svc-white);
+}
+
+.services-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: max(16px, calc((100% - 1100px) / 2));
+    width: min(1100px, calc(100% - 32px));
+    height: 1px;
+    background: var(--svc-line);
+}
+
+.services-intro__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: start;
+    gap: clamp(32px, 6vw, 96px);
+}
+
+.services-intro__heading {
+    position: relative;
+    padding-left: 24px;
+}
+
+.services-intro__heading::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 4px;
+    height: 72px;
+    border-radius: 4px;
+    background: var(--svc-blue-bright);
+}
+
+.services-intro .services-eyebrow {
+    color: var(--svc-blue);
+    margin-bottom: 20px;
+}
+
+.services-intro h2 {
+    margin: 0;
+    max-width: 15ch;
+    color: var(--svc-ink);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(2.2rem, 4.6vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+}
+
+.services-intro__copy {
+    padding-top: 38px;
+    border-top: 1px solid var(--svc-line);
+}
+
+.services-intro__copy p {
+    margin: 0 0 22px;
+    color: var(--svc-body);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1rem, 1.3vw, 1.1rem);
+    line-height: 1.95;
+}
+
+.services-intro__copy p:last-child {
+    margin-bottom: 0;
+}
+
+/* ----------------------------------------------------------
+   04. SERVICE DIRECTORY REFINEMENTS
+   Retain existing glass cards and two-column layout
+   ---------------------------------------------------------- */
+
+#our-services {
+    position: relative;
+    padding: clamp(70px, 8vw, 112px) 0;
+    background:
+            radial-gradient(
+                    circle at 90% 10%,
+                    rgba(25,52,145,0.045),
+                    transparent 36%
+            ),
+            linear-gradient(
+                    180deg,
+                    #f8faff 0%,
+                    #f3f6fc 100%
+            );
+}
+
+#our-services .services-heading {
+    max-width: 850px;
+    margin-bottom: 42px;
+}
+
+#our-services .services-heading h2 {
+    max-width: 17ch;
+    line-height: 1.13;
+    text-wrap: balance;
+}
+
+.services-section__lead {
+    margin: 20px 0 0;
+    max-width: 620px;
+    color: var(--svc-body);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+#our-services .services-gridCards {
+    gap: 24px;
+}
+
+#our-services .service-card {
+    min-height: 320px;
+    padding: clamp(25px, 3vw, 36px);
+    border: 1px solid rgba(25,52,145,0.12);
+    background: rgba(255,255,255,0.9);
+    box-shadow:
+            0 16px 38px rgba(13,21,55,0.055),
+            0 3px 12px rgba(13,21,55,0.025);
+    isolation: isolate;
+}
+
+#our-services .service-card::before {
+    opacity: 0.32;
+}
+
+#our-services .service-card h3 {
+    max-width: 19ch;
+    font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+#our-services .service-card p {
+    line-height: 1.85;
+}
+
+#our-services .service-card .services-chip {
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+}
+
+#our-services .service-card .service-btn {
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.4;
+    padding: 12px 20px;
+    min-height: 48px;
+}
+
+#our-services .service-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(25,52,145,0.26);
+    box-shadow:
+            0 24px 48px rgba(13,21,55,0.11),
+            0 8px 18px rgba(25,52,145,0.06);
+}
+
+/* ----------------------------------------------------------
+   05. FIND YOUR STARTING POINT
+   Editorial service-matching rows
+   ---------------------------------------------------------- */
+
+.services-solutions {
+    position: relative;
+    padding: clamp(82px, 9vw, 136px) 0;
+    background: var(--svc-white);
+}
+
+.services-solutions__header {
+    max-width: 770px;
+    margin-bottom: clamp(40px, 6vw, 74px);
+}
+
+.services-solutions__header .services-eyebrow {
+    color: var(--svc-blue);
+}
+
+.services-solutions__header h2 {
+    margin: 0;
+    max-width: 16ch;
+    color: var(--svc-ink);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+}
+
+.services-solutions__header > p:last-child {
+    margin: 24px 0 0;
+    max-width: 650px;
+    color: var(--svc-body);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.services-solutions__list {
+    border-top: 1px solid var(--svc-line);
+}
+
+.services-solution {
+    position: relative;
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr) minmax(190px, 0.45fr);
+    gap: clamp(20px, 3vw, 44px);
+    align-items: center;
+    padding: clamp(28px, 4vw, 46px) 8px;
+    border-bottom: 1px solid var(--svc-line);
+    transition:
+            background 250ms ease,
+            padding 250ms ease;
+}
+
+.services-solution::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--svc-blue-bright);
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: transform 250ms ease;
+}
+
+.services-solution:hover {
+    background: rgba(25,52,145,0.025);
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.services-solution:hover::before {
+    transform: scaleY(1);
+}
+
+.services-solution__number {
+    align-self: start;
+    padding-top: 5px;
+    color: var(--svc-blue);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.services-solution__content h3 {
+    margin: 0 0 14px;
+    max-width: 23ch;
+    color: var(--svc-ink);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+}
+
+.services-solution__content p {
+    margin: 0;
+    max-width: 570px;
+    color: var(--svc-body);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.98rem;
+    line-height: 1.85;
+}
+
+.services-solution__link {
+    display: inline-flex;
+    justify-self: end;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    max-width: 260px;
+    color: var(--svc-blue);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color 200ms ease;
+}
+
+.services-solution__link span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(25,52,145,0.2);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    transition:
+            background 200ms ease,
+            color 200ms ease,
+            transform 200ms ease;
+}
+
+.services-solution__link:hover {
+    color: var(--svc-blue-bright);
+}
+
+.services-solution__link:hover span {
+    color: #ffffff;
+    background: var(--svc-blue);
+    transform: translate(3px, -3px);
+}
+
+/* ----------------------------------------------------------
+   06. OUR APPROACH
+   Royal-blue architectural blueprint section
+   ---------------------------------------------------------- */
+
+.services-approach {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: clamp(88px, 10vw, 150px) 0;
+    background: linear-gradient(
+            135deg,
+            #193491 0%,
+            #132a7e 65%,
+            #101e60 100%
+    );
+    color: #ffffff;
+}
+
+.services-approach__background {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.services-approach__grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+            linear-gradient(
+                    rgba(255,255,255,0.075) 1px,
+                    transparent 1px
+            ),
+            linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.075) 1px,
+                    transparent 1px
+            );
+    background-size: 56px 56px;
+    mask-image: linear-gradient(
+            90deg,
+            transparent 0%,
+            #000 20%,
+            #000 80%,
+            transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+            90deg,
+            transparent 0%,
+            #000 20%,
+            #000 80%,
+            transparent 100%
+    );
+}
+
+.services-approach::after {
+    content: "";
+    position: absolute;
+    width: min(700px, 70vw);
+    aspect-ratio: 1;
+    right: -260px;
+    top: -250px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+    box-shadow:
+            0 0 0 80px rgba(255,255,255,0.018),
+            0 0 0 160px rgba(255,255,255,0.014);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.services-approach__header {
+    max-width: 790px;
+    margin-bottom: clamp(48px, 6vw, 80px);
+}
+
+.services-approach__header .services-eyebrow {
+    color: rgba(255,255,255,0.72);
+}
+
+.services-approach__header h2 {
+    margin: 0;
+    max-width: 17ch;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+}
+
+.services-approach__header > p:last-child {
+    margin: 24px 0 0;
+    max-width: 600px;
+    color: rgba(255,255,255,0.84);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.services-approach__steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    border-top: 1px solid rgba(255,255,255,0.24);
+}
+
+.services-approach__step {
+    position: relative;
+    padding: 40px clamp(22px, 3vw, 44px) 12px 0;
+}
+
+.services-approach__step:not(:first-child) {
+    padding-left: clamp(22px, 3vw, 44px);
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+
+.services-approach__number {
+    display: block;
+    margin-bottom: 38px;
+    color: rgba(255,255,255,0.52);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.06em;
+}
+
+.services-approach__step h3 {
+    margin: 0 0 16px;
+    max-width: 15ch;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.services-approach__step p {
+    margin: 0;
+    color: rgba(255,255,255,0.82);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.96rem;
+    line-height: 1.85;
+}
+
+/* ----------------------------------------------------------
+   07. FAQ SECTION
+   Split editorial layout with native accordions
+   ---------------------------------------------------------- */
+
+.services-faq {
+    position: relative;
+    padding: clamp(88px, 10vw, 144px) 0;
+    background: #f8faff;
+}
+
+.services-faq__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: start;
+    gap: clamp(40px, 7vw, 110px);
+}
+
+.services-faq__intro {
+    position: sticky;
+    top: 40px;
+}
+
+.services-faq__intro .services-eyebrow {
+    color: var(--svc-blue);
+}
+
+.services-faq__intro h2 {
+    margin: 0;
+    max-width: 12ch;
+    color: var(--svc-ink);
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(2.3rem, 4.6vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+}
+
+.services-faq__intro > p:not(.services-eyebrow) {
+    margin: 24px 0 28px;
+    max-width: 400px;
+    color: var(--svc-body);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.02rem;
+    line-height: 1.85;
+}
+
+.services-faq__intro .service-btn {
+    background: var(--svc-blue);
+    color: #ffffff;
+    border-color: var(--svc-blue);
+}
+
+.services-faq__intro .service-btn:hover {
+    background: var(--svc-blue-deep);
+    color: #ffffff;
+}
+
+.services-faq__questions {
+    border-top: 1px solid var(--svc-line);
+}
+
+.services-faq__item {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid var(--svc-line);
+    font-family: "Open Sans", sans-serif;
+}
+
+.services-faq__item summary {
+    position: relative;
+    display: block;
+    padding: 27px 50px 27px 0;
+    color: var(--svc-ink);
+    font-size: clamp(1rem, 1.45vw, 1.14rem);
+    font-weight: 750;
+    line-height: 1.55;
+    cursor: pointer;
+    list-style: none;
+    transition: color 200ms ease;
+}
+
+.services-faq__item summary::-webkit-details-marker {
+    display: none;
+}
+
+.services-faq__item summary::after {
+    content: "+";
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(25,52,145,0.18);
+    border-radius: 50%;
+    color: var(--svc-blue);
+    font-size: 1.4rem;
+    font-weight: 400;
+    transform: translateY(-50%);
+    transition:
+            background 200ms ease,
+            color 200ms ease,
+            transform 200ms ease;
+}
+
+.services-faq__item[open] summary {
+    color: var(--svc-blue);
+}
+
+.services-faq__item[open] summary::after {
+    content: "−";
+    color: #ffffff;
+    background: var(--svc-blue);
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.services-faq__item summary:hover {
+    color: var(--svc-blue-bright);
+}
+
+.services-faq__answer {
+    padding: 0 48px 27px 0;
+}
+
+.services-faq__answer p {
+    margin: 0;
+    color: var(--svc-body);
+    font-size: 0.98rem;
+    line-height: 1.9;
+}
+
+.services-faq__answer a {
+    color: var(--svc-blue);
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.services-faq__answer a:hover {
+    color: var(--svc-blue-bright);
+}
+
+/* ----------------------------------------------------------
+   08. FINAL CTA REFINEMENTS
+   Existing glassmorphism card preserved
+   ---------------------------------------------------------- */
+
+.services-section--cta {
+    padding: clamp(54px, 7vw, 100px) 0;
+    background: #ffffff;
+}
+
+.services-section--cta .services-cta {
+    padding: clamp(38px, 6vw, 76px);
+    border: 1px solid rgba(25,52,145,0.12);
+    background:
+            linear-gradient(
+                    135deg,
+                    rgba(255,255,255,0.98),
+                    rgba(242,246,255,0.94)
+            );
+    box-shadow:
+            0 22px 55px rgba(13,21,55,0.07),
+            0 6px 18px rgba(13,21,55,0.035);
+}
+
+.services-section--cta .services-cta h2 {
+    max-width: 18ch;
+    margin: 0 auto;
+    line-height: 1.13;
+    text-wrap: balance;
+}
+
+.services-section--cta .services-cta p:not(.services-eyebrow) {
+    max-width: 700px;
+}
+
+.services-section--cta .service-btn--primary {
+    background: var(--svc-blue);
+    color: #ffffff;
+    border-color: var(--svc-blue);
+    box-shadow: 0 12px 26px rgba(25,52,145,0.15);
+}
+
+.services-section--cta .service-btn--primary:hover {
+    background: var(--svc-blue-deep);
+    color: #ffffff;
+}
+
+/* ----------------------------------------------------------
+   09. RESPONSIVE — TABLET
+   ---------------------------------------------------------- */
+
+@media (max-width: 980px) {
+
+    .services-intro__layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .services-intro h2 {
+        max-width: 19ch;
+    }
+
+    .services-intro__copy {
+        padding-top: 26px;
+    }
+
+    .services-solution {
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 18px 26px;
+    }
+
+    .services-solution__link {
+        grid-column: 2;
+        justify-self: start;
+        max-width: none;
+    }
+
+    .services-faq__layout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .services-faq__intro {
+        position: static;
+    }
+
+    .services-faq__intro h2 {
+        max-width: 20ch;
+    }
+
+}
+
+/* ----------------------------------------------------------
+   10. RESPONSIVE — MOBILE
+   ---------------------------------------------------------- */
+
+@media (max-width: 640px) {
+
+    .services-main {
+        overflow: clip;
+    }
+
+    .services-hero .services-copy h1 {
+        max-width: 100%;
+        font-size: clamp(2.2rem, 9vw, 3.4rem);
+    }
+
+    .services-hero .services-copy > .service-btn {
+        margin-top: 12px;
+    }
+
+    .services-intro {
+        padding: 68px 0;
+    }
+
+    .services-intro__heading {
+        padding-left: 18px;
+    }
+
+    .services-intro__heading::before {
+        height: 56px;
+    }
+
+    .services-intro h2 {
+        font-size: clamp(2rem, 8vw, 2.9rem);
+    }
+
+    .services-intro__copy p {
+        font-size: 0.98rem;
+        line-height: 1.85;
+    }
+
+    #our-services {
+        padding: 68px 0;
+    }
+
+    #our-services .services-heading {
+        margin-bottom: 30px;
+    }
+
+    #our-services .services-gridCards {
+        gap: 18px;
+    }
+
+    #our-services .service-card {
+        min-height: auto;
+        padding: 25px 22px;
+    }
+
+    #our-services .service-card h3 {
+        font-size: 1.5rem;
+    }
+
+    #our-services .service-card .service-btn {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .services-solutions {
+        padding: 76px 0;
+    }
+
+    .services-solutions__header {
+        margin-bottom: 36px;
+    }
+
+    .services-solutions__header h2 {
+        font-size: clamp(2.2rem, 8.5vw, 3.1rem);
+    }
+
+    .services-solutions__header > p:last-child {
+        font-size: 0.98rem;
+    }
+
+    .services-solution {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 28px 0;
+    }
+
+    .services-solution__number {
+        padding: 0;
+    }
+
+    .services-solution__content h3 {
+        font-size: 1.4rem;
+    }
+
+    .services-solution__content p {
+        font-size: 0.95rem;
+    }
+
+    .services-solution__link {
+        grid-column: 1;
+        margin-top: 6px;
+    }
+
+    .services-solution:hover {
+        padding-left: 0;
+        padding-right: 0;
+        background: transparent;
+    }
+
+    .services-approach {
+        padding: 78px 0;
+    }
+
+    .services-approach__header h2 {
+        font-size: clamp(2.2rem, 8.5vw, 3.2rem);
+    }
+
+    .services-approach__steps {
+        grid-template-columns: 1fr;
+    }
+
+    .services-approach__step,
+    .services-approach__step:not(:first-child) {
+        padding: 28px 0;
+        border-left: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .services-approach__step:last-child {
+        border-bottom: none;
+    }
+
+    .services-approach__number {
+        margin-bottom: 18px;
+        font-size: 3.4rem;
+    }
+
+    .services-approach__step h3 {
+        font-size: 1.45rem;
+    }
+
+    .services-faq {
+        padding: 76px 0;
+    }
+
+    .services-faq__intro h2 {
+        font-size: clamp(2.2rem, 8.5vw, 3.1rem);
+    }
+
+    .services-faq__item summary {
+        padding: 22px 44px 22px 0;
+        font-size: 1rem;
+    }
+
+    .services-faq__answer {
+        padding-right: 8px;
+    }
+
+    .services-section--cta {
+        padding: 48px 0 76px;
+    }
+
+    .services-section--cta .services-cta {
+        padding: 36px 22px;
+    }
+
+}
+
+/* ----------------------------------------------------------
+   11. ACCESSIBILITY / REDUCED MOTION
+   ---------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .services-main *,
+    .services-main *::before,
+    .services-main *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .services-main .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+}
+
+/* ----------------------------------------------------------
+   12. REVEAL FALLBACK
+   New sections remain readable if JS is unavailable.
+   The updated services.js will enable scroll reveals.
+   ---------------------------------------------------------- */
+
+.services-intro .reveal,
+.services-solutions .reveal,
+.services-approach .reveal,
+.services-faq .reveal {
+    opacity: 1;
+    transform: none;
+}
+
+/* Reveal animations only when JS enables them */
+.services-main.services-animations-ready
+.services-intro .reveal:not(.is-visible),
+
+.services-main.services-animations-ready
+.services-solutions .reveal:not(.is-visible),
+
+.services-main.services-animations-ready
+.services-approach .reveal:not(.is-visible),
+
+.services-main.services-animations-ready
+.services-faq .reveal:not(.is-visible) {
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.services-main.services-animations-ready
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

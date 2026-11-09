@@ -1,73 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Services | Structures, Inc. | Specialty Contractors in Metro Atlanta</title>
-    <meta name="description" content="Explore Structures, Inc. services in Metro Atlanta, including structural jacking and leveling, Rubber Stone and Vuba Stone, metal and flat roof coatings, deck waterproofing, kitchen and bath remodeling, and plans and designs.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO / AEO / GEO -->
+    <title>Specialty Contracting Services in Metro Atlanta | Structures, Inc.</title>
+    <meta name="description" content="Explore structural jacking and leveling, Rubber Stone and Vuba Stone, roof coatings, deck waterproofing, remodeling, and design services from Structures, Inc. in Metro Atlanta.">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.mystructures.com/services.html">
 
-    <meta property="og:title" content="Services | Structures, Inc. | Specialty Contractors in Metro Atlanta">
-    <meta property="og:description" content="Structural jacking and leveling, Rubber Stone and Vuba Stone, roof coatings, deck waterproofing, kitchen and bath remodeling, and plans and designs throughout Metro Atlanta.">
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Specialty Contracting Services | Structures, Inc.">
+    <meta property="og:description" content="Structural, exterior, and interior property improvement services for residential and commercial properties throughout Metro Atlanta.">
     <meta property="og:url" content="https://www.mystructures.com/services.html">
     <meta property="og:image" content="https://www.mystructures.com/images/opensans.webp">
 
-    <link rel="stylesheet" href="services-index.css" />
+    <!-- Existing Stylesheets -->
+    <link rel="stylesheet" href="services-index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+    <!-- Business, WebPage, and Service Schema -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "Structures, Inc. Services",
-            "itemListElement": [
+            "@graph": [
                 {
-                    "@type": "Service",
-                    "position": 1,
-                    "name": "Structural Jacking and Leveling",
-                    "url": "https://www.mystructures.com/structural-jacking-leveling.html",
-                    "areaServed": "Metro Atlanta"
+                    "@type": "GeneralContractor",
+                    "@id": "https://www.mystructures.com/#business",
+                    "name": "Structures, Inc.",
+                    "url": "https://www.mystructures.com/",
+                    "telephone": "+1-770-403-6300",
+                    "email": "david@mystructures.com",
+                    "description": "Specialty contracting services for residential and commercial properties throughout Metro Atlanta, Georgia.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4205 Trotters Way, Suite A",
+                        "addressLocality": "Alpharetta",
+                        "addressRegion": "GA",
+                        "postalCode": "30004",
+                        "addressCountry": "US"
+                    },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Metro Atlanta, Georgia"
+                    }
                 },
                 {
-                    "@type": "Service",
-                    "position": 2,
-                    "name": "Rubber Stone and Vuba Stone",
-                    "url": "https://www.mystructures.com/rubberstone-vuba-stone.html",
-                    "areaServed": "Metro Atlanta"
+                    "@type": "WebPage",
+                    "@id": "https://www.mystructures.com/services.html#webpage",
+                    "url": "https://www.mystructures.com/services.html",
+                    "name": "Specialty Contracting Services in Metro Atlanta",
+                    "description": "Structural jacking and leveling, decorative stone overlays, roof coatings, deck waterproofing, remodeling, and project design.",
+                    "about": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "mainEntity": {
+                        "@id": "https://www.mystructures.com/services.html#services"
+                    }
                 },
                 {
-                    "@type": "Service",
-                    "position": 3,
-                    "name": "Metal and Flat Roof Coatings",
-                    "url": "https://www.mystructures.com/metal-flat-roof-coatings.html",
-                    "areaServed": "Metro Atlanta"
-                },
-                {
-                    "@type": "Service",
-                    "position": 4,
-                    "name": "Deck Waterproofing",
-                    "url": "https://www.mystructures.com/deck-waterproofing.html",
-                    "areaServed": "Metro Atlanta"
-                },
-                {
-                    "@type": "Service",
-                    "position": 5,
-                    "name": "Kitchen and Bath Remodeling",
-                    "url": "https://www.mystructures.com/kitchen-baths.html",
-                    "areaServed": "Metro Atlanta"
-                },
-                {
-                    "@type": "Service",
-                    "position": 6,
-                    "name": "Plans and Designs",
-                    "url": "https://www.mystructures.com/plans-designs.html",
-                    "areaServed": "Metro Atlanta"
+                    "@type": "ItemList",
+                    "@id": "https://www.mystructures.com/services.html#services",
+                    "name": "Structures, Inc. Specialty Services",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Structural Jacking and Leveling",
+                            "url": "https://www.mystructures.com/structural-jacking-leveling.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Rubber Stone and Vuba Stone",
+                            "url": "https://www.mystructures.com/rubberstone-vuba-stone.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Metal and Flat Roof Coatings",
+                            "url": "https://www.mystructures.com/metal-flat-roof-coatings.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "name": "Deck Waterproofing",
+                            "url": "https://www.mystructures.com/deck-waterproofing.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 5,
+                            "name": "Kitchen and Bathroom Remodeling",
+                            "url": "https://www.mystructures.com/kitchen-baths.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 6,
+                            "name": "Plans and Designs",
+                            "url": "https://www.mystructures.com/plans-designs.html"
+                        }
+                    ]
                 }
             ]
         }
@@ -75,17 +115,32 @@
 </head>
 
 <body class="page">
+
 <script src="shared.js" defer></script>
 <script src="services.js" defer></script>
 
+<!-- =====================================
+     NAVIGATION
+===================================== -->
+
 <header class="header">
     <nav class="nav">
+
         <a href="index.html" class="nav__brand">
-            <img src="images/triangle.webp" alt="Structures, Inc. contractor logo" class="nav__brandMark">
+            <img
+                    src="images/triangle.webp"
+                    alt="Structures, Inc. logo"
+                    class="nav__brandMark"
+            >
             <span class="nav__brandText">Structures Inc.</span>
         </a>
 
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+                class="nav__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
             <span class="nav__toggleIcon"></span>
             <span class="sr-only">Menu</span>
         </button>
@@ -93,15 +148,22 @@
         <ul class="nav__list">
             <li><a class="nav__link" href="index.html">Home</a></li>
             <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link nav__link--active" href="services.html">Services</a></li>
+            <li><a class="nav__link nav__link--active" href="services.html" aria-current="page">Services</a></li>
             <li><a class="nav__link" href="contact.html">Contact</a></li>
         </ul>
+
     </nav>
 </header>
 
 <main class="services-main">
-    <section class="services-hero">
-        <div class="services-hero__bg">
+
+    <!-- =====================================
+         HERO — ORIGINAL BLUEPRINT DESIGN
+    ===================================== -->
+
+    <section class="services-hero" aria-labelledby="services-title">
+
+        <div class="services-hero__bg" aria-hidden="true">
             <div class="services-grid"></div>
             <div class="services-sweep"></div>
             <div class="services-orbit services-orbit--1"></div>
@@ -109,134 +171,971 @@
         </div>
 
         <div class="services-shell services-hero__content">
+
             <div class="services-copy reveal">
-                <p class="services-eyebrow">OUR SERVICES</p>
-                <h1>Specialty contracting services for Metro Atlanta properties.</h1>
+
+                <p class="services-eyebrow">
+                    STRUCTURES, INC. | METRO ATLANTA
+                </p>
+
+                <h1 id="services-title">
+                    Specialty Contracting Services for Metro Atlanta Properties.
+                </h1>
+
                 <p class="services-lead">
-                    Structures Inc. provides structural jacking and leveling, Rubber Stone and Vuba Stone, metal and flat roof coatings, deck waterproofing, kitchen and bath remodeling, and plans and designs throughout Metro Atlanta.
+                    Structural support, protective coatings,
+                    waterproofing, decorative surface systems,
+                    remodeling, and project design.
                 </p>
+
                 <p>
-                    From structural support solutions to waterproofing, coatings, remodeling, and design-focused improvements, our work is built around durability, craftsmanship, and practical results for residential and commercial properties.
+                    Structures, Inc. provides specialty contracting
+                    services for residential and commercial
+                    properties throughout Metro Atlanta, Georgia.
+                    From sagging floors and deteriorating outdoor
+                    surfaces to waterproofing and renovation
+                    projects, our services address a variety of
+                    structural and property improvement needs.
                 </p>
+
+                <a
+                        href="#our-services"
+                        class="service-btn service-btn--primary"
+                >
+                    Explore Our Services
+                </a>
+
             </div>
 
-            <div class="services-heroCard reveal">
-                <span class="services-chip">METRO ATLANTA</span>
-                <h3>Reliable Solutions</h3>
+            <aside class="services-heroCard reveal">
+
+                <span class="services-chip">
+                    ALPHARETTA, GEORGIA
+                </span>
+
+                <h3>
+                    Your Property. Our Specialty.
+                </h3>
+
                 <p>
-                    Explore our core service offerings and find the right solution for your residential or commercial project.
+                    Not every property problem calls for the
+                    same solution. Explore our specialized
+                    services, identify your project's needs,
+                    and connect with our team to discuss
+                    the next steps.
                 </p>
-            </div>
+
+            </aside>
+
         </div>
     </section>
 
-    <section class="services-section">
+    <!-- =====================================
+         INTRODUCTION — EDITORIAL SECTION
+    ===================================== -->
+
+    <section class="services-intro" aria-labelledby="services-intro-title">
+
+        <div class="services-shell services-intro__layout">
+
+            <div class="services-intro__heading reveal">
+
+                <p class="services-eyebrow">
+                    BUILT AROUND YOUR PROPERTY
+                </p>
+
+                <h2 id="services-intro-title">
+                    The Right Solution Starts With Understanding the Problem.
+                </h2>
+
+            </div>
+
+            <div class="services-intro__copy reveal">
+
+                <p>
+                    Property improvements can involve very
+                    different challenges. An uneven floor
+                    may require structural attention, while
+                    a weather-exposed deck may need a
+                    waterproofing system. An aging patio
+                    might benefit from a decorative overlay.
+                </p>
+
+                <p>
+                    Structures, Inc. offers services spanning
+                    structural support, exterior protection,
+                    interior remodeling, and project planning.
+                    Explore each specialty to better understand
+                    which services may fit your property.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+         SIX CORE SERVICES
+         EXISTING CARD DESIGN PRESERVED
+    ===================================== -->
+
+    <section
+            class="services-section"
+            id="our-services"
+            aria-labelledby="services-list-title"
+    >
+
         <div class="services-shell">
+
             <div class="services-heading reveal">
-                <p class="services-eyebrow">WHAT WE OFFER</p>
-                <h2>Practical, durable solutions across structural, exterior, and interior projects.</h2>
+
+                <p class="services-eyebrow">
+                    WHAT WE DO
+                </p>
+
+                <h2 id="services-list-title">
+                    Explore Our Specialty Contracting Services.
+                </h2>
+
+                <p class="services-section__lead">
+                    Six service categories addressing
+                    structural, exterior, interior,
+                    and project planning needs.
+                </p>
+
             </div>
 
             <div class="services-gridCards">
-                <article class="service-card reveal">
-                    <div class="service-card__top">
-                        <span class="services-chip">01</span>
-                        <h3>Structural Jacking &amp; Leveling</h3>
-                    </div>
-                    <p>
-                        Structural jacking and leveling solutions designed to correct sagging floors, improve support, and restore stability to residential and commercial structures.
-                    </p>
-                    <a href="structural-jacking-leveling.html" class="service-btn">
-                        Learn More
-                    </a>
-                </article>
+
+                <!-- 01 STRUCTURAL JACKING -->
 
                 <article class="service-card reveal">
+
                     <div class="service-card__top">
-                        <span class="services-chip">02</span>
-                        <h3>Rubber Stone / Vuba Stone</h3>
+
+                        <span class="services-chip">
+                            01 / STRUCTURAL
+                        </span>
+
+                        <h3>
+                            Structural Jacking &amp; Leveling
+                        </h3>
+
                     </div>
+
                     <p>
-                        Durable decorative stone overlay systems that elevate patios, walkways, pool decks, and other outdoor surfaces with long-term performance and clean visual appeal.
+                        Sagging floors, uneven surfaces, and
+                        inadequate structural support can
+                        affect the stability and usability
+                        of a building. Structural jacking
+                        and leveling services address
+                        appropriate support and alignment
+                        concerns after evaluation of
+                        the existing conditions.
                     </p>
-                    <a href="rubberstone-vuba-stone.html" class="service-btn">
-                        Learn More
+
+                    <a
+                            href="structural-jacking-leveling.html"
+                            class="service-btn"
+                    >
+                        Explore Structural Jacking &amp; Leveling
                     </a>
+
                 </article>
 
-                <article class="service-card reveal">
-                    <div class="service-card__top">
-                        <span class="services-chip">03</span>
-                        <h3>Metal / Flat Roof Coatings</h3>
-                    </div>
-                    <p>
-                        Protective coating systems for metal and flat roofs that help extend roof life, improve weather resistance, and support long-term performance.
-                    </p>
-                    <a href="metal-flat-roof-coatings.html" class="service-btn">
-                        Learn More
-                    </a>
-                </article>
+                <!-- 02 RUBBER STONE -->
 
                 <article class="service-card reveal">
+
                     <div class="service-card__top">
-                        <span class="services-chip">04</span>
-                        <h3>Deck Waterproofing</h3>
+
+                        <span class="services-chip">
+                            02 / SURFACES
+                        </span>
+
+                        <h3>
+                            Rubber Stone &amp; Vuba Stone
+                        </h3>
+
                     </div>
+
                     <p>
-                        Deck waterproofing systems that help protect exposed surfaces from moisture intrusion, wear, and long-term damage while improving durability and usability.
+                        Refresh eligible patios, walkways,
+                        pool decks, and outdoor areas with
+                        decorative surface overlay systems.
+                        Rubber Stone and Vuba Stone offer
+                        distinct appearance and performance
+                        characteristics for property owners
+                        considering outdoor surface improvements.
                     </p>
-                    <a href="deck-waterproofing.html" class="service-btn">
-                        Learn More
+
+                    <a
+                            href="rubberstone-vuba-stone.html"
+                            class="service-btn"
+                    >
+                        Explore Rubber Stone &amp; Vuba Stone
                     </a>
+
                 </article>
 
-                <article class="service-card reveal">
-                    <div class="service-card__top">
-                        <span class="services-chip">05</span>
-                        <h3>Kitchen &amp; Baths</h3>
-                    </div>
-                    <p>
-                        Kitchen and bath remodeling services designed to improve daily function, visual appeal, and long-term property value with thoughtful, durable upgrades.
-                    </p>
-                    <a href="kitchen-baths.html" class="service-btn">
-                        Learn More
-                    </a>
-                </article>
+                <!-- 03 ROOF COATINGS -->
 
                 <article class="service-card reveal">
+
                     <div class="service-card__top">
-                        <span class="services-chip">06</span>
-                        <h3>Plans &amp; Designs</h3>
+
+                        <span class="services-chip">
+                            03 / ROOFING
+                        </span>
+
+                        <h3>
+                            Metal &amp; Flat Roof Coatings
+                        </h3>
+
                     </div>
+
                     <p>
-                        Planning and design services that help shape renovation and improvement projects with clarity, direction, and a practical path from concept to execution.
+                        Protective coating systems can
+                        help improve weather resistance
+                        and extend the useful life of
+                        suitable metal and flat roofing
+                        systems. Existing roof conditions,
+                        substrate compatibility, and
+                        necessary repairs should be
+                        evaluated before coating.
                     </p>
-                    <a href="plans-designs.html" class="service-btn">
-                        Learn More
+
+                    <a
+                            href="metal-flat-roof-coatings.html"
+                            class="service-btn"
+                    >
+                        Explore Metal &amp; Flat Roof Coatings
                     </a>
+
                 </article>
+
+                <!-- 04 DECK WATERPROOFING -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-card__top">
+
+                        <span class="services-chip">
+                            04 / WATERPROOFING
+                        </span>
+
+                        <h3>
+                            Deck Waterproofing
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Outdoor decks face regular exposure
+                        to rain, moisture, and changing
+                        weather conditions. Deck waterproofing
+                        systems help protect suitable
+                        surfaces from moisture intrusion
+                        and water-related deterioration.
+                        System selection depends on
+                        deck construction and condition.
+                    </p>
+
+                    <a
+                            href="deck-waterproofing.html"
+                            class="service-btn"
+                    >
+                        Explore Deck Waterproofing
+                    </a>
+
+                </article>
+
+                <!-- 05 KITCHENS AND BATHS -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-card__top">
+
+                        <span class="services-chip">
+                            05 / INTERIORS
+                        </span>
+
+                        <h3>
+                            Kitchen &amp; Bathroom Remodeling
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Improve the functionality, comfort,
+                        and appearance of kitchens and
+                        bathrooms through thoughtful
+                        remodeling. Interior improvements
+                        may include updated finishes,
+                        layout considerations, and
+                        practical upgrades that better
+                        support everyday use.
+                    </p>
+
+                    <a
+                            href="kitchen-baths.html"
+                            class="service-btn"
+                    >
+                        Explore Kitchen &amp; Bath Remodeling
+                    </a>
+
+                </article>
+
+                <!-- 06 PLANS AND DESIGNS -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-card__top">
+
+                        <span class="services-chip">
+                            06 / PLANNING
+                        </span>
+
+                        <h3>
+                            Plans &amp; Designs
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Successful improvement projects
+                        begin with clear goals and
+                        practical planning. Our plans
+                        and designs services help
+                        establish project direction,
+                        organize requirements, and
+                        support the transition from
+                        initial ideas toward execution.
+                    </p>
+
+                    <a
+                            href="plans-designs.html"
+                            class="service-btn"
+                    >
+                        Explore Plans &amp; Designs
+                    </a>
+
+                </article>
+
             </div>
+
         </div>
     </section>
+
+    <!-- =====================================
+         FIND THE RIGHT SOLUTION
+         NEW EDITORIAL SECTION
+    ===================================== -->
+
+    <section
+            class="services-solutions"
+            aria-labelledby="solutions-title"
+    >
+
+        <div class="services-shell">
+
+            <div class="services-solutions__header reveal">
+
+                <p class="services-eyebrow">
+                    FIND YOUR STARTING POINT
+                </p>
+
+                <h2 id="solutions-title">
+                    What Does Your Property Need?
+                </h2>
+
+                <p>
+                    Not sure which service fits your project?
+                    Start with the issue you're experiencing.
+                    These common property concerns can help
+                    point you toward the relevant specialty.
+                </p>
+
+            </div>
+
+            <div class="services-solutions__list">
+
+                <article class="services-solution reveal">
+
+                    <span class="services-solution__number">
+                        01
+                    </span>
+
+                    <div class="services-solution__content">
+
+                        <h3>
+                            Floors Sagging or Feeling Uneven?
+                        </h3>
+
+                        <p>
+                            Sagging floors and uneven structural
+                            support may warrant a professional
+                            assessment to determine the cause
+                            and appropriate corrective options.
+                        </p>
+
+                    </div>
+
+                    <a
+                            href="structural-jacking-leveling.html"
+                            class="services-solution__link"
+                            aria-label="Learn about structural jacking and leveling for sagging floors"
+                    >
+                        Structural Jacking &amp; Leveling
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </article>
+
+                <article class="services-solution reveal">
+
+                    <span class="services-solution__number">
+                        02
+                    </span>
+
+                    <div class="services-solution__content">
+
+                        <h3>
+                            Patio, Walkway, or Pool Deck Looking Worn?
+                        </h3>
+
+                        <p>
+                            Decorative surface overlay systems
+                            may offer an improvement option
+                            for eligible existing outdoor
+                            surfaces, depending on their condition.
+                        </p>
+
+                    </div>
+
+                    <a
+                            href="rubberstone-vuba-stone.html"
+                            class="services-solution__link"
+                            aria-label="Explore Rubber Stone and Vuba Stone outdoor surface overlays"
+                    >
+                        Rubber Stone &amp; Vuba Stone
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </article>
+
+                <article class="services-solution reveal">
+
+                    <span class="services-solution__number">
+                        03
+                    </span>
+
+                    <div class="services-solution__content">
+
+                        <h3>
+                            Metal or Flat Roof Showing Wear?
+                        </h3>
+
+                        <p>
+                            A compatible protective coating
+                            may help preserve an eligible
+                            roofing system. Existing damage
+                            and roof conditions should
+                            be evaluated first.
+                        </p>
+
+                    </div>
+
+                    <a
+                            href="metal-flat-roof-coatings.html"
+                            class="services-solution__link"
+                            aria-label="Explore metal and flat roof coating services"
+                    >
+                        Roof Coatings
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </article>
+
+                <article class="services-solution reveal">
+
+                    <span class="services-solution__number">
+                        04
+                    </span>
+
+                    <div class="services-solution__content">
+
+                        <h3>
+                            Concerned About Water Exposure on a Deck?
+                        </h3>
+
+                        <p>
+                            Waterproofing systems can help
+                            reduce moisture intrusion and
+                            protect suitable exposed deck
+                            assemblies from water-related damage.
+                        </p>
+
+                    </div>
+
+                    <a
+                            href="deck-waterproofing.html"
+                            class="services-solution__link"
+                            aria-label="Explore deck waterproofing solutions"
+                    >
+                        Deck Waterproofing
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </article>
+
+                <article class="services-solution reveal">
+
+                    <span class="services-solution__number">
+                        05
+                    </span>
+
+                    <div class="services-solution__content">
+
+                        <h3>
+                            Planning an Interior Renovation?
+                        </h3>
+
+                        <p>
+                            Kitchen and bathroom remodeling
+                            can improve the function,
+                            appearance, and everyday
+                            usability of interior spaces.
+                        </p>
+
+                    </div>
+
+                    <a
+                            href="kitchen-baths.html"
+                            class="services-solution__link"
+                            aria-label="Explore kitchen and bathroom remodeling services"
+                    >
+                        Kitchen &amp; Bath Remodeling
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </article>
+
+                <article class="services-solution reveal">
+
+                    <span class="services-solution__number">
+                        06
+                    </span>
+
+                    <div class="services-solution__content">
+
+                        <h3>
+                            Have an Idea but Need a Plan?
+                        </h3>
+
+                        <p>
+                            Planning and design services
+                            help define project goals,
+                            organize requirements, and
+                            clarify the steps toward
+                            implementation.
+                        </p>
+
+                    </div>
+
+                    <a
+                            href="plans-designs.html"
+                            class="services-solution__link"
+                            aria-label="Explore planning and design services"
+                    >
+                        Plans &amp; Designs
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+         OUR APPROACH
+         BLUE ARCHITECTURAL SECTION
+    ===================================== -->
+
+    <section
+            class="services-approach"
+            aria-labelledby="approach-title"
+    >
+
+        <div class="services-approach__background" aria-hidden="true">
+            <div class="services-approach__grid"></div>
+        </div>
+
+        <div class="services-shell">
+
+            <div class="services-approach__header reveal">
+
+                <p class="services-eyebrow">
+                    YOUR NEXT STEPS
+                </p>
+
+                <h2 id="approach-title">
+                    From Property Concern to Project Conversation.
+                </h2>
+
+                <p>
+                    Every property is different.
+                    A clear conversation about existing
+                    conditions and project goals is
+                    a useful place to begin.
+                </p>
+
+            </div>
+
+            <div class="services-approach__steps">
+
+                <article class="services-approach__step reveal">
+
+                    <span class="services-approach__number">
+                        01
+                    </span>
+
+                    <h3>
+                        Describe Your Project
+                    </h3>
+
+                    <p>
+                        Tell us about your property,
+                        the issue you're experiencing,
+                        or the improvement you're considering.
+                    </p>
+
+                </article>
+
+                <article class="services-approach__step reveal">
+
+                    <span class="services-approach__number">
+                        02
+                    </span>
+
+                    <h3>
+                        Discuss Your Options
+                    </h3>
+
+                    <p>
+                        Connect with our team to discuss
+                        the relevant service, project
+                        requirements, and whether further
+                        evaluation may be needed.
+                    </p>
+
+                </article>
+
+                <article class="services-approach__step reveal">
+
+                    <span class="services-approach__number">
+                        03
+                    </span>
+
+                    <h3>
+                        Clarify the Next Steps
+                    </h3>
+
+                    <p>
+                        Determine the appropriate next
+                        conversation, evaluation, or
+                        planning requirements for
+                        your particular project.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS
+         NATIVE ACCESSIBLE ACCORDIONS
+    ===================================== -->
+
+    <section
+            class="services-faq"
+            aria-labelledby="faq-title"
+    >
+
+        <div class="services-shell">
+
+            <div class="services-faq__layout">
+
+                <div class="services-faq__intro reveal">
+
+                    <p class="services-eyebrow">
+                        FREQUENTLY ASKED QUESTIONS
+                    </p>
+
+                    <h2 id="faq-title">
+                        Questions Worth Asking.
+                    </h2>
+
+                    <p>
+                        Find answers to common questions
+                        about our contracting services,
+                        project types, and service area.
+                    </p>
+
+                    <a
+                            href="contact.html"
+                            class="service-btn"
+                    >
+                        Ask Us a Question
+                    </a>
+
+                </div>
+
+                <div class="services-faq__questions">
+
+                    <details class="services-faq__item reveal">
+
+                        <summary>
+                            What specialty contracting services
+                            does Structures, Inc. provide?
+                        </summary>
+
+                        <div class="services-faq__answer">
+                            <p>
+                                Structures, Inc. provides structural
+                                jacking and leveling, Rubber Stone
+                                and Vuba Stone decorative overlays,
+                                metal and flat roof coatings,
+                                deck waterproofing, kitchen
+                                and bathroom remodeling, and
+                                planning and design services
+                                throughout Metro Atlanta.
+                            </p>
+                        </div>
+
+                    </details>
+
+                    <details class="services-faq__item reveal">
+
+                        <summary>
+                            Who can help with sagging floors
+                            in Metro Atlanta?
+                        </summary>
+
+                        <div class="services-faq__answer">
+                            <p>
+                                Structures, Inc. offers
+                                <a href="structural-jacking-leveling.html">
+                                    structural jacking and leveling
+                                </a>
+                                services for suitable structural
+                                support concerns. Sagging floors
+                                can have different causes, so
+                                evaluation is important before
+                                selecting a corrective approach.
+                            </p>
+                        </div>
+
+                    </details>
+
+                    <details class="services-faq__item reveal">
+
+                        <summary>
+                            Can existing patios and pool decks
+                            be resurfaced?
+                        </summary>
+
+                        <div class="services-faq__answer">
+                            <p>
+                                Some existing outdoor surfaces
+                                may be candidates for decorative
+                                overlay systems such as
+                                <a href="rubberstone-vuba-stone.html">
+                                    Rubber Stone and Vuba Stone
+                                </a>.
+                                Suitability depends on the
+                                substrate, existing damage,
+                                and product requirements.
+                            </p>
+                        </div>
+
+                    </details>
+
+                    <details class="services-faq__item reveal">
+
+                        <summary>
+                            Can roof coatings extend
+                            the life of an existing roof?
+                        </summary>
+
+                        <div class="services-faq__answer">
+                            <p>
+                                Compatible roof coatings
+                                may help extend the service
+                                life of suitable metal
+                                and flat roofing systems.
+                                They are not a substitute
+                                for correcting major
+                                underlying roof damage.
+                            </p>
+                        </div>
+
+                    </details>
+
+                    <details class="services-faq__item reveal">
+
+                        <summary>
+                            What is the purpose of
+                            deck waterproofing?
+                        </summary>
+
+                        <div class="services-faq__answer">
+                            <p>
+                                Deck waterproofing helps
+                                protect suitable deck
+                                assemblies from moisture
+                                intrusion and water-related
+                                deterioration. The appropriate
+                                system depends on construction,
+                                exposure, and existing conditions.
+                            </p>
+                        </div>
+
+                    </details>
+
+                    <details class="services-faq__item reveal">
+
+                        <summary>
+                            Does Structures, Inc. work on
+                            residential and commercial properties?
+                        </summary>
+
+                        <div class="services-faq__answer">
+                            <p>
+                                Yes. Structures, Inc. provides
+                                specialty contracting services
+                                for residential and commercial
+                                properties throughout Metro
+                                Atlanta. Contact the team
+                                to discuss the availability
+                                and suitability of a service
+                                for your project.
+                            </p>
+                        </div>
+
+                    </details>
+
+                    <details class="services-faq__item reveal">
+
+                        <summary>
+                            Where is Structures, Inc. located?
+                        </summary>
+
+                        <div class="services-faq__answer">
+                            <p>
+                                Structures, Inc. is located
+                                at 4205 Trotters Way,
+                                Suite A, Alpharetta,
+                                Georgia 30004, and serves
+                                the Metro Atlanta area.
+                            </p>
+                        </div>
+
+                    </details>
+
+                    <details class="services-faq__item reveal">
+
+                        <summary>
+                            How do I contact Structures, Inc.
+                            about a project?
+                        </summary>
+
+                        <div class="services-faq__answer">
+                            <p>
+                                Visit our
+                                <a href="contact.html">contact page</a>,
+                                call
+                                <a href="tel:17704036300">
+                                    770-403-6300
+                                </a>,
+                                or email
+                                <a href="mailto:david@mystructures.com">
+                                    david@mystructures.com
+                                </a>
+                                to discuss your property
+                                and project requirements.
+                            </p>
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+         FINAL CONSULTATION CTA
+         EXISTING DESIGN PRESERVED
+    ===================================== -->
 
     <section class="services-section services-section--cta">
+
         <div class="services-shell">
+
             <div class="services-cta reveal">
-                <p class="services-eyebrow">START YOUR PROJECT</p>
-                <h2>Need a trusted team for your next improvement project?</h2>
-                <p>
-                    We bring practical expertise, high-quality workmanship, and dependable service to every project across structural, waterproofing, coating, remodeling, and design-focused work.
+
+                <p class="services-eyebrow">
+                    START YOUR PROJECT
                 </p>
-                <a href="contact.html" class="service-btn service-btn--primary">Request a Consultation</a>
+
+                <h2>
+                    Let's Talk About What's Next for Your Property.
+                </h2>
+
+                <p>
+                    From structural support and protective
+                    coatings to decorative surfaces,
+                    waterproofing, remodeling, and design,
+                    Structures, Inc. provides specialty
+                    contracting services throughout Metro Atlanta.
+                    Tell us what you're working on.
+                </p>
+
+                <a
+                        href="contact.html"
+                        class="service-btn service-btn--primary"
+                >
+                    Request a Consultation
+                </a>
+
             </div>
+
         </div>
     </section>
+
 </main>
 
+<!-- =====================================
+     ORIGINAL FOOTER
+===================================== -->
+
 <footer class="site-footer">
+
     <div class="footer-inner">
+
         <div class="footer-contact">
-            <span class="footer-label">Contact</span>
+
+            <span class="footer-label">
+                Contact
+            </span>
 
             <a href="tel:17704036300" class="footer-link">
                 770-403-6300
@@ -245,16 +1144,21 @@
             <a href="mailto:david@mystructures.com" class="footer-link">
                 david@mystructures.com
             </a>
+
         </div>
 
         <div class="footer-service">
+
             <div class="footer-service-line">
+
                 <span class="footer-pin" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="16" height="16">
                         <path d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2 2.2z"/>
                     </svg>
                 </span>
+
                 <span>Serving Metro Atlanta</span>
+
             </div>
 
             <a
@@ -265,7 +1169,9 @@
             >
                 4205 Trotters Way, Alpharetta, GA 30004, Suite A
             </a>
+
         </div>
+
     </div>
 
     <div class="footer-copy">
@@ -274,10 +1180,16 @@
 
     <div class="footer-credit">
         Crafted with Precision by
-        <a href="https://www.codess.dev" target="_blank" rel="noopener">
+        <a
+                href="https://www.codess.dev"
+                target="_blank"
+                rel="noopener"
+        >
             CODESS
         </a>
     </div>
+
 </footer>
+
 </body>
 </html>

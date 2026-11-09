@@ -1,79 +1,228 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact Structures, Inc. | Specialty Contractors in Metro Atlanta</title>
-    <meta name="description" content="Contact Structures, Inc. in Metro Atlanta for structural jacking and leveling, Rubber Stone and Vuba Stone, deck waterproofing, roof coatings, kitchen and bath remodeling, and plans and designs.">
-    <link rel="canonical" href="https://www.mystructures.com/contact.html">
+    <title>Contact Structures, Inc. | Atlanta Specialty Contractors</title>
 
-    <meta property="og:title" content="Contact Structures, Inc. | Specialty Contractors in Metro Atlanta">
-    <meta property="og:description" content="Call, email, or visit Structures, Inc. in Alpharetta, GA for specialty contracting services throughout Metro Atlanta.">
+    <meta name="description"
+          content="Contact Structures, Inc. in Alpharetta, GA for structural jacking and leveling, deck waterproofing, roof coatings, Rubber Stone, Vuba Stone, remodeling and design. Call 770-403-6300.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://www.mystructures.com/contact.html">
+
+    <!-- SOCIAL SHARING -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mystructures.com/contact.html">
-    <meta property="og:image" content="https://www.mystructures.com/images/opensans.webp">
+    <meta property="og:title"
+          content="Contact Structures, Inc. | Metro Atlanta Specialty Contractors">
+    <meta property="og:description"
+          content="Discuss your residential or commercial project with Structures, Inc. in Alpharetta, Georgia.">
+    <meta property="og:url"
+          content="https://www.mystructures.com/contact.html">
+    <meta property="og:image"
+          content="https://www.mystructures.com/images/opensans.webp">
 
-    <link rel="stylesheet" href="contact-index.css" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="contact-index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+    <!-- BUSINESS + CONTACT PAGE STRUCTURED DATA -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "GeneralContractor",
-            "name": "Structures, Inc.",
-            "url": "https://www.mystructures.com/contact.html",
-            "telephone": "770-403-6300",
-            "email": "david@mystructures.com",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4205 Trotters Way, Suite A",
-                "addressLocality": "Alpharetta",
-                "addressRegion": "GA",
-                "postalCode": "30004",
-                "addressCountry": "US"
-            },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Metro Atlanta"
-            }
+            "@graph": [
+                {
+                    "@type": "GeneralContractor",
+                    "@id": "https://www.mystructures.com/#business",
+                    "name": "Structures, Inc.",
+                    "url": "https://www.mystructures.com/",
+                    "telephone": "+1-770-403-6300",
+                    "email": "david@mystructures.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4205 Trotters Way, Suite A",
+                        "addressLocality": "Alpharetta",
+                        "addressRegion": "GA",
+                        "postalCode": "30004",
+                        "addressCountry": "US"
+                    },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Metro Atlanta, Georgia"
+                    },
+                    "hasOfferCatalog": {
+                        "@type": "OfferCatalog",
+                        "name": "Specialty Contracting Services",
+                        "itemListElement": [
+                            {
+                                "@type": "OfferCatalog",
+                                "name": "Structural Jacking and Leveling"
+                            },
+                            {
+                                "@type": "OfferCatalog",
+                                "name": "Deck Waterproofing"
+                            },
+                            {
+                                "@type": "OfferCatalog",
+                                "name": "Metal and Flat Roof Coatings"
+                            },
+                            {
+                                "@type": "OfferCatalog",
+                                "name": "Rubber Stone and Vuba Stone"
+                            },
+                            {
+                                "@type": "OfferCatalog",
+                                "name": "Kitchen and Bath Remodeling"
+                            },
+                            {
+                                "@type": "OfferCatalog",
+                                "name": "Plans and Designs"
+                            }
+                        ]
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/profile.php?id=61563117539114"
+                    ]
+                },
+                {
+                    "@type": "ContactPage",
+                    "@id": "https://www.mystructures.com/contact.html#webpage",
+                    "url": "https://www.mystructures.com/contact.html",
+                    "name": "Contact Structures, Inc.",
+                    "description": "Contact Structures, Inc. for residential and commercial specialty contracting in Metro Atlanta.",
+                    "about": {
+                        "@id": "https://www.mystructures.com/#business"
+                    },
+                    "mainEntity": {
+                        "@id": "https://www.mystructures.com/#business"
+                    }
+                },
+                {
+                    "@type": "FAQPage",
+                    "@id": "https://www.mystructures.com/contact.html#faq",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "How do I contact Structures, Inc. about a project?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Call 770-403-6300 or email david@mystructures.com with your project location, a short description, and any helpful photos."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What services can I ask Structures, Inc. about?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Structural jacking and leveling, deck waterproofing, metal and flat roof coatings, Rubber Stone and Vuba Stone, kitchen and bath remodeling, and plans and designs."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Where is Structures, Inc. located?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "4205 Trotters Way, Suite A, Alpharetta, GA 30004. Please call ahead to arrange an appointment."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What area does Structures, Inc. serve?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Structures, Inc. serves residential and commercial clients throughout Metro Atlanta. Contact the team to confirm service at your project address."
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     </script>
+
+    <script src="shared.js" defer></script>
+    <script src="contact.js" defer></script>
 </head>
 
-<body class="page">
-<script src="shared.js" defer></script>
-<script src="contact.js" defer></script>
+<body class="page contact-page">
+
+<!-- ==========================================
+     SHARED NAVIGATION
+     ========================================== -->
 
 <header class="header">
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
+
         <a href="index.html" class="nav__brand">
-            <img src="images/triangle.webp" alt="Structures, Inc. contractor logo" class="nav__brandMark">
-            <span class="nav__brandText">Structures Inc.</span>
+            <img
+                    src="images/triangle.webp"
+                    alt=""
+                    class="nav__brandMark"
+            >
+            <span class="nav__brandText">
+                Structures, Inc.
+            </span>
         </a>
 
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+                class="nav__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
             <span class="nav__toggleIcon"></span>
             <span class="sr-only">Menu</span>
         </button>
 
         <ul class="nav__list">
-            <li><a class="nav__link" href="index.html">Home</a></li>
-            <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link" href="services.html">Services</a></li>
-            <li><a class="nav__link nav__link--active" href="contact.html">Contact</a></li>
+            <li>
+                <a class="nav__link" href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="nav__link" href="about.html">
+                    About
+                </a>
+            </li>
+            <li>
+                <a class="nav__link" href="services.html">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a class="nav__link nav__link--active"
+                   href="contact.html"
+                   aria-current="page">
+                    Contact
+                </a>
+            </li>
         </ul>
+
     </nav>
 </header>
 
 <main class="contact-main">
-    <section class="contact-hero">
-        <div class="contact-hero__bg">
+
+    <!-- ==========================================
+         ARCHITECTURAL BLUEPRINT HERO
+         ========================================== -->
+
+    <section class="contact-hero"
+             aria-labelledby="contact-heading">
+
+        <div class="contact-hero__bg" aria-hidden="true">
             <div class="contact-grid"></div>
             <div class="contact-sweep"></div>
             <div class="contact-orbit contact-orbit--1"></div>
@@ -81,154 +230,423 @@
         </div>
 
         <div class="contact-shell contact-hero__content">
+
             <div class="contact-copy reveal">
-                <p class="contact-eyebrow">CONTACT US</p>
-                <h1>Let’s talk about your project.</h1>
+
+                <p class="contact-eyebrow">
+                    STRUCTURES, INC. / PROJECT INQUIRIES
+                </p>
+
+                <h1 id="contact-heading">
+                    Let's engineer your next project.
+                </h1>
 
                 <p class="contact-lead">
-                    Whether you need structural jacking and leveling, deck waterproofing, roof coatings, remodeling, plans and designs, or Rubber Stone and Vuba Stone installation, Structures Inc. is here to help.
+                    From structural jacking and leveling
+                    to deck waterproofing, roof coatings,
+                    remodeling, architectural plans and
+                    designs, and Rubber Stone or Vuba Stone
+                    installations, Structures, Inc. is
+                    ready to discuss your project.
                 </p>
 
                 <p>
-                    Reach out today to discuss your project, ask questions, or request a consultation. We proudly serve residential and commercial clients throughout Metro Atlanta.
+                    Based in Alpharetta, Georgia, our team
+                    works with residential and commercial
+                    clients throughout Metro Atlanta.
+                    Tell us what you're planning, where
+                    your property is located, and what
+                    you need help accomplishing.
                 </p>
 
                 <div class="contact-heroActions">
-                    <a href="tel:17704036300" class="contact-btn contact-btn--primary">Call 770-403-6300</a>
-                    <a href="mailto:david@mystructures.com" class="contact-btn contact-btn--secondary">Email Us</a>
-                </div>
-            </div>
 
-            <div class="contact-heroCard reveal">
-                <span class="contact-chip">DIRECT CONTACT</span>
-                <h3>Get in Touch</h3>
-
-                <div class="contact-quickLinks">
-                    <a href="tel:17704036300" class="contact-quickLink">770-403-6300</a>
-                    <a href="mailto:david@mystructures.com" class="contact-quickLink">david@mystructures.com</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-section">
-        <div class="contact-shell">
-            <div class="contact-cardsGrid">
-                <article class="contact-card reveal">
-                    <span class="contact-chip">CALL US</span>
-                    <h3>Speak with a specialist</h3>
-                    <p>
-                        The fastest way to reach us is by phone. Call to discuss your project, ask questions, or schedule a consultation.
-                    </p>
-                    <a href="tel:17704036300" class="contact-btn contact-btn--card">
+                    <a href="tel:+17704036300"
+                       class="contact-btn contact-btn--primary">
                         Call 770-403-6300
                     </a>
-                </article>
 
-                <article class="contact-card reveal">
-                    <span class="contact-chip">EMAIL</span>
-                    <h3>Send project details</h3>
-                    <p>
-                        Email us photos, project descriptions, or questions and we’ll get back to you as soon as possible.
-                    </p>
-                    <a href="mailto:david@mystructures.com" class="contact-btn contact-btn--card">
-                        Email david@mystructures.com
+                    <a href="mailto:david@mystructures.com"
+                       class="contact-btn contact-btn--secondary">
+                        Email Our Team
                     </a>
+
+                </div>
+            </div>
+
+            <!-- PREMIUM GLASS CONTACT CARD -->
+
+            <aside class="contact-heroCard reveal"
+                   aria-label="Direct contact information">
+
+                <span class="contact-chip">
+                    DIRECT CONTACT
+                </span>
+
+                <h2>Let's Talk.</h2>
+
+                <p>
+                    Have a project in mind?
+                    Connect directly with our team.
+                </p>
+
+                <div class="contact-quickLinks">
+
+                    <a href="tel:+17704036300"
+                       class="contact-quickLink">
+                        770-403-6300
+                    </a>
+
+                    <a href="mailto:david@mystructures.com"
+                       class="contact-quickLink">
+                        david@mystructures.com
+                    </a>
+
+                </div>
+
+                <p>
+                    Serving residential and commercial
+                    projects across Metro Atlanta.
+                </p>
+
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT OPTIONS
+         ========================================== -->
+
+    <section class="contact-section"
+             aria-label="Ways to contact Structures, Inc.">
+
+        <div class="contact-shell">
+
+            <div class="contact-cardsGrid">
+
+                <article class="contact-card reveal">
+
+                    <span class="contact-chip">
+                        01 / PHONE
+                    </span>
+
+                    <h2>Speak With Our Team</h2>
+
+                    <p>
+                        Have questions about a structural
+                        repair, specialty coating, remodeling
+                        project, or new installation?
+                        Call to discuss your needs and
+                        arrange the next steps.
+                    </p>
+
+                    <a href="tel:+17704036300"
+                       class="contact-btn contact-btn--card">
+                        Call 770-403-6300
+                    </a>
+
                 </article>
 
                 <article class="contact-card reveal">
-                    <span class="contact-chip">SERVICE AREA</span>
-                    <h3>Metro Atlanta</h3>
+
+                    <span class="contact-chip">
+                        02 / EMAIL
+                    </span>
+
+                    <h2>Share Your Project</h2>
+
                     <p>
-                        Structures Inc. proudly serves residential and commercial clients throughout the Metro Atlanta region with practical, high-quality specialty contracting solutions.
+                        Send us your project description,
+                        property location, questions, and
+                        any helpful photos. Our team can
+                        review your inquiry and discuss
+                        how to proceed.
                     </p>
+
+                    <a href="mailto:david@mystructures.com?subject=Project%20Inquiry"
+                       class="contact-btn contact-btn--card">
+                        Email Our Team
+                    </a>
+
                 </article>
+
+                <article class="contact-card reveal">
+
+                    <span class="contact-chip">
+                        03 / SERVICE AREA
+                    </span>
+
+                    <h2>Serving Metro Atlanta</h2>
+
+                    <p>
+                        Structures, Inc. provides specialty
+                        contracting services for residential
+                        and commercial properties throughout
+                        the Metro Atlanta region.
+                        Contact us to confirm availability
+                        for your specific project address.
+                    </p>
+
+                </article>
+
             </div>
         </div>
     </section>
-    <div class="contact-connectBar reveal">
+
+    <!-- ==========================================
+         SOCIAL CONNECTIONS
+         ========================================== -->
+
+    <section class="contact-connectBar reveal"
+             aria-labelledby="contact-social-heading">
+
         <div class="contact-connectBar__copy">
-            <span class="contact-chip">CONNECT</span>
-            <h3>Stay connected with Structures Inc.</h3>
-            <p>Follow us on Facebook or help future clients by leaving a Google review.</p>
+
+            <span class="contact-chip">
+                STAY CONNECTED
+            </span>
+
+            <h2 id="contact-social-heading">
+                Follow Our Work.
+            </h2>
+
+            <p>
+                Connect with Structures, Inc. on Facebook,
+                or share your experience with a Google review.
+            </p>
+
         </div>
 
         <div class="contact-connectBar__actions">
-            <a href="https://www.facebook.com/profile.php?id=61563117539114" target="_blank" rel="noopener" class="contact-btn contact-btn--card">
-                Facebook
+
+            <a
+                    href="https://www.facebook.com/profile.php?id=61563117539114"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-btn contact-btn--card"
+            >
+                Visit Facebook
             </a>
-            <a href="https://share.google/R4Dpy3dp3D06ywYU4" target="_blank" rel="noopener" class="contact-btn contact-btn--card">
+
+            <a
+                    href="https://share.google/R4Dpy3dp3D06ywYU4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-btn contact-btn--card"
+            >
                 Leave a Google Review
             </a>
-        </div>
-    </div>
 
-    <section class="contact-section contact-section--map">
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         AI-FRIENDLY PROJECT FAQ
+         ========================================== -->
+
+    <section class="contact-section contact-faq"
+             aria-labelledby="contact-faq-heading">
+
         <div class="contact-shell">
-            <div class="contact-mapCard reveal">
-                <div class="contact-mapHeader">
-                    <p class="contact-eyebrow">OUR LOCATION</p>
-                    <h2>Visit Our Office</h2>
-                    <h4 class="contact-phone">Call First To Make An Appointment</h4>
-                    <p class="contact-lead">
-                        4205 Trotters Way, Alpharetta, GA 30004, Suite A
+
+            <div class="contact-faq__heading reveal">
+
+                <p class="contact-eyebrow">
+                    PROJECT INFORMATION / FAQ
+                </p>
+
+                <h2 id="contact-faq-heading">
+                    Questions Before We Begin?
+                </h2>
+
+                <p>
+                    Helpful information about contacting
+                    Structures, Inc. and starting
+                    your next project.
+                </p>
+
+            </div>
+
+            <div class="contact-faq__list">
+
+                <details class="contact-faq__item reveal">
+                    <summary>
+                        How do I contact Structures, Inc. about a project?
+                    </summary>
+                    <p>
+                        Call
+                        <a href="tel:+17704036300">770-403-6300</a>
+                        or email
+                        <a href="mailto:david@mystructures.com">
+                            david@mystructures.com
+                        </a>
+                        with your project location, a brief
+                        description of the work, and any
+                        helpful photos.
                     </p>
+                </details>
+
+                <details class="contact-faq__item reveal">
+                    <summary>
+                        What services can I ask Structures, Inc. about?
+                    </summary>
+                    <p>
+                        Contact our team about structural
+                        jacking and leveling, deck
+                        waterproofing, metal and flat roof
+                        coatings, Rubber Stone and Vuba
+                        Stone installations, kitchen and
+                        bath remodeling, and plans and designs.
+                    </p>
+                </details>
+
+                <details class="contact-faq__item reveal">
+                    <summary>
+                        Where is Structures, Inc. located?
+                    </summary>
+                    <p>
+                        Our office is located at
+                        4205 Trotters Way, Suite A,
+                        Alpharetta, GA 30004.
+                        Please call ahead to arrange
+                        an office appointment.
+                    </p>
+                </details>
+
+                <details class="contact-faq__item reveal">
+                    <summary>
+                        What area does Structures, Inc. serve?
+                    </summary>
+                    <p>
+                        Structures, Inc. serves residential
+                        and commercial clients throughout
+                        Metro Atlanta. Contact our team
+                        to confirm service availability
+                        at your project address.
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         LOCATION + GOOGLE MAP
+         ========================================== -->
+
+    <section class="contact-section contact-section--map"
+             aria-labelledby="contact-location-heading">
+
+        <div class="contact-shell">
+
+            <div class="contact-mapCard reveal">
+
+                <div class="contact-mapHeader">
+
+                    <p class="contact-eyebrow">
+                        OUR LOCATION / ALPHARETTA, GA
+                    </p>
+
+                    <h2 id="contact-location-heading">
+                        Visit Our Office
+                    </h2>
+
+                    <p class="contact-phone">
+                        Please call ahead to arrange
+                        an office appointment.
+                    </p>
+
+                    <address class="contact-lead">
+                        4205 Trotters Way, Suite A
+                        Alpharetta, GA 30004
+                    </address>
+
                 </div>
 
                 <div class="contact-mapWrap">
+
                     <iframe
-                            title="Structures Inc Location"
+                            title="Map of Structures, Inc. office in Alpharetta, Georgia"
                             src="https://www.google.com/maps?q=4205+Trotters+Way,+Alpharetta,+GA+30004,+Suite+A&output=embed"
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
                     </iframe>
+
                     <a
                             href="https://www.google.com/maps/search/?api=1&query=4205+Trotters+Way,+Alpharetta,+GA+30004,+Suite+A"
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             class="contact-btn contact-btn--card"
                     >
                         Get Directions
                     </a>
+
                 </div>
+
             </div>
         </div>
     </section>
+
 </main>
 
-<footer class="site-footer">
-    <div class="footer-inner">
-        <div class="footer-contact">
-            <span class="footer-label">Contact</span>
+<!-- ==========================================
+     SHARED FOOTER
+     ========================================== -->
 
-            <a href="tel:17704036300" class="footer-link">
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-contact">
+
+            <span class="footer-label">
+                Contact
+            </span>
+
+            <a href="tel:+17704036300"
+               class="footer-link">
                 770-403-6300
             </a>
 
-            <a href="mailto:david@mystructures.com" class="footer-link">
+            <a href="mailto:david@mystructures.com"
+               class="footer-link">
                 david@mystructures.com
             </a>
+
         </div>
 
         <div class="footer-service">
+
             <div class="footer-service-line">
+
                 <span class="footer-pin" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="16" height="16">
-                        <path d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2 2.2z"/>
+                    <svg viewBox="0 0 24 24"
+                         width="16"
+                         height="16">
+                        <path d="M12 2C8.7 2 6 4.7 6 8c0 4.7 6 12 6 12s6-7.3 6-12c0-3.3-2.7-6-6-6zm0 8.2c-1.2 0-2.2-1-2.2-2.2S10.8 5.8 12 5.8s2.2 1 2.2 2.2-1 2.2-2.2-1 2.2-2.2 2.2z"/>
                     </svg>
                 </span>
+
                 <span>Serving Metro Atlanta</span>
+
             </div>
 
             <a
                     href="https://www.google.com/maps/search/?api=1&query=4205+Trotters+Way,+Alpharetta,+GA+30004,+Suite+A"
                     class="footer-address"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
             >
-                4205 Trotters Way, Alpharetta, GA 30004, Suite A
+                4205 Trotters Way, Suite A,
+                Alpharetta, GA 30004
             </a>
+
         </div>
+
     </div>
 
     <div class="footer-copy">
@@ -237,10 +655,14 @@
 
     <div class="footer-credit">
         Crafted with Precision by
-        <a href="https://www.codess.dev" target="_blank" rel="noopener">
+        <a href="https://www.codess.dev"
+           target="_blank"
+           rel="noopener noreferrer">
             CODESS
         </a>
     </div>
+
 </footer>
+
 </body>
 </html>

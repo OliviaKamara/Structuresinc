@@ -1630,3 +1630,838 @@ html, body {
         transform: none;
     }
 }
+
+/* ==========================================================
+   STRUCTURES, INC. — HOMEPAGE AI / SEO ENHANCEMENTS
+   APPEND TO Pages/home.css
+   ========================================================== */
+
+/* PAGE STRUCTURE */
+
+.home-page .main {
+    display: block;
+    min-height: 0;
+    padding: 24px 16px 48px;
+}
+
+.home-page .main > .services-orbit {
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.home-page .home-expertise,
+.home-page .home-faq,
+.home-page .home-final {
+    font-family: "Open Sans", sans-serif;
+}
+
+.home-page .home-expertise__inner,
+.home-page .home-faq__inner,
+.home-page .home-final__inner {
+    width: min(1100px, calc(100% - 36px));
+    margin: 0 auto;
+}
+
+/* SERVICE EXPERTISE */
+
+.home-page .home-expertise {
+    padding: 95px 0 105px;
+    background: #f5f7fc;
+}
+
+.home-page .home-kicker {
+    margin: 0 0 18px;
+    color: #0409c0;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+.home-page .home-expertise__head {
+    max-width: 790px;
+    margin-bottom: 44px;
+}
+
+.home-page .home-expertise h2,
+.home-page .home-faq h2,
+.home-page .home-final h2 {
+    margin: 0 0 20px;
+    font-size: clamp(2rem, 4.4vw, 3.7rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 1.13;
+    text-wrap: balance;
+}
+
+.home-page .home-expertise__head > p:last-child,
+.home-page .home-faq__heading > p:last-child {
+    color: #384360;
+    line-height: 1.85;
+}
+
+.home-page .home-expertise__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.home-page .home-expertise__card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid rgba(4, 9, 192, 0.14);
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 14px 30px rgba(9, 22, 60, 0.05);
+    transition:
+            transform 220ms ease,
+            box-shadow 220ms ease;
+}
+
+.home-page .home-expertise__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 40px rgba(9, 22, 60, 0.1);
+}
+
+.home-page .home-expertise__card > span {
+    color: #0409c0;
+    font-size: 0.67rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.home-page .home-expertise__card h3 {
+    margin: 20px 0 12px;
+    color: #0d1537;
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.home-page .home-expertise__card p {
+    margin: 0 0 25px;
+    color: #384360;
+    font-size: 0.94rem;
+    line-height: 1.8;
+}
+
+.home-page .home-expertise__card a {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: auto;
+    color: #0409c0;
+    font-size: 0.87rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.home-page .home-expertise__card a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.home-page .home-expertise__all {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 14px 22px;
+    border-radius: 99px;
+    background: #0409c0;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 750;
+}
+
+.home-page .home-expertise__all:hover {
+    background: #132a7e;
+}
+
+/* FAQ SECTION */
+
+.home-page .home-faq {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.home-page .home-faq__inner {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 75px;
+}
+
+.home-page .home-faq__heading {
+    align-self: start;
+}
+
+.home-page .home-faq__items {
+    border-top: 1px solid rgba(4, 9, 192, 0.17);
+}
+
+.home-page .home-faq details {
+    border-bottom: 1px solid rgba(4, 9, 192, 0.17);
+}
+
+.home-page .home-faq summary {
+    position: relative;
+    padding: 24px 40px 24px 0;
+    color: #0d1537;
+    font-size: 1rem;
+    font-weight: 750;
+    line-height: 1.6;
+    cursor: pointer;
+    list-style: none;
+}
+
+.home-page .home-faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.home-page .home-faq summary::after {
+    content: "+";
+    position: absolute;
+    right: 5px;
+    top: 18px;
+    color: #0409c0;
+    font-size: 1.5rem;
+}
+
+.home-page .home-faq details[open] summary::after {
+    content: "−";
+}
+
+.home-page .home-faq details p {
+    margin: 0 0 25px;
+    color: #384360;
+    font-size: 0.96rem;
+    line-height: 1.85;
+}
+
+.home-page .home-faq details a {
+    color: #0409c0;
+    font-weight: 700;
+}
+
+/* FINAL CALL TO ACTION */
+
+.home-page .home-final {
+    padding: 85px 0;
+    color: #ffffff;
+    background: linear-gradient(
+            130deg,
+            #193491,
+            #132a7e
+    );
+}
+
+.home-page .home-final__inner {
+    max-width: 900px;
+}
+
+.home-page .home-final .home-kicker {
+    color: #cbd6ff;
+}
+
+.home-page .home-final h2 {
+    color: #ffffff;
+}
+
+.home-page .home-final p:not(.home-kicker) {
+    max-width: 650px;
+    color: #e0e7ff;
+    line-height: 1.85;
+}
+
+.home-page .home-final a {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 18px;
+    padding: 14px 24px;
+    border-radius: 99px;
+    background: #ffffff;
+    color: #132a7e;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.home-page .home-final a:hover {
+    background: #e7edff;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.home-page .home-expertise a:focus-visible,
+.home-page .home-faq summary:focus-visible,
+.home-page .home-final a:focus-visible {
+    outline: 3px solid #5674ff;
+    outline-offset: 4px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .home-page .home-expertise__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-page .home-faq__inner {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .home-page .home-expertise,
+    .home-page .home-faq {
+        padding: 65px 0;
+    }
+
+    .home-page .home-expertise__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-page .home-expertise__card {
+        padding: 24px;
+    }
+
+    .home-page .main > .services-orbit {
+        min-height: 0;
+    }
+
+    .home-page .home-final {
+        padding: 65px 0;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .home-page .home-expertise__card {
+        transition: none;
+    }
+
+    .home-page .home-expertise__card:hover {
+        transform: none;
+    }
+
+    .home-page .loader {
+        display: none !important;
+    }
+
+    .home-page .header,
+    .home-page .main {
+        opacity: 1 !important;
+    }
+}
+
+/* ==========================================================
+   STRUCTURES, INC. — HOMEPAGE LAYOUT CORRECTIONS
+   Fix section widths, margins, padding and alignment
+   Append to the VERY BOTTOM of Pages/home.css
+   ========================================================== */
+
+/* 01. GLOBAL BOX SIZING */
+
+.home-page,
+.home-page *,
+.home-page *::before,
+.home-page *::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 02. REMOVE ORIGINAL MAIN CONSTRAINTS */
+
+.home-page .main {
+    display: block;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+/* 03. KEEP THE ORIGINAL ORBIT CENTERED */
+
+.home-page .main > .services-orbit {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding-left: clamp(16px, 3vw, 40px);
+    padding-right: clamp(16px, 3vw, 40px);
+}
+
+/* 04. FULL-WIDTH SECTION BACKGROUNDS */
+
+.home-page .home-intro,
+.home-page .home-expertise,
+.home-page .home-faq,
+.home-page .home-final {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 05. ONE CONSISTENT CONTENT WIDTH */
+
+.home-page .home-intro__inner,
+.home-page .home-expertise__inner,
+.home-page .home-faq__inner,
+.home-page .home-final__inner {
+    width: min(1100px, calc(100% - 48px));
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* 06. CONSISTENT VERTICAL SPACING */
+
+.home-page .home-intro {
+    padding: clamp(75px, 8vw, 120px) 0;
+}
+
+.home-page .home-expertise {
+    padding: clamp(75px, 8vw, 110px) 0;
+}
+
+.home-page .home-faq {
+    padding: clamp(75px, 8vw, 110px) 0;
+}
+
+.home-page .home-final {
+    padding: clamp(75px, 8vw, 110px) 0;
+}
+
+/* 07. FAQ — CLEAN TWO-COLUMN ALIGNMENT */
+
+.home-page .home-faq__inner {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 0.85fr)
+        minmax(0, 1.15fr);
+    align-items: start;
+    gap: clamp(40px, 6vw, 80px);
+}
+
+.home-page .home-faq__heading,
+.home-page .home-faq__items {
+    min-width: 0;
+}
+
+.home-page .home-faq__heading h2 {
+    max-width: 14ch;
+    margin-top: 0;
+    overflow-wrap: normal;
+}
+
+.home-page .home-faq__items {
+    width: 100%;
+}
+
+/* 08. CTA — FULL-BLEED BLUE BACKGROUND */
+
+.home-page .home-final {
+    background: linear-gradient(
+            135deg,
+            #193491 0%,
+            #132a7e 65%,
+            #101e60 100%
+    );
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.home-page .home-final__inner {
+    max-width: 1100px;
+    padding: 0;
+    text-align: left;
+}
+
+.home-page .home-final h2 {
+    max-width: 850px;
+    margin: 0 0 24px;
+    font-size: clamp(2.4rem, 5vw, 4.3rem);
+    line-height: 1.12;
+}
+
+.home-page .home-final p:not(.home-kicker) {
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+/* 09. REMOVE GAP BEFORE FOOTER */
+
+.home-page .site-footer {
+    margin-top: 0;
+}
+
+/* 10. TABLET */
+
+@media (max-width: 900px) {
+
+    .home-page .home-faq__inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .home-page .home-faq__heading h2 {
+        max-width: 22ch;
+    }
+
+}
+
+/* 11. MOBILE */
+
+@media (max-width: 640px) {
+
+    .home-page .home-intro__inner,
+    .home-page .home-expertise__inner,
+    .home-page .home-faq__inner,
+    .home-page .home-final__inner {
+        width: calc(100% - 36px);
+    }
+
+    .home-page .home-intro,
+    .home-page .home-expertise,
+    .home-page .home-faq,
+    .home-page .home-final {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .home-page .home-faq__heading h2 {
+        max-width: 100%;
+    }
+
+    .home-page .home-final h2 {
+        font-size: clamp(2rem, 8.5vw, 3rem);
+    }
+
+}
+
+
+/* ==========================================
+   HOMEPAGE — FULL-WIDTH BLUE SLOGAN
+   ========================================== */
+
+/* Preserve homepage layout */
+.home-page .main {
+    display: block;
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 0 0 48px;
+    box-sizing: border-box;
+}
+
+/* Allow banner to span the page */
+.home-page .services-orbit {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
+    gap: 28px;
+}
+
+/* Blue banner */
+.home-page .quote-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: none;
+    min-height: 68px;
+    margin: 0;
+    padding: 16px 24px;
+
+    left: auto;
+    right: auto;
+    transform: none;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    border: none;
+    border-radius: 0;
+
+    background: linear-gradient(
+            110deg,
+            #02065f 0%,
+            #0409c0 50%,
+            #2949e5 100%
+    );
+
+    box-shadow: 0 10px 24px rgba(4,9,100,.18);
+}
+
+/* Subtle engineering blueprint grid */
+.home-page .quote-top::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background-image:
+            linear-gradient(
+                    rgba(255,255,255,.055) 1px,
+                    transparent 1px
+            ),
+            linear-gradient(
+                    90deg,
+                    rgba(255,255,255,.055) 1px,
+                    transparent 1px
+            );
+
+    background-size: 32px 32px;
+}
+
+/* Remove original white pill styling */
+.home-page .quote-top .quote-top-bg {
+    position: relative;
+    z-index: 1;
+    display: block;
+
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+
+    background: transparent;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(16px, 1.65vw, 25px);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0.1px;
+    text-align: center;
+    text-wrap: balance;
+
+    text-shadow: 0 2px 8px rgba(0,0,40,.2);
+}
+
+/* Keep orbit centered independently */
+.home-page .orbit-stage {
+    width: min(1300px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .home-page .quote-top {
+        min-height: 60px;
+        padding: 15px 18px;
+    }
+
+    .home-page .quote-top .quote-top-bg {
+        font-size: clamp(15px, 3.8vw, 20px);
+    }
+}
+/* ==========================================
+   HOMEPAGE — FINAL SLOGAN WIDTH FIX
+   ========================================== */
+
+/* Remove padding from the actual orbit parent */
+.home-page .main > .services-orbit {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Full-width slogan without viewport hacks */
+.home-page .services-orbit > .quote-top {
+    position: relative;
+    left: auto;
+    right: auto;
+    transform: none;
+
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Keep the orbit cards centered separately */
+.home-page .orbit-stage {
+    width: min(1300px, calc(100% - 32px));
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+/* ========================================
+   CINEMATIC ENGINEERING SLOGAN
+   ======================================== */
+
+.home-page .services-orbit > .quote-top {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    border-bottom: 2px solid rgba(130, 175, 255, .65);
+
+    box-shadow:
+            0 12px 35px rgba(4, 9, 192, .18),
+            inset 0 -1px 0 rgba(255,255,255,.15);
+}
+
+/* Animated light sweep */
+.home-page .services-orbit > .quote-top::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background: linear-gradient(
+            110deg,
+            transparent 25%,
+            rgba(255,255,255,.12) 48%,
+            transparent 70%
+    );
+
+    transform: translateX(-150%);
+    animation: blueprintShimmer 9s ease-in-out infinite;
+}
+
+/* Keep text above the light effect */
+.home-page .quote-top .quote-top-bg {
+    position: relative;
+    z-index: 2;
+}
+
+/* Subtle light sweep */
+@keyframes blueprintShimmer {
+    0%, 65% {
+        transform: translateX(-150%);
+    }
+
+    90%, 100% {
+        transform: translateX(150%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-page .services-orbit > .quote-top::after {
+        animation: none;
+    }
+}
+
+/* ==========================================
+   LUXURY SERVICE CARD FINISH
+   ========================================== */
+
+/*
+ Replace .orbit-card below with the actual
+ service card selector if it differs.
+*/
+
+.home-page .orbit-card {
+    border: 1px solid rgba(255,255,255,.42);
+
+    box-shadow:
+            0 16px 35px rgba(2,8,60,.22),
+            0 3px 10px rgba(0,0,0,.08),
+            inset 0 1px 0 rgba(255,255,255,.25);
+
+    transition:
+            box-shadow 300ms ease,
+            border-color 300ms ease,
+            filter 300ms ease;
+}
+
+.home-page .orbit-card:hover {
+    border-color: rgba(175,205,255,.9);
+
+    box-shadow:
+            0 24px 55px rgba(2,8,75,.3),
+            0 0 20px rgba(65,105,255,.22);
+
+    filter: brightness(1.05);
+}
+
+/* ==========================================
+   PREMIUM GLASS NAVIGATION
+   ========================================== */
+
+.home-page .header {
+    background: linear-gradient(
+            180deg,
+            rgba(250,252,255,.88),
+            rgba(228,237,252,.65)
+    );
+
+    backdrop-filter: blur(20px) saturate(145%);
+    -webkit-backdrop-filter: blur(20px) saturate(145%);
+
+    border-bottom: 1px solid rgba(255,255,255,.55);
+
+    box-shadow:
+            0 8px 30px rgba(4,9,70,.08),
+            inset 0 1px 0 rgba(255,255,255,.7);
+}
+
+.home-page .nav__link {
+    transition:
+            color 220ms ease,
+            background 220ms ease,
+            box-shadow 220ms ease,
+            transform 220ms ease;
+}
+
+.home-page .nav__link:hover {
+    background: rgba(255,255,255,.72);
+    box-shadow: 0 8px 20px rgba(4,9,192,.1);
+}
+
+.home-page .nav__link--active {
+    background: rgba(4,9,192,.12);
+    border-color: rgba(4,9,192,.35);
+
+    box-shadow:
+            inset 0 1px 0 rgba(255,255,255,.5),
+            0 4px 12px rgba(4,9,192,.08);
+}
+
+/* ==========================================
+   SLOGAN — PRECISION FINISH
+   ========================================== */
+
+.home-page .services-orbit > .quote-top {
+    border-bottom: 2px solid rgba(154,190,255,.75);
+
+    box-shadow:
+            0 10px 26px rgba(4,9,100,.18),
+            inset 0 -1px 0 rgba(255,255,255,.12);
+}
+
+.home-page .quote-top .quote-top-bg {
+    text-shadow:
+            0 2px 8px rgba(0,0,45,.3);
+}
+
+
